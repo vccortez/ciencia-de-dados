@@ -1,8 +1,10 @@
 ---
-title: "Conteúdos"
+title: "Plano de ensino"
 ---
 
-## Lista geral
+Rascunho do plano de ensino.
+
+## Conteúdos
 
 Lista não exaustiva de conteúdos a serem abordados.
 Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados.
@@ -37,3 +39,17 @@ Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados.
 27. KNN (?)
 28. Modelos e processamento de dados "não estruturados" como imagens, texto
 29. Redes neurais, algoritmos genéticos, colônia de formigas, enfim, bioinspirados
+
+## Unidades
+
+Disciplinas são por padrão organizadas em três unidades.
+Uma unidade pode ser vista como um subconjunto dos assuntos listados seguindo algum tema especificado.
+Aqui, com base nos assuntos listados, é tomada a decisão de definir como os temas das unidades:
+
+1. Preparação ou pré-processamento de dados
+2. Análise e visualização de dados
+3. Modelagem e aprendizado de máquina
+
+Essa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais de estatística e finalizando com um pouco de aprendizado de máquina.
+Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos serão apresentados em cada momento será avaliada caso a caso.
+
