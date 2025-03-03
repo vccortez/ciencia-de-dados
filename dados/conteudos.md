@@ -1,8 +1,12 @@
-# Conteúdos
+---
+title: "Conteúdos"
+---
+
+## Lista geral
 
 Lista não exaustiva de conteúdos a serem abordados.
 Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados.
-É mais fácil simplesmente listar o que você gostaria de apresentar antes de fazer qualquer tipo de organização de dados mais complexa.
+É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização de dados mais complexa.
 
 1. O que é ciência de dados, definições e termos relacionados
 2. História da ciência de dados
@@ -19,17 +23,17 @@ Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados.
 13. Coleta de dados, web crawling/scraping
 14. Limpeza de dados, dados incompletos ou ausentes
 15. Dados categóricos vs numéricos e escalas de medida
-16. Estatísticas descritivas, média, mediana, etc, medidas de dispersão, variância, correlação
+16. Estatísticas descritivas, média, mediana, medidas de dispersão, variância, correlação
 17. Ruídos, outliers
 18. Normalização de dados
 19. Redução de dimensionalidade (?)
 20. Visualização de dados, gráficos de barras, linha, boxplots, histogramas, etc
-21. Aprendizado estatístico, supervisionado e não supervisionado
+21. Aprendizado de máquina (estatístico), supervisionado e não supervisionado
 22. Modelos de regressão e classificação clássicos
 23. Métricas de avaliação, acurácia, precisão, recall, etc
 24. K-means
 25. Projetos de ciência de dados, modelos como CRISP-DM, ZM
-26. Transformações de dados, conversões de valores, normalização, etc
+26. Transformações de dados, combinações, filtros, conversões de valores, normalização, etc
 27. KNN (?)
-28. Modelos e processamento de dados "não esturutados" como imagens, texto
+28. Modelos e processamento de dados "não estruturados" como imagens, texto
 29. Redes neurais, algoritmos genéticos, colônia de formigas, enfim, bioinspirados
