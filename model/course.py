@@ -4,8 +4,10 @@ from typing import List, Optional
 from .node import Node
 from .module import Module
 
+
 class Course(Node):
-    """A course structure"""
+    """Estrutura de uma disciplina"""
+
     name: Optional[str] = Field(default=None)
     description: Optional[str] = Field(default=None)
 
