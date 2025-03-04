@@ -53,3 +53,45 @@ Aqui, com base nos assuntos listados, é tomada a decisão de definir como os te
 Essa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais de estatística e finalizando com um pouco de aprendizado de máquina.
 Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos serão apresentados em cada momento será avaliada caso a caso.
 
+### Conteúdos por unidade
+
+Definidos os temas das unidades, podemos selecionar os conteúdos (ignorando a ordem) para cada uma.
+Na primeira unidade, temos:
+
+1. O que é ciência de dados, definições e termos relacionados
+2. História da ciência de dados
+3. Processos de ciência de dados: CRISP-DM, KDD, mineração de dados
+4. Introdução ou revisão da linguagem Python
+5. Tipos de dados: categóricos e numéricos
+6. Formato de dados: dados estruturados e não estruturados, formatos de arquivos
+7. Coleta de dados: bancos de dados ou bases de dados, web crawling ou scraping, criação de bases de dados
+8. Introdução a engenharia de dados
+9. IPython
+10. Jupyter Notebooks
+11. Pandas
+
+Na segunda unidade:
+
+1. Escalas de medidas: nominal, ordinal, intervalar e racional
+2. Estatística descritiva: medidas de tendência, frequência, dispersão, distribuição, etc
+3. Correlação e covariância
+4. Visualização de dados: gráficos de barras, dispersão, linhas, histogramas, boxplots
+5. Qualidade de dados: dados ausentes, ruídos e outliers
+6. Transformação de dados: conversões de valores, normalização
+7. Introdução a modelagem de dados
+8. Numpy
+9. Matplotlib
+10. Seaborn
+
+E na terceira unidade:
+
+1. Aprendizado de máquina
+2. Treinamento supervisionado e não supervisionado
+3. Regressão linear
+4. Classificação
+5. Avaliação de modelos
+6. Agrupamento: K-means
+7. Algoritmos bioinspirados
+8. Processamento de imagens e textos
+9. SciKit Learn
+10. SciPy
