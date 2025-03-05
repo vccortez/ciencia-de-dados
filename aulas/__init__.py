@@ -1,0 +1,48 @@
+from . import (
+    meet_11_abertura,
+    meet_12_ciencia,
+    meet_13_bases,
+    meet_14_fundamentos,
+    meet_15_python,
+    meet_16_manipulacao,
+    meet_17_coleta,
+    meet_18_avaliacao,
+    meet_21_estatistica,
+    meet_22_amostragem,
+    meet_23_visualizacao,
+    meet_24_qualidade,
+    meet_25_transformacao,
+    meet_26_avaliacao,
+    meet_31_aprendizado,
+    meet_32_modelagem,
+    meet_33_metricas,
+    meet_34_outros,
+    meet_35_avaliacao,
+    meet_36_encerramento,
+)
+
+meets = [
+    module.meet
+    for module in (
+        meet_11_abertura,
+        meet_12_ciencia,
+        meet_13_bases,
+        meet_14_fundamentos,
+        meet_15_python,
+        meet_16_manipulacao,
+        meet_17_coleta,
+        meet_18_avaliacao,
+        meet_21_estatistica,
+        meet_22_amostragem,
+        meet_23_visualizacao,
+        meet_24_qualidade,
+        meet_25_transformacao,
+        meet_26_avaliacao,
+        meet_31_aprendizado,
+        meet_32_modelagem,
+        meet_33_metricas,
+        meet_34_outros,
+        meet_35_avaliacao,
+        meet_36_encerramento,
+    )
+]
