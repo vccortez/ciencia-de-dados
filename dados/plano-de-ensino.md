@@ -1,14 +1,14 @@
 ---
-title: "Plano de ensino"
+title: "Roteiro de ensino"
 ---
 
-Rascunho do plano de ensino.
+Rascunho do plano de aulas.
 
 ## Conteúdos
 
 Lista não exaustiva de conteúdos a serem abordados.
 Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados.
-É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização de dados mais complexa.
+É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização mais complexa.
 
 1. O que é ciência de dados, definições e termos relacionados
 2. História da ciência de dados
@@ -50,13 +50,13 @@ Aqui, com base nos assuntos listados, é tomada a decisão de definir como os te
 2. Análise e visualização de dados
 3. Modelagem e aprendizado de máquina
 
-Essa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais de estatística e finalizando com um pouco de aprendizado de máquina.
-Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos serão apresentados em cada momento será avaliada caso a caso.
+Essa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais estatística e finalizando com um pouco de aprendizado de máquina.
+Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos.
 
 ### Conteúdos por unidade
 
-Definidos os temas das unidades, podemos selecionar os conteúdos (ignorando a ordem) para cada uma.
-Na primeira unidade, temos:
+Definidos os temas das unidades, fica mais fácil selecionar os conteúdos para cada uma.
+Ignorando a ordem, na primeira unidade, temos:
 
 1. O que é ciência de dados, definições e termos relacionados
 2. História da ciência de dados
@@ -95,3 +95,35 @@ E na terceira unidade:
 8. Processamento de imagens e textos
 9. SciKit Learn
 10. SciPy
+
+## Aulas
+
+Definir quais conteúdos se encaixam em cada aula é um pouco mais complexo, já que depende da quantidade de conteúdo abordado para o tempo de exposição e que, neste caso, não há uma experiência prévia para facilitar previsões.
+Como plano inicial, temos na primeira unidade:
+
+1. Abertura da disciplina: apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas
+2. Ciência de dados: histórico; definições; KDD; Big Data; Data mining; processos de desenvolvimento
+3. Bases de dados: tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares
+4. Fundamentos de Python: revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade
+5. Python em computação científica: fundamentos; IPython; Jupyter notebooks
+6. Manipulação de dados: dados tabulares; Pandas; DataFrames
+7. Coleta de dados: seleção; web crawling ou scraping; Requests
+8. Avaliação
+
+Na segunda unidade:
+
+1. Estatística descritiva: fundamentos; escalas de medida; medidas descritivas, NumPy
+2. Amostragem de dados: representatividade; variabilidade
+3. Visualização de dados: gráficos; Matplotlib; Seaborn
+4. Qualidade de dados: ausências; ruídos; outliers; limpeza
+5. Transformação de dados: conversão de valores; normalização; padronização
+6. Avaliação
+
+Na terceira unidade:
+
+1. Aprendizado de máquina: definições; treinamento
+2. Modelagem de dados: regressão linear; classificação; agrupamento; algoritmos; SciKit Learn
+3. Avaliação de modelos: métricas de resultados; hiperparâmetros; hipóteses; SciPy
+4. Outros tópicos: algoritmos bioinspirados; dados não estruturados; ética
+5. Avaliação
+6. Encerramento da disciplina: recuperação e exame final
