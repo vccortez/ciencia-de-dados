@@ -102,19 +102,19 @@ Definir quais conteúdos se encaixam em cada aula é um pouco mais complexo, já
 Como plano inicial, temos na primeira unidade:
 
 1. Abertura da disciplina: apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas
-2. Ciência de dados: histórico; definições; KDD; Big Data; Data mining; processos de desenvolvimento
+2. Ciência de dados: histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento
 3. Bases de dados: tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares
 4. Fundamentos de Python: revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade
 5. Python em computação científica: fundamentos; IPython; Jupyter notebooks
 6. Manipulação de dados: dados tabulares; Pandas; DataFrames
-7. Coleta de dados: seleção; web crawling ou scraping; Requests
+7. Descoberta de dados: seleção; web crawling ou scraping; Requests
 8. Avaliação
 
 Na segunda unidade:
 
-1. Estatística descritiva: fundamentos; escalas de medida; medidas descritivas, NumPy
-2. Amostragem de dados: representatividade; variabilidade
-3. Visualização de dados: gráficos; Matplotlib; Seaborn
+1. Amostragem de dados: população; amostra; representatividade; variabilidade; inferência dedutiva e indutiva
+2. Estatística descritiva: fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy
+3. Visualização de dados: gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD)
 4. Qualidade de dados: ausências; ruídos; outliers; limpeza
 5. Transformação de dados: conversão de valores; normalização; padronização
 6. Avaliação
