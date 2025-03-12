@@ -5,6 +5,7 @@ template-partials:
     - biblio.tex
     - before-title.tex
 cite-method: biblatex
+mainfont: TeX Gyre Heros
 biblatexoptions:
     - "style=abnt"
     - "url=false"
