@@ -1,0 +1,195 @@
+[
+  {
+    "objectID": "meta/plano-de-aulas.html",
+    "href": "meta/plano-de-aulas.html",
+    "title": "Roteiro de ensino",
+    "section": "",
+    "text": "Rascunho do plano de aulas.",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de ensino"
+    ]
+  },
+  {
+    "objectID": "meta/plano-de-aulas.html#conteúdos",
+    "href": "meta/plano-de-aulas.html#conteúdos",
+    "title": "Roteiro de ensino",
+    "section": "Conteúdos",
+    "text": "Conteúdos\nLista não exaustiva de conteúdos a serem abordados. Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados. É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização mais complexa.\n\nO que é ciência de dados, definições e termos relacionados\nHistória da ciência de dados\nIntrodução ou revisão da linguagem Python\nIPython\nJupyter Notebooks\nTipos de dados, estruturados (tabulares) e “não estruturados”\nNumPy\nPandas\nSciPy\nSciKit Learn\nMatplotlib\nSeaborn\nColeta de dados, web crawling/scraping\nLimpeza de dados, dados incompletos ou ausentes\nDados categóricos vs numéricos e escalas de medida\nEstatísticas descritivas, média, mediana, medidas de dispersão, variância, correlação\nRuídos, outliers\nNormalização de dados\nRedução de dimensionalidade (?)\nVisualização de dados, gráficos de barras, linha, boxplots, histogramas, etc\nAprendizado de máquina (estatístico), supervisionado e não supervisionado\nModelos de regressão e classificação clássicos\nMétricas de avaliação, acurácia, precisão, recall, etc\nK-means\nProjetos de ciência de dados, modelos como CRISP-DM, ZM\nTransformações de dados, combinações, filtros, conversões de valores, normalização, etc\nKNN (?)\nModelos e processamento de dados “não estruturados” como imagens, texto\nRedes neurais, algoritmos genéticos, colônia de formigas, enfim, bioinspirados",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de ensino"
+    ]
+  },
+  {
+    "objectID": "meta/plano-de-aulas.html#unidades",
+    "href": "meta/plano-de-aulas.html#unidades",
+    "title": "Roteiro de ensino",
+    "section": "Unidades",
+    "text": "Unidades\nDisciplinas são por padrão organizadas em três unidades. Uma unidade pode ser vista como um subconjunto dos assuntos listados seguindo algum tema especificado. Aqui, com base nos assuntos listados, é tomada a decisão de definir como os temas das unidades:\n\nPreparação ou pré-processamento de dados\nAnálise e visualização de dados\nModelagem e aprendizado de máquina\n\nEssa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais estatística e finalizando com um pouco de aprendizado de máquina. Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos.\n\nConteúdos por unidade\nDefinidos os temas das unidades, fica mais fácil selecionar os conteúdos para cada uma. Ignorando a ordem, na primeira unidade, temos:\n\nO que é ciência de dados, definições e termos relacionados\nHistória da ciência de dados\nProcessos de ciência de dados: CRISP-DM, KDD, mineração de dados\nIntrodução ou revisão da linguagem Python\nTipos de dados: categóricos e numéricos\nFormato de dados: dados estruturados e não estruturados, formatos de arquivos\nColeta de dados: bancos de dados ou bases de dados, web crawling ou scraping, criação de bases de dados\nIntrodução a engenharia de dados\nIPython\nJupyter Notebooks\nPandas\n\nNa segunda unidade:\n\nEscalas de medidas: nominal, ordinal, intervalar e racional\nEstatística descritiva: medidas de tendência, frequência, dispersão, distribuição, etc\nCorrelação e covariância\nVisualização de dados: gráficos de barras, dispersão, linhas, histogramas, boxplots\nQualidade de dados: dados ausentes, ruídos e outliers\nTransformação de dados: conversões de valores, normalização\nIntrodução a modelagem de dados\nNumpy\nMatplotlib\nSeaborn\n\nE na terceira unidade:\n\nAprendizado de máquina\nTreinamento supervisionado e não supervisionado\nRegressão linear\nClassificação\nAvaliação de modelos\nAgrupamento: K-means\nAlgoritmos bioinspirados\nProcessamento de imagens e textos\nSciKit Learn\nSciPy",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de ensino"
+    ]
+  },
+  {
+    "objectID": "meta/plano-de-aulas.html#aulas",
+    "href": "meta/plano-de-aulas.html#aulas",
+    "title": "Roteiro de ensino",
+    "section": "Aulas",
+    "text": "Aulas\nDefinir quais conteúdos se encaixam em cada aula é um pouco mais complexo, já que depende da quantidade de conteúdo abordado para o tempo de exposição e que, neste caso, não há uma experiência prévia para facilitar previsões. Como plano inicial, temos na primeira unidade:\n\nAbertura da disciplina: apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas\nCiência de dados: histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento\nBases de dados: tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares\nFundamentos de Python: revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade\nPython em computação científica: fundamentos; IPython; Jupyter notebooks\nManipulação de dados: dados tabulares; Pandas; DataFrames\nDescoberta de dados: seleção; web crawling ou scraping; Requests\nAvaliação\n\nNa segunda unidade:\n\nAmostragem de dados: população; amostra; representatividade; variabilidade; inferência dedutiva e indutiva\nEstatística descritiva: fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy\nVisualização de dados: gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD)\nQualidade de dados: ausências; ruídos; outliers; limpeza\nTransformação de dados: conversão de valores; normalização; padronização\nAvaliação\n\nNa terceira unidade:\n\nAprendizado de máquina: definições; treinamento\nModelagem de dados: regressão linear; classificação; agrupamento; algoritmos; SciKit Learn\nAvaliação de modelos: métricas de resultados; hiperparâmetros; hipóteses; SciPy\nOutros tópicos: algoritmos bioinspirados; dados não estruturados; ética\nAvaliação\nEncerramento da disciplina: recuperação e exame final",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de ensino"
+    ]
+  },
+  {
+    "objectID": "meta/calendario.html",
+    "href": "meta/calendario.html",
+    "title": "Calendário",
+    "section": "",
+    "text": "Agenda de tópicos para as datas de aula disponíveis.",
+    "crumbs": [
+      "Outros recursos",
+      "Calendário"
+    ]
+  },
+  {
+    "objectID": "meta/calendario.html#aulas",
+    "href": "meta/calendario.html#aulas",
+    "title": "Calendário",
+    "section": "Aulas",
+    "text": "Aulas\nAs aulas iniciam em 17/03/25 e podem se estender até 09/07/25. O calendário de aulas para o plano atual se encontra na Tabela 1.\n\n\n\n\nTabela 1: Calendário de aulas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnidade\nTópico\nInício\nFim\n\n\n\n\n1\n1\nAbertura da disciplina\n17/03/25\n19/03/25\n\n\n2\n1\nCiência de dados\n24/03/25\n24/03/25\n\n\n3\n1\nBases de dados\n26/03/25\n26/03/25\n\n\n4\n1\nFundamentos de Python\n31/03/25\n31/03/25\n\n\n5\n1\nPython em computação científica\n02/04/25\n02/04/25\n\n\n6\n1\nManipulação de dados\n07/04/25\n07/04/25\n\n\n7\n1\nDescoberta de dados\n09/04/25\n09/04/25\n\n\n8\n1\nPrimeira avaliação\n14/04/25\n16/04/25\n\n\n9\n2\nAmostragem de dados\n21/04/25\n21/04/25\n\n\n10\n2\nEstatística descritiva\n23/04/25\n23/04/25\n\n\n11\n2\nVisualização de dados\n28/04/25\n28/04/25\n\n\n12\n2\nQualidade de dados\n30/04/25\n30/04/25\n\n\n13\n2\nTransformação de dados\n05/05/25\n05/05/25\n\n\n14\n2\nSegunda avaliação\n07/05/25\n12/05/25\n\n\n15\n3\nAprendizado de máquina\n14/05/25\n14/05/25\n\n\n16\n3\nModelagem de dados\n19/05/25\n19/05/25\n\n\n17\n3\nAvaliação de modelos\n21/05/25\n21/05/25\n\n\n18\n3\nOutros tópicos\n26/05/25\n26/05/25\n\n\n19\n3\nTerceira avaliação\n28/05/25\n02/06/25\n\n\n20\n3\nEncerramento da disciplina\n04/06/25\n04/06/25",
+    "crumbs": [
+      "Outros recursos",
+      "Calendário"
+    ]
+  },
+  {
+    "objectID": "slides/11_abertura.html#roteiro",
+    "href": "slides/11_abertura.html#roteiro",
+    "title": "Abertura da disciplina",
+    "section": "Roteiro",
+    "text": "Roteiro\n\nApresentações\nDisciplina\nExpectativas\nPróxima aula",
+    "crumbs": [
+      "Slides",
+      "Abertura da disciplina"
+    ]
+  },
+  {
+    "objectID": "slides/11_abertura.html#apresentações",
+    "href": "slides/11_abertura.html#apresentações",
+    "title": "Abertura da disciplina",
+    "section": "Apresentações",
+    "text": "Apresentações\n\n\n\nComo prefere ser chamado\nFormação, experiência, interesses\nFamiliaridade com Python\nPor que escolheu esta disciplina\n\n\nnome_preferido = input()\n\ninformacoes = input()\n  .split(\"\\n\")\n\nnivel_python = max(\n  0,\n  min(\n    10,\n    float(\n      input(\"nível\")\n    )\n  )\n)\n\n_ = input(\"por quê ?\")",
+    "crumbs": [
+      "Slides",
+      "Abertura da disciplina"
+    ]
+  },
+  {
+    "objectID": "slides/11_abertura.html#disciplina",
+    "href": "slides/11_abertura.html#disciplina",
+    "title": "Abertura da disciplina",
+    "section": "Disciplina",
+    "text": "Disciplina\n\nSIGAA\nPlano de ensino\n\nplano-de-ensino\n\nRepositório\n\nvccortez/ciencia-de-dados\n\nPágina pública\n\nvccortez.github.io/ciencia-de-dados",
+    "crumbs": [
+      "Slides",
+      "Abertura da disciplina"
+    ]
+  },
+  {
+    "objectID": "slides/11_abertura.html#disciplina-1",
+    "href": "slides/11_abertura.html#disciplina-1",
+    "title": "Abertura da disciplina",
+    "section": "Disciplina",
+    "text": "Disciplina\n\nHorário\nPresença\nMaterial\nCanal de comunicação\n\n\n\nLivro base\nComputadores pessoais\nAmbiente de desenvolvimento",
+    "crumbs": [
+      "Slides",
+      "Abertura da disciplina"
+    ]
+  },
+  {
+    "objectID": "slides/11_abertura.html#expectativas",
+    "href": "slides/11_abertura.html#expectativas",
+    "title": "Abertura da disciplina",
+    "section": "Expectativas",
+    "text": "Expectativas\n\nMotivação pessoal\nDinâmica das aulas\nPartipação e colaboração\nCuriosidade\nLeitura crítica",
+    "crumbs": [
+      "Slides",
+      "Abertura da disciplina"
+    ]
+  },
+  {
+    "objectID": "slides/11_abertura.html#próxima-aula",
+    "href": "slides/11_abertura.html#próxima-aula",
+    "title": "Abertura da disciplina",
+    "section": "Próxima aula",
+    "text": "Próxima aula\n\nLeitura dos capítulos 1 e 2\n\nIntrodução à Ciência de Dados\nCiência de Dados na Prática\n\nDiscussão\n\nCiência de Dados é uma nova área de conhecimento?",
+    "crumbs": [
+      "Slides",
+      "Abertura da disciplina"
+    ]
+  },
+  {
+    "objectID": "notebooks/index.html",
+    "href": "notebooks/index.html",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Índice de todos os IPython/Jupyter notebooks publicados na pasta notebooks/.\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Notebooks"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Início",
+    "section": "",
+    "text": "Repositório de recursos da disciplina de Tópicos em Computação Aplicada a Ciência de Dados. Os principais recursos da disciplina serão publicados neste repositório. Um website da disciplina, gerado com a ferramenta Quarto, está disponível na página GitHub deste repositório."
+  },
+  {
+    "objectID": "index.html#ciência-de-dados",
+    "href": "index.html#ciência-de-dados",
+    "title": "Início",
+    "section": "",
+    "text": "Repositório de recursos da disciplina de Tópicos em Computação Aplicada a Ciência de Dados. Os principais recursos da disciplina serão publicados neste repositório. Um website da disciplina, gerado com a ferramenta Quarto, está disponível na página GitHub deste repositório."
+  },
+  {
+    "objectID": "index.html#organização-do-projeto",
+    "href": "index.html#organização-do-projeto",
+    "title": "Início",
+    "section": "Organização do projeto",
+    "text": "Organização do projeto\nOs arquivos estão dispostos em pastas principais temáticas para evitar árvores de diretórios complexas. Frequentemente, o nome de arquivos de recursos da disciplina estarão numerados para indicar a qual unidade e aula esse recurso pertence.\n\n\n.\n├── anotacoes\n│   └── index.qmd\n├── aulas\n│   ├── meet_11_abertura.py\n│   ├── meet_12_ciencia.py\n│   ├── meet_13_bases.py\n│   ├── meet_14_fundamentos.py\n│   ├── meet_15_python.py\n│   ├── meet_16_manipulacao.py\n│   ├── meet_17_descoberta.py\n│   ├── meet_18_avaliacao.py\n│   ├── meet_21_amostragem.py\n│   ├── meet_22_estatistica.py\n│   ├── meet_23_visualizacao.py\n│   ├── meet_24_qualidade.py\n│   ├── meet_25_transformacao.py\n│   ├── meet_26_avaliacao.py\n│   ├── meet_31_aprendizado.py\n│   ├── meet_32_modelagem.py\n│   ├── meet_33_metricas.py\n│   ├── meet_34_outros.py\n│   ├── meet_35_avaliacao.py\n│   └── meet_36_encerramento.py\n├── dados\n│   └── datas.csv\n├── img\n│   └── logo-ufpi.pdf\n├── meta\n│   ├── before-title.tex\n│   ├── biblio.tex\n│   ├── bibliografia.bib\n│   ├── calendario.qmd\n│   ├── index.qmd\n│   ├── plano-de-aulas.md\n│   └── plano-de-ensino.qmd\n├── model\n│   ├── course.py\n│   ├── meet.py\n│   ├── module.py\n│   ├── node.py\n│   ├── plan.py\n│   └── topic.py\n├── notebooks\n│   └── index.qmd\n├── scripts\n│   ├── agendador.py\n│   ├── extrair_topicos_aulas.js\n│   ├── gerar_indice_pasta.py\n│   ├── gerar_plano_json.py\n│   ├── preencher_topicos_sigaa.js\n│   ├── scrape_sigaa_dates.js\n│   └── util.py\n├── slides\n│   ├── 11_abertura.qmd\n│   └── index.qmd\n├── web\n│   └── styles.css\n├── LICENSE\n├── Makefile\n├── README.md\n├── index.qmd\n└── requirements.txt\n\n10 directories, 52 files"
+  },
+  {
+    "objectID": "anotacoes/index.html",
+    "href": "anotacoes/index.html",
+    "title": "Anotações",
+    "section": "",
+    "text": "Índice de todas as anotações, resumos e dicussões publicadas na pasta anotacoes/.\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Anotações"
+    ]
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "Slides",
+    "section": "",
+    "text": "Índice de todas as apresentações de slides publicadas na pasta slides/.\n\n\n\n\nTabela 1: Índice de slides\n\n\n\n\n\n\n#\nNome do arquivo\nLink\n\n\n\n\n1\n11_abertura\nVer 11_abertura.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "meta/index.html",
+    "href": "meta/index.html",
+    "title": "Outros recursos",
+    "section": "",
+    "text": "Índice de outros recursos publicados.\n\n\n\n\nTabela 1: Índice de recursos\n\n\n\n\n\n\n#\nNome do arquivo\nLink\n\n\n\n\n1\ncalendario\nVer calendario.qmd\n\n\n2\nplano-de-aulas\nVer plano-de-aulas.md\n\n\n3\nplano-de-ensino\nVer plano-de-ensino.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Outros recursos"
+    ]
+  }
+]
