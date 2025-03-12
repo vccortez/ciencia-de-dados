@@ -20,8 +20,8 @@ jobs:
           version: 1.6.42
           tinytex: true
       
-      - name: tinytex manual font install
-        run: ~/.TinyTeX/bin/x86_64-linux/tlmgr install tex-gyre
+      - name: texlive font install
+        run: apt install texlive-fonts-recommended texlive-fonts-extra
 
       - name: install python
         uses: actions/setup-python@v5
