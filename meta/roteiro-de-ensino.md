@@ -2,7 +2,7 @@
 title: "Roteiro de ensino"
 ---
 
-Rascunho do plano de aulas.
+Rascunho do roteiro de aulas.
 
 ## Conteúdos
 

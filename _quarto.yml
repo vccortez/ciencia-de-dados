@@ -44,7 +44,9 @@ format:
 
 execute: 
   cache: false
-  freeze: auto
+  freeze: false
+
+lang: pt-BR
 
 bibliography:
   - "meta/bibliografia.bib"
