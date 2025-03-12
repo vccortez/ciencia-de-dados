@@ -20,8 +20,8 @@ jobs:
           version: 1.6.42
           tinytex: true
       
-      - name: texlive font install
-        run: sudo apt install texlive-fonts-recommended texlive-fonts-extra
+      - name: install texlive dependencies
+        run: sudo apt -q install texlive-fonts-recommended texlive-lang-portuguese
 
       - name: install python
         uses: actions/setup-python@v5
