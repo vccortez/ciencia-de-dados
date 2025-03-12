@@ -1,0 +1,16 @@
+---
+title: Início
+order: 1
+---
+
+{{< include README.md >}}
+
+## Organização do projeto
+
+Os arquivos estão dispostos em pastas principais temáticas para evitar árvores de diretórios complexas.
+Frequentemente, o nome de arquivos de recursos da disciplina estarão numerados para indicar a qual unidade e aula esse recurso pertence.
+
+```{python}
+# | echo: false
+!tree -L 2 --gitignore -I "_*" --dirsfirst
+```

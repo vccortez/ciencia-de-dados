@@ -170,5 +170,10 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+# Quarto files
 /.quarto/
 /_site/
+public/
+_freeze/
+*_files/
+*.quarto_ipynb

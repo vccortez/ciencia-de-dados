@@ -1,0 +1,88 @@
+---
+order: 11
+title: "Abertura da disciplina"
+format:
+  revealjs:
+    theme: dark
+    slide-number: true
+---
+
+## Roteiro
+
+- Apresentações
+- Disciplina
+- Expectativas
+- Próxima aula
+
+## Apresentações
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Como prefere ser chamado
+- Formação, experiência, interesses
+- Familiaridade com Python
+- Por que escolheu esta disciplina
+:::
+
+::: {.column width="40%"}
+```{.python .code-overflow-wrap}
+nome_preferido = input()
+
+informacoes = input()
+  .split("\n")
+
+nivel_python = max(
+  0,
+  min(
+    10,
+    float(
+      input("nível")
+    )
+  )
+)
+
+_ = input("por quê ?")
+```
+:::
+
+::::
+
+## Disciplina
+
+- SIGAA
+- Plano de ensino
+  - [plano-de-ensino](../meta/plano-de-ensino.qmd)
+- Repositório
+  - [{{< var link.repo-name >}}]({{< var link.repo >}})
+- Página pública
+  - [{{< var link.site-short >}}]({{< var link.site >}})
+
+## Disciplina
+
+- Horário
+- Presença
+- Material
+- Canal de comunicação
+
+::: {.notes}
+- Livro base
+- Computadores pessoais
+- Ambiente de desenvolvimento
+:::
+
+## Expectativas
+
+- Motivação pessoal
+- Dinâmica das aulas
+- Partipação e colaboração
+- Curiosidade
+- Leitura crítica
+
+## Próxima aula
+
+- Leitura dos capítulos 1 e 2
+  - Introdução à Ciência de Dados
+  - Ciência de Dados na Prática
+- Discussão
+  - Ciência de Dados é uma nova área de conhecimento?

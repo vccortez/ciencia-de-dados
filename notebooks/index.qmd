@@ -1,0 +1,24 @@
+---
+title: Notebooks
+order: 3
+---
+
+Índice de todos os IPython/Jupyter notebooks publicados na pasta `notebooks/`.
+
+```{python}
+# | echo: false
+# | label: tbl-notebooks
+# | tbl-cap: Índice de notebooks
+import os
+
+from IPython.display import Markdown, display
+
+from scripts import gerar_indice_pasta
+from scripts.util import relpath
+
+folder = relpath(os.environ["QUARTO_DOCUMENT_PATH"], os.environ["QUARTO_PROJECT_ROOT"])
+indice = gerar_indice_pasta.run(folder, ["*.ipynb"])
+
+if len(indice) > 0:
+    display(Markdown("\n".join(indice)))
+```

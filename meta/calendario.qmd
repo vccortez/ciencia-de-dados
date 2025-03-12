@@ -1,0 +1,70 @@
+---
+title: Calendário
+---
+
+Agenda de tópicos para as datas de aula disponíveis.
+
+```{python}
+# | echo: false
+# | output: false
+import pandas as pd
+from IPython.display import display_markdown, display, Markdown
+from tabulate import tabulate
+```
+
+## Aulas
+
+```{python}
+# | echo: false
+# | output: false
+from scripts import agendador
+
+# datas de aula 'válidas', ou seja, não marcadas como canceladas
+dates = agendador.load_dates("dados/datas.csv")
+```
+
+As aulas iniciam em `{python} dates.iloc[0].strftime("%d/%m/%y")` e podem se estender até `{python} dates.iloc[-1].strftime("%d/%m/%y")`.
+O calendário de aulas para o plano atual se encontra na @tbl-datas.
+
+```{python}
+# | echo: false
+# | label: tbl-datas
+# | tbl-cap: Calendário de aulas
+import numpy as np
+from aulas import meets
+
+# atribuindo cada aula a uma data
+meets_with_dates = agendador.assign_meet_dates(meets, dates)
+
+unidade = 1
+for m in meets_with_dates:
+    m.module_number = unidade
+    if m.is_closing:
+        unidade += 1
+
+# formatação da saída
+json_meets = [m.model_dump() for m in meets_with_dates]
+cols = ["unidade", "topico", "inicio", "fim"]
+df = pd.DataFrame.from_dict(json_meets)
+
+df["topico"] = df["title"]
+
+df["unidade"] = df["module_number"]
+
+df["inicio"] = pd.to_datetime(df["start_date"]).dt.strftime("%d/%m/%y")
+
+df["fim"] = df["dates"].apply(lambda v: v[-1])
+df["fim"] = pd.to_datetime(df["fim"]).dt.strftime("%d/%m/%y")
+
+# df["final"] = np.where(df["is_closing"], "Sim", "")
+
+Markdown(
+    df[cols]
+    .set_index(df.index + 1)
+    .to_markdown(
+        headers=["Unidade", "Tópico", "Início", "Fim"],
+        colalign=["right", "center", "center", "center", "center"],
+    )
+)
+
+```

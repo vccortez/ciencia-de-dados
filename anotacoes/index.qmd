@@ -1,0 +1,24 @@
+---
+title: Anotações
+order: 2
+---
+
+Índice de todas as anotações, resumos e dicussões publicadas na pasta `anotacoes/`.
+
+```{python}
+# | echo: false
+# | label: tbl-anotacoes
+# | tbl-cap: Índice de anotações
+import os
+
+from IPython.display import Markdown, display
+
+from scripts import gerar_indice_pasta
+from scripts.util import relpath
+
+folder = relpath(os.environ["QUARTO_DOCUMENT_PATH"], os.environ["QUARTO_PROJECT_ROOT"])
+indice = gerar_indice_pasta.run(folder, ["*.md", "*.qmd"])
+
+if len(indice) > 0:
+    display(Markdown("\n".join(indice)))
+```

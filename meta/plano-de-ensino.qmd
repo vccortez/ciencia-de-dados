@@ -1,0 +1,123 @@
+---
+title: Plano de ensino
+format: pdf
+template-partials:
+    - biblio.tex
+    - before-title.tex
+cite-method: biblatex
+biblatexoptions:
+    - "style=abnt"
+    - "url=false"
+    - "doi=false"
+    - "isbn=false"
+documentclass: memoir
+papersize: a4
+fontsize: 11pt
+hyperrefoptions: hidelinks
+nocite: "@*"
+---
+
+```{=latex}
+\begin{center}\large\bfseries\scshape
+    \begin{minipage}{.1\textwidth}
+        \includegraphics[width=\linewidth]{../img/logo-ufpi.pdf}
+    \end{minipage}%
+    \begin{tabular}{l}
+         {Universidade Federal do Piauí, UFPI} \\
+         {Centro de Ciências da Natureza, CCN} \\
+         {Departamento de Computação, DC}
+    \end{tabular}%
+\end{center}
+
+\begin{center}
+    {\large\bfseries\scshape Plano de Ensino}
+
+    \vspace{1em}
+
+    \begin{tabular}{ll}
+        \toprule
+        \textbf{Disciplina}: & Tópicos em Computação Aplicada \\
+        \textbf{Curso}: & Ciência da Computação \\
+        \textbf{Docente}: & Vitor Augusto Correa Cortez Almeida \\
+        \bottomrule
+    \end{tabular}
+\end{center}
+```
+
+## Ementa {.unnumbered}
+
+```{python}
+# | echo: false
+from IPython.display import display, Markdown
+
+from aulas import meets
+
+ementa = [m.title for m in meets if m.has_content and not m.is_canceled]
+
+if len(ementa) > 0:
+    display(Markdown("; ".join(ementa) + "."))
+```
+
+## Objetivo {.unnumbered}
+
+Apresentar a área, processos e ferramentas de Ciência de Dados e motivar o aluno a aplicar essas ferramentas para resolver problemas práticos e aprender a aprender.
+
+## Conteúdo programático {.unnumbered}
+
+```{=latex}
+\begin{multicols}{3}
+\footnotesize
+```
+
+```{python}
+# | echo: false
+from collections import defaultdict
+
+conteudo = defaultdict(lambda: defaultdict(list))
+for m in meets:
+    if m.has_content:
+        conteudo[m.module_number][m.title].extend(m.topics)
+
+output = []
+for u, vs in conteudo.items():
+    if u != 1:
+        output.append("\n```{=latex}\n\columnbreak\n```")
+    output.append(f"- Unidade {u}")
+    for v, ts in vs.items():
+        output.append(f"  - {v}")
+        for t in ts:
+            output.append(f"    - {t}")
+
+display(Markdown("\n".join(output)))
+```
+
+```{=latex}
+\end{multicols}
+```
+
+## Método de ensino {.unnumbered}
+
+Aulas expositivas e dialogadas; Aulas práticas, com exercícios guiados e/ou assistidos; Atividades e apresentações práticas, individuais ou em grupo.
+
+## Recursos didáticos {.unnumbered}
+
+Sistema Integrado de Gestão de Atividades Acadêmicas; Lousa; Projetor multimídia; Computadores; Softwares gratuitos: VSCode, Python3, Miniconda/Anaconda, Git, LibreOffice e navegador web.
+
+## Sistemática de avaliação {.unnumbered}
+
+Avaliação formativa, considerando a participação do aluno no decorrer das três unidades de conteúdo, e somativa por meio da entrega e apresentação de projetos e resolução de exames escritos.
+A média aritmética entre as notas de cada unidade determina a nota parcial.
+Alunos com nota parcial $\ge7$ serão aprovados; $<4$ reprovados; e, caso contrário, de exame final.
+Em caso de exame final, uma média aritmética $\ge6$ entre as notas do exame final e parcial determina se o aluno será aprovado.
+
+## Bibliografia básica {.unnumbered}
+
+```{=latex}
+\printbibliography[heading=none,keyword=main]
+```
+
+## Bibliografia complementar {.unnumbered}
+
+```{=latex}
+\printbibliography[heading=none,notkeyword=main]
+```

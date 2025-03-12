@@ -1,0 +1,62 @@
+project:
+  type: website
+  output-dir: public
+  execute-dir: project
+  preview: 
+    port: 8081
+    browser: false
+  render:
+    - index.qmd
+    - anotacoes
+    - notebooks
+    - slides
+    - meta
+
+website:
+  title: "Ciência de Dados"
+  repo-url: https://github.com/vccortez/ciencia-de-dados
+  repo-actions: source
+  page-navigation: true
+  back-to-top-navigation: true
+
+  sidebar:
+    style: floating
+    contents: auto
+    collapse-level: 1
+  
+  navbar:
+    background: secondary
+    search: true
+
+format:
+  html:
+    link-external-newwindow: true
+    link-external-icon: true
+    lang: pt-BR
+    theme:
+      dark:
+        - darkly
+      light:
+        - cosmo
+        - brand
+    css: web/styles.css
+    toc: true
+
+execute: 
+  cache: false
+  freeze: auto
+
+bibliography:
+  - "meta/bibliografia.bib"
+
+author:
+  - name: Vitor Cortez
+    # orcid: 0000-0002-7402-2224
+    # email: vitor.cortez@ufpi.edu.br
+    url: https://www.linkedin.com/in/vitorcortez
+    # affiliations:
+    #   - name: Universidade Federal do Piauí
+    #     department: Departamento de Computação
+    #     city: Teresina
+    #     state: PI
+    #     country: Brasil
