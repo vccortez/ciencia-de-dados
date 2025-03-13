@@ -36,12 +36,6 @@ from aulas import meets
 # atribuindo cada aula a uma data
 meets_with_dates = agendador.assign_meet_dates(meets, dates)
 
-unidade = 1
-for m in meets_with_dates:
-    m.module_number = unidade
-    if m.is_closing:
-        unidade += 1
-
 # formatação da saída
 json_meets = [m.model_dump() for m in meets_with_dates]
 cols = ["unidade", "topico", "inicio", "fim"]
@@ -55,8 +49,6 @@ df["inicio"] = pd.to_datetime(df["start_date"]).dt.strftime("%d/%m/%y")
 
 df["fim"] = df["dates"].apply(lambda v: v[-1])
 df["fim"] = pd.to_datetime(df["fim"]).dt.strftime("%d/%m/%y")
-
-# df["final"] = np.where(df["is_closing"], "Sim", "")
 
 Markdown(
     df[cols]
