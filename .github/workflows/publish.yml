@@ -19,11 +19,12 @@ jobs:
         with:
           version: 1.6.42
           tinytex: true
+
+      - run: |
+          ~/.TinyTeX/bin/x86_64-linux/tlmgr install hyphen-portuguese
       
       - name: install texlive dependencies
-        run: | 
-          sudo apt -q install texlive-fonts-recommended texlive-lang-portuguese
-          tlmgr install hyphen-portuguese
+        run: sudo apt -q install texlive-fonts-recommended texlive-lang-portuguese
 
       - name: install python
         uses: actions/setup-python@v5
