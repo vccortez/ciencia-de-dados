@@ -31,7 +31,7 @@ O calendário de aulas para o plano atual se encontra na @tbl-datas.
 # | label: tbl-datas
 # | tbl-cap: Calendário de aulas
 import numpy as np
-from aulas import meets
+from meets import meets
 
 # atribuindo cada aula a uma data
 meets_with_dates = agendador.assign_meet_dates(meets, dates)

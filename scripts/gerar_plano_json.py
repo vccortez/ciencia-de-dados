@@ -4,7 +4,7 @@ if __name__ == "__main__":
     sys.path.insert(1, os.path.join(sys.path[0], ".."))
 
 from model import Plan
-from aulas import meets
+from meets import meets
 from scripts import agendador
 
 dates = agendador.load_dates("dados/datas.csv")

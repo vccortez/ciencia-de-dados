@@ -6,6 +6,7 @@ from typing import Optional, List, Union
 from datetime import date
 
 from .node import Node
+from .resource import Resource
 
 
 class Meet(Node):
@@ -16,7 +17,7 @@ class Meet(Node):
     res_base_path: Path = Field(
         default=Path(os.path.dirname(os.path.realpath(__file__))).parent
     )
-    resources: List[str] = Field(default_factory=list)
+    resources: List[Union[Resource, str]] = Field(default_factory=list)
 
     is_extra: Optional[bool] = Field(default=False)
     is_canceled: Optional[bool] = Field(default=False)
@@ -35,7 +36,12 @@ class Meet(Node):
     @computed_field
     def res_paths(self) -> List[Path]:
         return [
-            fpath
-            for rpath in self.resources
-            if (fpath := self.res_base_path / rpath) and fpath.exists and fpath.is_file
+            file_path
+            for res in self.resources
+            if type(res) == Resource
+            and res.kind == "file"
+            and res.value
+            and (file_path := self.res_base_path / res.value)
+            and file_path.exists()
+            and file_path.is_file()
         ]

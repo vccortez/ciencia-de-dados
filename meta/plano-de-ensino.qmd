@@ -51,7 +51,7 @@ nocite: "@*"
 # | echo: false
 from IPython.display import display, Markdown
 
-from aulas import meets
+from meets import meets
 
 ementa = [m.title for m in meets if m.has_content and not m.is_canceled]
 
