@@ -1,5 +1,5 @@
 ---
-title: "Roteiro de ensino"
+title: "Roteiro de aulas"
 ---
 
 Rascunho do roteiro de aulas.
