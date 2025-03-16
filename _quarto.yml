@@ -50,6 +50,7 @@ lang: pt-BR
 
 bibliography:
   - "meta/bibliografia.bib"
+  - "meta/references.bib"
 
 author:
   - name: Vitor Cortez

@@ -1,11 +1,11 @@
 ---
-title: Plano de ensino
+title: "Plano de ensino"
 format: pdf
 template-partials:
-    - biblio.tex
-    - before-title.tex
+    - "biblio.tex"
+    - "before-title.tex"
 cite-method: biblatex
-mainfont: TeX Gyre Heros
+mainfont: "TeX Gyre Heros"
 biblatexoptions:
     - "style=abnt"
     - "url=false"
@@ -16,6 +16,8 @@ papersize: a4
 fontsize: 11pt
 hyperrefoptions: hidelinks
 nocite: "@*"
+bibliography:
+    - "bibliografia.bib"
 ---
 
 ```{=latex}
