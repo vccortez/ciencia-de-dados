@@ -1,5 +1,6 @@
 ---
 title: Calendário
+order: 1
 ---
 
 Agenda de tópicos para as datas de aula disponíveis.

@@ -8,6 +8,7 @@ meet = Meet(
         "Áreas e termos relacionados",
         "Processos de desenvolvimento",
     ],
+    date_span=2,
     resources=[
         Resource(title="Livro", value="[@carvalho:2024:cdfa, cap. 1--2]", kind="bib")
     ],
