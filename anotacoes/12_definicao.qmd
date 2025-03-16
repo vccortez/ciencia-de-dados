@@ -1,0 +1,83 @@
+---
+title: Definição
+order: 12
+keywords:
+    - introdução
+    - definição
+    - história
+---
+
+Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição simples e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.
+
+## O que é Ciência de Dados
+
+As definições para o termo Ciência de Dados são tão diversas quanto as partes interessadas[^1] nele. A tirinha na @fig-what-is-ds ilustra diferentes percepções sobre o termo.
+
+[^1]: <https://pt.wikipedia.org/wiki/Stakeholder>
+
+![Estereótipos sobre Ciência de Dados [@godsey:2017:think, pág. 4]](../img/what-is-ds.png){#fig-what-is-ds fig-scap="Estereótipos sobre Ciência de Dados" fig-align="center" width="80%"}
+
+Parte dessa diversidade de percepções se dá pela popularização do termo "Ciência de Dados", por vezes visto como mais uma *buzzword*,[^2] uma palavra da moda sem sentido específico. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.
+
+[^2]: <https://en.wikipedia.org/wiki/Buzzword>
+
+### História e definições
+
+A história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo @verri:2024:dsp, a história do termo inicia nos anos 60 com Peter Naur[^3] ao sugerir que o termo ciência de dados ou "dadologia" (*datalogy*) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época [@blum:2020:foundations]. Os primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística, como C. F. Jeff Wu e William Cleveland, que respectivamente argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos [@morettin:2025:estatistica; @verri:2024:dsp].
+
+[^3]: <https://en.wikipedia.org/wiki/Peter_Naur>
+
+Segundo @carvalho:2024:cdfa, a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada voltada para a extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas [@morettin:2025:estatistica].
+
+Alguns autores veem a Ciência de Dados mais como um subconjunto de ferramentas da matemática estatística e da computação e menos como uma nova área de conhecimento. Por exemplo, @vanderplas:2016:python sugere que o leitor pense sobre Ciência de Dados não como uma nova área de conhecimento, mas sim um conjunto de habilidades interdisciplinares que podem ser aplicadas a qualquer domínio na busca de perguntas e respostas baseadas em dados. Sob esse ponto de vista, o diagrama de Venn de Drew Conway[^4], apresentado na @fig-venn-diagram, costuma ser invocado para ilustrar os ingredientes da Ciência de Dados.
+
+[^4]: <http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram>
+
+```{python}
+# | label: fig-venn-diagram
+# | fig-align: center
+# | fig-cap: Diagrama de Venn de Drew Conway
+# | fig-alt: Ciência de Dados no centro do diagrama sendo a união de Matemática e estatística, Computação e Conhecimento de domínio
+# | echo: false
+
+from matplotlib import pyplot as plt
+import numpy as np
+from matplotlib_venn import venn3, venn3_circles
+
+plt.figure(figsize=(6, 6), facecolor=(1, 1, 1, 0))
+subsets = {"100": 1, "010": 1, "001": 1, "110": 1, "011": 1, "101": 1, "111": 0}
+v = venn3(subsets=subsets, set_labels=("A", "B", "C"))
+
+v.get_label_by_id("100").set_text("Habilidades\nde hacker")
+v.get_label_by_id("010").set_text("Matemática\ne estatística")
+v.get_label_by_id("001").set_text("Experiência\nde domínio\nsubstancial")
+
+v.get_label_by_id("110").set_text("Machine\nLearning")
+v.get_label_by_id("011").set_text("Pesquisa\ntradicional")
+v.get_label_by_id("011").set_rotation(15)
+v.get_label_by_id("101").set_text("Zona de\nperigo")
+v.get_label_by_id("101").set_rotation(-15)
+
+v.get_label_by_id("111").set_text("Ciência\nde dados")
+
+v.get_label_by_id("A").set_text("")
+v.get_label_by_id("B").set_text("")
+v.get_label_by_id("C").set_text("")
+
+for l in v.subset_labels:
+    l.set_color("w")
+
+# c = venn3_circles(subsets=subsets, linestyle="dashed", color="w")
+
+plt.show()
+```
+
+Em resumo, Conway enfatiza que é a combinação dos três conjuntos de habilidades principais que cria um cientista de dados: as habilidades para lidar com tecnologia em que os dados são codificados; os conhecimentos dos métodos para extração de valor desses dados; e uma experiência de domínio substancial voltada à produção de conhecimento. É a este último conjunto de habilidades que Conway atribui o aspecto científico do termo.
+
+Complementarmente, @godsey:2017:think considera que a Ciência de Dados também engloba o conjunto de processos e conceitos que servem de guia para se fazer progresso e tomar decisões em projetos centrados em dados. A diferença entre essa visão e as outras apresentadas anteriormente é sutil e, basicamente, se resume a qual aspecto da Ciência de Dados é julgado mais relevante na visão dos autores, isto é, o conhecimento técnico e teórico *versus* a mentalidade e a experiência aplicada do cientista de dados, o que vai de encontro à definição de Conway.
+
+A figura do cientista de dados também é alvo de grandes expectativas de conhecimentos multidisciplinares. Por exemplo, @sanjiv:2016:data descreve um cientista de dados como "alguém que levanta questões interessantes sobre dados para gerar conhecimento útil" e que é provavelmente "um indivíduo com treinamento em ciência da computação, negócios, economia, estatística, e munido com a quantidade necessária de conhecimento do domínio relevante para o problema em questão." Em contrapartida, outros autores consideram que essa visão não é realista, configurando o chamado cientista de dados "unicórnio" [@fayyad:2022:from].
+
+Independentemente da definição, a interdisciplinaridade é sempre um fator atribuído à Ciência de Dados. Visto que não há um consenso na literatura sobre o que a Ciência de Dados engloba, é natural que a definição de um cientista de dados também seja incerta. Parafraseando a frase frequentemente parafraseada de Josh Wills[^5], "um cientista de dados é uma pessoa que é melhor em estatística do que qualquer engenheiro de *software* e melhor em engenharia de *software* do que qualquer estatístico".
+
+[^5]: <https://youtu.be/U8cl693mREc?si=bnC9sHotmkebkSms&t=256>
