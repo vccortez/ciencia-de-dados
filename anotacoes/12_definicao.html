@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vitor Cortez">
+<meta name="keywords" content="introdução, definição, história">
 
-<title>Roteiro de aulas – Ciência de Dados</title>
+<title>Definição – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +52,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../meta/plano-de-ensino.pdf" rel="prev">
+<link href="../notebooks/index.html" rel="next">
+<link href="../anotacoes/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -97,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../meta/index.html">Outros recursos</a></li><li class="breadcrumb-item"><a href="../meta/roteiro-de-aulas.html">Roteiro de aulas</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../anotacoes/index.html">Anotações</a></li><li class="breadcrumb-item"><a href="../anotacoes/12_definicao.html">Definição</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -113,14 +135,14 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../anotacoes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Anotações</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../anotacoes/12_definicao.html" class="sidebar-item-text sidebar-link">
+  <a href="../anotacoes/12_definicao.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Definição</span></a>
   </div>
 </li>
@@ -153,11 +175,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../meta/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Outros recursos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../meta/calendario.html" class="sidebar-item-text sidebar-link">
@@ -172,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../meta/roteiro-de-aulas.html" class="sidebar-item-text sidebar-link active">
+  <a href="../meta/roteiro-de-aulas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Roteiro de aulas</span></a>
   </div>
 </li>
@@ -188,21 +210,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#conteúdos" id="toc-conteúdos" class="nav-link active" data-scroll-target="#conteúdos">Conteúdos</a></li>
-  <li><a href="#unidades" id="toc-unidades" class="nav-link" data-scroll-target="#unidades">Unidades</a>
+  <li><a href="#o-que-é-ciência-de-dados" id="toc-o-que-é-ciência-de-dados" class="nav-link active" data-scroll-target="#o-que-é-ciência-de-dados">O que é Ciência de Dados</a>
   <ul class="collapse">
-  <li><a href="#conteúdos-por-unidade" id="toc-conteúdos-por-unidade" class="nav-link" data-scroll-target="#conteúdos-por-unidade">Conteúdos por unidade</a></li>
+  <li><a href="#história-e-definições" id="toc-história-e-definições" class="nav-link" data-scroll-target="#história-e-definições">História e definições</a></li>
   </ul></li>
-  <li><a href="#aulas" id="toc-aulas" class="nav-link" data-scroll-target="#aulas">Aulas</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/meta/roteiro-de-aulas.md" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/anotacoes/12_definicao.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../meta/index.html">Outros recursos</a></li><li class="breadcrumb-item"><a href="../meta/roteiro-de-aulas.html">Roteiro de aulas</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../anotacoes/index.html">Anotações</a></li><li class="breadcrumb-item"><a href="../anotacoes/12_definicao.html">Definição</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Roteiro de aulas</h1>
+<h1 class="title">Definição</h1>
 </div>
 
 
@@ -221,135 +241,96 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Palavras-chave</div>
+    <p>introdução, definição, história</p>
+  </div>
+</div>
 
 </header>
 
 
-<p>Rascunho do roteiro de aulas.</p>
-<section id="conteúdos" class="level2">
-<h2 class="anchored" data-anchor-id="conteúdos">Conteúdos</h2>
-<p>Lista não exaustiva de conteúdos a serem abordados. Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados. É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização mais complexa.</p>
-<ol type="1">
-<li>O que é ciência de dados, definições e termos relacionados</li>
-<li>História da ciência de dados</li>
-<li>Introdução ou revisão da linguagem Python</li>
-<li>IPython</li>
-<li>Jupyter Notebooks</li>
-<li>Tipos de dados, estruturados (tabulares) e “não estruturados”</li>
-<li>NumPy</li>
-<li>Pandas</li>
-<li>SciPy</li>
-<li>SciKit Learn</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-<li>Coleta de dados, web crawling/scraping</li>
-<li>Limpeza de dados, dados incompletos ou ausentes</li>
-<li>Dados categóricos vs numéricos e escalas de medida</li>
-<li>Estatísticas descritivas, média, mediana, medidas de dispersão, variância, correlação</li>
-<li>Ruídos, outliers</li>
-<li>Normalização de dados</li>
-<li>Redução de dimensionalidade (?)</li>
-<li>Visualização de dados, gráficos de barras, linha, boxplots, histogramas, etc</li>
-<li>Aprendizado de máquina (estatístico), supervisionado e não supervisionado</li>
-<li>Modelos de regressão e classificação clássicos</li>
-<li>Métricas de avaliação, acurácia, precisão, recall, etc</li>
-<li>K-means</li>
-<li>Projetos de ciência de dados, modelos como CRISP-DM, ZM</li>
-<li>Transformações de dados, combinações, filtros, conversões de valores, normalização, etc</li>
-<li>KNN (?)</li>
-<li>Modelos e processamento de dados “não estruturados” como imagens, texto</li>
-<li>Redes neurais, algoritmos genéticos, colônia de formigas, enfim, bioinspirados</li>
-</ol>
-</section>
-<section id="unidades" class="level2">
-<h2 class="anchored" data-anchor-id="unidades">Unidades</h2>
-<p>Disciplinas são por padrão organizadas em três unidades. Uma unidade pode ser vista como um subconjunto dos assuntos listados seguindo algum tema especificado. Aqui, com base nos assuntos listados, é tomada a decisão de definir como os temas das unidades:</p>
-<ol type="1">
-<li>Preparação ou pré-processamento de dados</li>
-<li>Análise e visualização de dados</li>
-<li>Modelagem e aprendizado de máquina</li>
-</ol>
-<p>Essa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais estatística e finalizando com um pouco de aprendizado de máquina. Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos.</p>
-<section id="conteúdos-por-unidade" class="level3">
-<h3 class="anchored" data-anchor-id="conteúdos-por-unidade">Conteúdos por unidade</h3>
-<p>Definidos os temas das unidades, fica mais fácil selecionar os conteúdos para cada uma. Ignorando a ordem, na primeira unidade, temos:</p>
-<ol type="1">
-<li>O que é ciência de dados, definições e termos relacionados</li>
-<li>História da ciência de dados</li>
-<li>Processos de ciência de dados: CRISP-DM, KDD, mineração de dados</li>
-<li>Introdução ou revisão da linguagem Python</li>
-<li>Tipos de dados: categóricos e numéricos</li>
-<li>Formato de dados: dados estruturados e não estruturados, formatos de arquivos</li>
-<li>Coleta de dados: bancos de dados ou bases de dados, web crawling ou scraping, criação de bases de dados</li>
-<li>Introdução a engenharia de dados</li>
-<li>IPython</li>
-<li>Jupyter Notebooks</li>
-<li>Pandas</li>
-</ol>
-<p>Na segunda unidade:</p>
-<ol type="1">
-<li>Escalas de medidas: nominal, ordinal, intervalar e racional</li>
-<li>Estatística descritiva: medidas de tendência, frequência, dispersão, distribuição, etc</li>
-<li>Correlação e covariância</li>
-<li>Visualização de dados: gráficos de barras, dispersão, linhas, histogramas, boxplots</li>
-<li>Qualidade de dados: dados ausentes, ruídos e outliers</li>
-<li>Transformação de dados: conversões de valores, normalização</li>
-<li>Introdução a modelagem de dados</li>
-<li>Numpy</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-</ol>
-<p>E na terceira unidade:</p>
-<ol type="1">
-<li>Aprendizado de máquina</li>
-<li>Treinamento supervisionado e não supervisionado</li>
-<li>Regressão linear</li>
-<li>Classificação</li>
-<li>Avaliação de modelos</li>
-<li>Agrupamento: K-means</li>
-<li>Algoritmos bioinspirados</li>
-<li>Processamento de imagens e textos</li>
-<li>SciKit Learn</li>
-<li>SciPy</li>
-</ol>
-</section>
-</section>
-<section id="aulas" class="level2">
-<h2 class="anchored" data-anchor-id="aulas">Aulas</h2>
-<p>Definir quais conteúdos se encaixam em cada aula é um pouco mais complexo, já que depende da quantidade de conteúdo abordado para o tempo de exposição e que, neste caso, não há uma experiência prévia para facilitar previsões. Como plano inicial, temos na primeira unidade:</p>
-<ol type="1">
-<li>Abertura da disciplina: apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas</li>
-<li>Ciência de dados: histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento</li>
-<li>Bases de dados: tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares</li>
-<li>Fundamentos de Python: revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade</li>
-<li>Python em computação científica: fundamentos; IPython; Jupyter notebooks</li>
-<li>Manipulação de dados: dados tabulares; Pandas; DataFrames</li>
-<li>Descoberta de dados: seleção; web crawling ou scraping; Requests</li>
-<li>Avaliação</li>
-</ol>
-<p>Na segunda unidade:</p>
-<ol type="1">
-<li>Amostragem de dados: população; amostra; representatividade; variabilidade; inferência dedutiva e indutiva</li>
-<li>Estatística descritiva: fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy</li>
-<li>Visualização de dados: gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD)</li>
-<li>Qualidade de dados: ausências; ruídos; outliers; limpeza</li>
-<li>Transformação de dados: conversão de valores; normalização; padronização</li>
-<li>Avaliação</li>
-</ol>
-<p>Na terceira unidade:</p>
-<ol type="1">
-<li>Aprendizado de máquina: definições; treinamento</li>
-<li>Modelagem de dados: regressão linear; classificação; agrupamento; algoritmos; SciKit Learn</li>
-<li>Avaliação de modelos: métricas de resultados; hiperparâmetros; hipóteses; SciPy</li>
-<li>Outros tópicos: algoritmos bioinspirados; dados não estruturados; ética</li>
-<li>Avaliação</li>
-<li>Encerramento da disciplina: recuperação e exame final</li>
-</ol>
+<p>Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição simples e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.</p>
+<section id="o-que-é-ciência-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-ciência-de-dados">O que é Ciência de Dados</h2>
+<p>As definições para o termo Ciência de Dados são tão diversas quanto as partes interessadas<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> nele. A tirinha na <a href="#fig-what-is-ds" class="quarto-xref">Figura&nbsp;1</a> ilustra diferentes percepções sobre o termo.</p>
+<div id="fig-what-is-ds" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-scap="Estereótipos sobre Ciência de Dados" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-what-is-ds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/what-is-ds.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" data-fig-scap="Estereótipos sobre Ciência de Dados">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-what-is-ds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Estereótipos sobre Ciência de Dados <span class="citation" data-cites="godsey:2017:think">(<a href="#ref-godsey:2017:think" role="doc-biblioref">Godsey 2017</a>, pág. 4)</span>
+</figcaption>
+</figure>
+</div>
+<p>Parte dessa diversidade de percepções se dá pela popularização do termo “Ciência de Dados”, por vezes visto como mais uma <em>buzzword</em>,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> uma palavra da moda sem sentido específico. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.</p>
+<section id="história-e-definições" class="level3">
+<h3 class="anchored" data-anchor-id="história-e-definições">História e definições</h3>
+<p>A história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo <span class="citation" data-cites="verri:2024:dsp">Verri (<a href="#ref-verri:2024:dsp" role="doc-biblioref">2024</a>)</span>, a história do termo inicia nos anos 60 com Peter Naur<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> ao sugerir que o termo ciência de dados ou “dadologia” (<em>datalogy</em>) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época <span class="citation" data-cites="blum:2020:foundations">(<a href="#ref-blum:2020:foundations" role="doc-biblioref">Blum, Hopcroft, e Kannan 2020</a>)</span>. Os primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística, como C. F. Jeff Wu e William Cleveland, que respectivamente argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos <span class="citation" data-cites="morettin:2025:estatistica verri:2024:dsp">(<a href="#ref-morettin:2025:estatistica" role="doc-biblioref">Morettin e Singer 2025</a>; <a href="#ref-verri:2024:dsp" role="doc-biblioref">Verri 2024</a>)</span>.</p>
+<p>Segundo <span class="citation" data-cites="carvalho:2024:cdfa">Carvalho, Menezes, e Bonidia (<a href="#ref-carvalho:2024:cdfa" role="doc-biblioref">2024</a>)</span>, a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada voltada para a extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas <span class="citation" data-cites="morettin:2025:estatistica">(<a href="#ref-morettin:2025:estatistica" role="doc-biblioref">Morettin e Singer 2025</a>)</span>.</p>
+<p>Alguns autores veem a Ciência de Dados mais como um subconjunto de ferramentas da matemática estatística e da computação e menos como uma nova área de conhecimento. Por exemplo, <span class="citation" data-cites="vanderplas:2016:python">VanderPlas (<a href="#ref-vanderplas:2016:python" role="doc-biblioref">2016</a>)</span> sugere que o leitor pense sobre Ciência de Dados não como uma nova área de conhecimento, mas sim um conjunto de habilidades interdisciplinares que podem ser aplicadas a qualquer domínio na busca de perguntas e respostas baseadas em dados. Sob esse ponto de vista, o diagrama de Venn de Drew Conway<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, apresentado na <a href="#fig-venn-diagram" class="quarto-xref">Figura&nbsp;2</a>, costuma ser invocado para ilustrar os ingredientes da Ciência de Dados.</p>
+<div id="cell-fig-venn-diagram" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div id="fig-venn-diagram" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Ciência de Dados no centro do diagrama sendo a união de Matemática e estatística, Computação e Conhecimento de domínio">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-venn-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="12_definicao_files/figure-html/fig-venn-diagram-output-1.png" class="quarto-figure quarto-figure-center figure-img" alt="Ciência de Dados no centro do diagrama sendo a união de Matemática e estatística, Computação e Conhecimento de domínio" width="466" height="447">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-venn-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Diagrama de Venn de Drew Conway
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Em resumo, Conway enfatiza que é a combinação dos três conjuntos de habilidades principais que cria um cientista de dados: as habilidades para lidar com tecnologia em que os dados são codificados; os conhecimentos dos métodos para extração de valor desses dados; e uma experiência de domínio substancial voltada à produção de conhecimento. É a este último conjunto de habilidades que Conway atribui o aspecto científico do termo.</p>
+<p>Complementarmente, <span class="citation" data-cites="godsey:2017:think">Godsey (<a href="#ref-godsey:2017:think" role="doc-biblioref">2017</a>)</span> considera que a Ciência de Dados também engloba o conjunto de processos e conceitos que servem de guia para se fazer progresso e tomar decisões em projetos centrados em dados. A diferença entre essa visão e as outras apresentadas anteriormente é sutil e, basicamente, se resume a qual aspecto da Ciência de Dados é julgado mais relevante na visão dos autores, isto é, o conhecimento técnico e teórico <em>versus</em> a mentalidade e a experiência aplicada do cientista de dados, o que vai de encontro à definição de Conway.</p>
+<p>A figura do cientista de dados também é alvo de grandes expectativas de conhecimentos multidisciplinares. Por exemplo, <span class="citation" data-cites="sanjiv:2016:data">Das (<a href="#ref-sanjiv:2016:data" role="doc-biblioref">2016</a>)</span> descreve um cientista de dados como “alguém que levanta questões interessantes sobre dados para gerar conhecimento útil” e que é provavelmente “um indivíduo com treinamento em ciência da computação, negócios, economia, estatística, e munido com a quantidade necessária de conhecimento do domínio relevante para o problema em questão.” Em contrapartida, outros autores consideram que essa visão não é realista, configurando o chamado cientista de dados “unicórnio” <span class="citation" data-cites="fayyad:2022:from">(<a href="#ref-fayyad:2022:from" role="doc-biblioref">Fayyad e Hamutcu 2022</a>)</span>.</p>
+<p>Independentemente da definição, a interdisciplinaridade é sempre um fator atribuído à Ciência de Dados. Visto que não há um consenso na literatura sobre o que a Ciência de Dados engloba, é natural que a definição de um cientista de dados também seja incerta. Parafraseando a frase frequentemente parafraseada de Josh Wills<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>, “um cientista de dados é uma pessoa que é melhor em estatística do que qualquer engenheiro de <em>software</em> e melhor em engenharia de <em>software</em> do que qualquer estatístico”.</p>
+
 
 
 </section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-blum:2020:foundations" class="csl-entry" role="listitem">
+Blum, Avrim, John Hopcroft, e Ravi Kannan. 2020. <em>Foundations of Data Science</em>. Cambridge: Cambridge University Press. <a href="https://www.cambridge.org/core/books/foundations-of-data-science/6A43CE830DE83BED6CC5171E62B0AA9E">https://www.cambridge.org/core/books/foundations-of-data-science/6A43CE830DE83BED6CC5171E62B0AA9E</a>.
+</div>
+<div id="ref-carvalho:2024:cdfa" class="csl-entry" role="listitem">
+Carvalho, André C. P. L. F. de, Angelo G. Menezes, e Robson P. Bonidia. 2024. <em>Ci<span>ê</span>ncia de Dados: <span>Fundamentos e Aplica<span>ç</span><span>õ</span>es</span></em>. LTC. <a href="https://books.google.com.br/books?id=HNSn0AEACAAJ">https://books.google.com.br/books?id=HNSn0AEACAAJ</a>.
+</div>
+<div id="ref-sanjiv:2016:data" class="csl-entry" role="listitem">
+Das, Sanjiv R. 2016. <span>“Data Science: Theories, Models, Algorithms, and Analytics”</span>. 2016. <a href="http://srdas.github.io/Papers/DSA_Book.pdf">http://srdas.github.io/Papers/DSA_Book.pdf</a>.
+</div>
+<div id="ref-fayyad:2022:from" class="csl-entry" role="listitem">
+Fayyad, Usama, e Hamit Hamutcu. 2022. <span>“From <span>Unicorn</span> <span>Data</span> <span>Scientist</span> to <span>Key</span> <span>Roles</span> in <span>Data</span> <span>Science</span>: Standardizing <span>Roles</span>”</span>. <em>Harvard Data Science Review</em> 4 (3). <a href="https://hdsr.mitpress.mit.edu/pub/60qq269p">https://hdsr.mitpress.mit.edu/pub/60qq269p</a>.
+</div>
+<div id="ref-godsey:2017:think" class="csl-entry" role="listitem">
+Godsey, Brian. 2017. <em>Think Like a Data Scientist: Tackle the Data Science Process Step-by-Step</em>. Manning. <a href="https://www.manning.com/books/think-like-a-data-scientist">https://www.manning.com/books/think-like-a-data-scientist</a>.
+</div>
+<div id="ref-morettin:2025:estatistica" class="csl-entry" role="listitem">
+Morettin, Pedro Alberto, e Júlio da Motta Singer. 2025. <em>Estatística e Ciência de Dados</em>. LTC. <a href="https://books.google.com.br/books?id=KRD6zwEACAAJ">https://books.google.com.br/books?id=KRD6zwEACAAJ</a>.
+</div>
+<div id="ref-vanderplas:2016:python" class="csl-entry" role="listitem">
+VanderPlas, Jake. 2016. <em>Python Data Science Handbook: Essential Tools for Working with Data</em>. O’Reilly Media. <a href="https://books.google.com.br/books?id=dQgGzQEACAAJ">https://books.google.com.br/books?id=dQgGzQEACAAJ</a>.
+</div>
+<div id="ref-verri:2024:dsp" class="csl-entry" role="listitem">
+Verri, Filipe Alves Neto. 2024. <em>Data Science Project: An Inductive Learning Approach</em> (versão 0.1.0). Leanpub. <a href="https://doi.org/10.5281/zenodo.14498011">https://doi.org/10.5281/zenodo.14498011</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://pt.wikipedia.org/wiki/Stakeholder" class="uri">https://pt.wikipedia.org/wiki/Stakeholder</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://en.wikipedia.org/wiki/Buzzword" class="uri">https://en.wikipedia.org/wiki/Buzzword</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://en.wikipedia.org/wiki/Peter_Naur" class="uri">https://en.wikipedia.org/wiki/Peter_Naur</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" class="uri">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://youtu.be/U8cl693mREc?si=bnC9sHotmkebkSms&amp;t=256" class="uri">https://youtu.be/U8cl693mREc?si=bnC9sHotmkebkSms&amp;t=256</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -920,11 +901,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../meta/plano-de-ensino.pdf" class="pagination-link" aria-label="Plano de ensino">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Plano de ensino</span>
+      <a href="../anotacoes/index.html" class="pagination-link" aria-label="Anotações">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Anotações</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../notebooks/index.html" class="pagination-link" aria-label="Notebooks">
+        <span class="nav-page-text">Notebooks</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -932,4 +916,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/meta/roteiro-de-aulas.md" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/anotacoes/12_definicao.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
