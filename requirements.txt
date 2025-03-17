@@ -10,6 +10,7 @@ seaborn==0.13.2
 scikit-learn==1.6.1
 tabulate==0.9.0
 matplotlib-venn==1.1.2
+python-frontmatter==1.1.0
 ## The following requirements were added by pip freeze:
 annotated-types==0.7.0
 anyio==4.8.0

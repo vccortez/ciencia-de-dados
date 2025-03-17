@@ -9,15 +9,11 @@ order: 4
 # | echo: false
 # | label: tbl-slides
 # | tbl-cap: Índice de slides
-import os
-
 from IPython.display import Markdown, display
 
 from scripts import gerar_indice_pasta
-from scripts.util import relpath
 
-folder = relpath(os.environ["QUARTO_DOCUMENT_PATH"], os.environ["QUARTO_PROJECT_ROOT"])
-indice = gerar_indice_pasta.run(folder)
+indice = gerar_indice_pasta.run()
 
 if len(indice) > 0:
     display(Markdown("\n".join(indice)))
