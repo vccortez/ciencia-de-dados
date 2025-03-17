@@ -2,9 +2,10 @@
 title: Definição
 order: 12
 keywords:
-    - introdução
-    - definição
-    - história
+    - Ciência de Dados
+    - Introdução
+    - Definição
+    - História
 ---
 
 Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição simples e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.
