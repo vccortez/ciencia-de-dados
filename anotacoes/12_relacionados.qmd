@@ -1,0 +1,61 @@
+---
+title: Áreas relacionadas
+order: 12
+keywords:
+    - Big Data
+    - Machine Learning
+    - Data Mining
+    - KDD
+---
+
+Existem várias outras áreas de conhecimento e campos de estudo que também colocam dados e seu processamento nos holofotes.
+Por exemplo, _Big Data_ e _Machine Learning_ são umas das mais populares.
+Considerando a ideia difusa de Ciência de Dados,[^1] é natural que haja alguma confusão e/ou sobreposição entre os tópicos.
+Aqui, vamos comentar a relação dessas áreas.
+
+[^1]: Resenha: [Definições de Ciência de Dados](12_definicao.qmd)
+
+## O que não é Ciência de Dados?
+
+O sinal de interrogação no título desta seção é proposital.
+As áreas de conhecimento comentadas aqui apresentam muitas aspectos em comum com a Ciência de Dados, e não tão menos quanto outras, como a Análise de Dados e a própria Estatística, que não serão comentadas aqui.
+É comum ser discutido na literatura se Ciência de Dados não é apenas um _rebrand_ de inúmeros outros campos mais antigos que combinam engenharia de _software_ com análise de dados [@godsey:2017:think].
+
+### Big Data
+
+O termo _Big Data_ costuma ser usado tanto para descrever grandes volumes de dados quanto para nomear a área de estudos e tecnologias voltadas a esses dados.
+Em @carvalho:2024:cdfa, os autores apresentam _Big Data_ falando sobre os três Vs que caracterizam seu objeto de estudo: dados com grande volume, velocidade e variedade.
+Os autores também tentam desambiguar Ciência de Dados de _Big Data_ com o entendimento de que o primeiro lida com a formulação de soluções computacionais para transformar, preprocessar, modelar e extrair conhecimento de dados, e o segundo lida com o estudo de tecnologias para coletar, armazenar, processar e transmitir dados.
+Na minha visão, essa desambiguação não é clara o suficiente.
+
+É possível que _Big Data_ seja usado como sinônimo de Ciência de Dados e as diferenciações variam de autor para autor.
+Por exemplo, para @kotu:2018:data, o termo Ciência de Dados engloba as técnicas de processamento de _Big Data_ que, por sua vez, apenas indica grandes volumes de dados.
+Já em @sanjiv:2016:data, o autor afirma que a Ciência de Dados está além do _Big Data_ por incluir a criação de dados de várias fontes e sua quantificação em informação.
+Essas visões não são necessariamente contraditórias, mas também não deixam claro quanta sobreposição há entre os termos.
+
+Em @morettin:2025:estatistica, os autores comentam que ter de lidar com grandes volumes de dados não é o suficiente para marcar a divisão entre Ciência de Dados e Estatística.
+Por outro lado, essa distinção pode ser o suficiente para desambiguar a Ciência de Dados de _Big Data_.
+Em outras palavras, pode-se considerar que _Big Data_ engloba o estudo de questões pertinentes para lidar com grandes volumes de dados, ao passo que a Ciência de Dados pode ou não ter de lidar com grandes volumes de dados, a depender do problema em investigação.
+
+### Machine Learning
+
+De maneira semelhante à relação com _Big Data_, a Aprendizagem de Máquina ou _Machine Learning_ pode ser uma ferramenta usada pela Ciência de Dados.
+Em @kotu:2018:data, a Ciência de Dados é tratada como um termo guarda-chuva em que os tipos de modelos de aprendizado tipicamente estudados em _Machine Learning_ são vistos como seus subtópicos.
+@morettin:2025:estatistica também distingue a ideia de aprendizado estatístico do aprendizado automático, ambos termos que podem ser usados para designar _Machine Learning_.
+
+Vale mencionar que _Machine Learning_ faz parte do [Diagrama de Venn](12_definicao.qmd#fig-venn-diagram) da Ciência de Dados.
+Em seu texto original,[^drew] Drew Conway comenta que conhecimentos de matemática e estatística com computação são os ingredientes para formar _Machine Learning_, mas não o suficiente para chegar na Ciência de Dados.
+Este tópico será abordado com mais profundidade em textos futuros.
+
+[^drew]: <http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram>
+
+### KDD e Data Mining
+
+KDD é uma sigla para _Knowledge-Discovery in Databases_[^kdd] ou descoberta de conhecimento em bases de dados.
+_Data Mining_ ou mineração de dados é uma das etapas do processo genérico de KDD[^dm] que, por sua vez, pode ser considerado como um tópicos mais específico dentro da grande área de Ciência de Dados.
+KDD e _Data Mining_ são termos às vezes usados como sinônimos, visto que a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento.
+Mais detalhes sobre esse processo em si serão apresentados em textos futuros.
+
+[^kdd]: <https://pt.wikipedia.org/wiki/Extração_de_conhecimento>
+
+[^dm]: <https://www.datascience-pm.com/kdd-and-data-mining>
