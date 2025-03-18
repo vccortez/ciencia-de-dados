@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vitor Cortez">
+<meta name="keywords" content="Big Data, Machine Learning, Data Mining, KDD">
 
-<title>Calendário – Ciência de Dados</title>
+<title>Áreas relacionadas – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,8 +52,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../meta/plano-de-ensino.pdf" rel="next">
-<link href="../meta/index.html" rel="prev">
+<link href="../notebooks/index.html" rel="next">
+<link href="../anotacoes/12_definicao.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -98,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../meta/index.html">Outros recursos</a></li><li class="breadcrumb-item"><a href="../meta/calendario.html">Calendário</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../anotacoes/index.html">Anotações</a></li><li class="breadcrumb-item"><a href="../anotacoes/12_relacionados.html">Áreas relacionadas</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -114,11 +135,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../anotacoes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Anotações</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../anotacoes/12_definicao.html" class="sidebar-item-text sidebar-link">
@@ -127,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../anotacoes/12_relacionados.html" class="sidebar-item-text sidebar-link">
+  <a href="../anotacoes/12_relacionados.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Áreas relacionadas</span></a>
   </div>
 </li>
@@ -160,14 +181,14 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../meta/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Outros recursos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../meta/calendario.html" class="sidebar-item-text sidebar-link active">
+  <a href="../meta/calendario.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calendário</span></a>
   </div>
 </li>
@@ -195,16 +216,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#aulas" id="toc-aulas" class="nav-link active" data-scroll-target="#aulas">Aulas</a></li>
+  <li><a href="#o-que-não-é-ciência-de-dados" id="toc-o-que-não-é-ciência-de-dados" class="nav-link active" data-scroll-target="#o-que-não-é-ciência-de-dados">O que não é Ciência de Dados?</a>
+  <ul class="collapse">
+  <li><a href="#big-data" id="toc-big-data" class="nav-link" data-scroll-target="#big-data">Big Data</a></li>
+  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning">Machine Learning</a></li>
+  <li><a href="#kdd-e-data-mining" id="toc-kdd-e-data-mining" class="nav-link" data-scroll-target="#kdd-e-data-mining">KDD e Data Mining</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/meta/calendario.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/anotacoes/12_relacionados.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../meta/index.html">Outros recursos</a></li><li class="breadcrumb-item"><a href="../meta/calendario.html">Calendário</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../anotacoes/index.html">Anotações</a></li><li class="breadcrumb-item"><a href="../anotacoes/12_relacionados.html">Áreas relacionadas</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Calendário</h1>
+<h1 class="title">Áreas relacionadas</h1>
 </div>
 
 
@@ -223,192 +249,66 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Palavras-chave</div>
+    <p>Big Data, Machine Learning, Data Mining, KDD</p>
+  </div>
+</div>
 
 </header>
 
 
-<p>Agenda de tópicos para as datas de aula disponíveis.</p>
-<section id="aulas" class="level2">
-<h2 class="anchored" data-anchor-id="aulas">Aulas</h2>
-<p>As aulas iniciam em 10/03/25 e podem se estender até 09/07/25. O calendário de aulas para o plano atual se encontra na <a href="#tbl-datas" class="quarto-xref">Tabela&nbsp;1</a>.</p>
-<div class="cell" data-execution_count="3">
-<div id="tbl-datas" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="3">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-datas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;1: Calendário de aulas
-</figcaption>
-<div aria-describedby="tbl-datas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
-<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 5%">
-<col style="width: 16%">
-<col style="width: 48%">
-<col style="width: 14%">
-<col style="width: 14%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;"></th>
-<th style="text-align: center;">Unidade</th>
-<th style="text-align: center;">Tópico</th>
-<th style="text-align: center;">Início</th>
-<th style="text-align: center;">Fim</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Abertura da disciplina</td>
-<td style="text-align: center;">10/03/25</td>
-<td style="text-align: center;">17/03/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Ciência de dados</td>
-<td style="text-align: center;">19/03/25</td>
-<td style="text-align: center;">24/03/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Bases de dados</td>
-<td style="text-align: center;">26/03/25</td>
-<td style="text-align: center;">26/03/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Fundamentos de Python</td>
-<td style="text-align: center;">31/03/25</td>
-<td style="text-align: center;">31/03/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Python em computação científica</td>
-<td style="text-align: center;">02/04/25</td>
-<td style="text-align: center;">02/04/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Manipulação de dados</td>
-<td style="text-align: center;">07/04/25</td>
-<td style="text-align: center;">07/04/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Descoberta de dados</td>
-<td style="text-align: center;">09/04/25</td>
-<td style="text-align: center;">09/04/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">8</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Primeira avaliação</td>
-<td style="text-align: center;">14/04/25</td>
-<td style="text-align: center;">16/04/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">9</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Amostragem de dados</td>
-<td style="text-align: center;">21/04/25</td>
-<td style="text-align: center;">21/04/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">10</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Estatística descritiva</td>
-<td style="text-align: center;">23/04/25</td>
-<td style="text-align: center;">23/04/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">11</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Visualização de dados</td>
-<td style="text-align: center;">28/04/25</td>
-<td style="text-align: center;">28/04/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">12</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Qualidade de dados</td>
-<td style="text-align: center;">30/04/25</td>
-<td style="text-align: center;">30/04/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">13</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Transformação de dados</td>
-<td style="text-align: center;">05/05/25</td>
-<td style="text-align: center;">05/05/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">14</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Segunda avaliação</td>
-<td style="text-align: center;">07/05/25</td>
-<td style="text-align: center;">12/05/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">15</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Aprendizado de máquina</td>
-<td style="text-align: center;">14/05/25</td>
-<td style="text-align: center;">14/05/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">16</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Modelagem de dados</td>
-<td style="text-align: center;">19/05/25</td>
-<td style="text-align: center;">19/05/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">17</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Avaliação de modelos</td>
-<td style="text-align: center;">21/05/25</td>
-<td style="text-align: center;">21/05/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">18</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Outros tópicos</td>
-<td style="text-align: center;">26/05/25</td>
-<td style="text-align: center;">26/05/25</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">19</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Terceira avaliação</td>
-<td style="text-align: center;">28/05/25</td>
-<td style="text-align: center;">02/06/25</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">20</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Encerramento da disciplina</td>
-<td style="text-align: center;">04/06/25</td>
-<td style="text-align: center;">09/07/25</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</figure>
-</div>
-</div>
+<p>Existem várias outras áreas de conhecimento e campos de estudo que também colocam dados e seu processamento nos holofotes. Por exemplo, <em>Big Data</em> e <em>Machine Learning</em> são umas das mais populares. Considerando a ideia difusa de Ciência de Dados,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> é natural que haja alguma confusão e/ou sobreposição entre os tópicos. Aqui, vamos comentar a relação dessas áreas.</p>
+<section id="o-que-não-é-ciência-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-não-é-ciência-de-dados">O que não é Ciência de Dados?</h2>
+<p>O sinal de interrogação no título desta seção é proposital. As áreas de conhecimento comentadas aqui apresentam muitas aspectos em comum com a Ciência de Dados, e não tão menos quanto outras, como a Análise de Dados e a própria Estatística, que não serão comentadas aqui. É comum ser discutido na literatura se Ciência de Dados não é apenas um <em>rebrand</em> de inúmeros outros campos mais antigos que combinam engenharia de <em>software</em> com análise de dados <span class="citation" data-cites="godsey:2017:think">(<a href="#ref-godsey:2017:think" role="doc-biblioref">Godsey 2017</a>)</span>.</p>
+<section id="big-data" class="level3">
+<h3 class="anchored" data-anchor-id="big-data">Big Data</h3>
+<p>O termo <em>Big Data</em> costuma ser usado tanto para descrever grandes volumes de dados quanto para nomear a área de estudos e tecnologias voltadas a esses dados. Em <span class="citation" data-cites="carvalho:2024:cdfa">Carvalho, Menezes, e Bonidia (<a href="#ref-carvalho:2024:cdfa" role="doc-biblioref">2024</a>)</span>, os autores apresentam <em>Big Data</em> falando sobre os três Vs que caracterizam seu objeto de estudo: dados com grande volume, velocidade e variedade. Os autores também tentam desambiguar Ciência de Dados de <em>Big Data</em> com o entendimento de que o primeiro lida com a formulação de soluções computacionais para transformar, preprocessar, modelar e extrair conhecimento de dados, e o segundo lida com o estudo de tecnologias para coletar, armazenar, processar e transmitir dados. Na minha visão, essa desambiguação não é clara o suficiente.</p>
+<p>É possível que <em>Big Data</em> seja usado como sinônimo de Ciência de Dados e as diferenciações variam de autor para autor. Por exemplo, para <span class="citation" data-cites="kotu:2018:data">Kotu e Deshpande (<a href="#ref-kotu:2018:data" role="doc-biblioref">2018</a>)</span>, o termo Ciência de Dados engloba as técnicas de processamento de <em>Big Data</em> que, por sua vez, apenas indica grandes volumes de dados. Já em <span class="citation" data-cites="sanjiv:2016:data">Das (<a href="#ref-sanjiv:2016:data" role="doc-biblioref">2016</a>)</span>, o autor afirma que a Ciência de Dados está além do <em>Big Data</em> por incluir a criação de dados de várias fontes e sua quantificação em informação. Essas visões não são necessariamente contraditórias, mas também não deixam claro quanta sobreposição há entre os termos.</p>
+<p>Em <span class="citation" data-cites="morettin:2025:estatistica">Morettin e Singer (<a href="#ref-morettin:2025:estatistica" role="doc-biblioref">2025</a>)</span>, os autores comentam que ter de lidar com grandes volumes de dados não é o suficiente para marcar a divisão entre Ciência de Dados e Estatística. Por outro lado, essa distinção pode ser o suficiente para desambiguar a Ciência de Dados de <em>Big Data</em>. Em outras palavras, pode-se considerar que <em>Big Data</em> engloba o estudo de questões pertinentes para lidar com grandes volumes de dados, ao passo que a Ciência de Dados pode ou não ter de lidar com grandes volumes de dados, a depender do problema em investigação.</p>
+</section>
+<section id="machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning">Machine Learning</h3>
+<p>De maneira semelhante à relação com <em>Big Data</em>, a Aprendizagem de Máquina ou <em>Machine Learning</em> pode ser uma ferramenta usada pela Ciência de Dados. Em <span class="citation" data-cites="kotu:2018:data">Kotu e Deshpande (<a href="#ref-kotu:2018:data" role="doc-biblioref">2018</a>)</span>, a Ciência de Dados é tratada como um termo guarda-chuva em que os tipos de modelos de aprendizado tipicamente estudados em <em>Machine Learning</em> são vistos como seus subtópicos. <span class="citation" data-cites="morettin:2025:estatistica">Morettin e Singer (<a href="#ref-morettin:2025:estatistica" role="doc-biblioref">2025</a>)</span> também distingue a ideia de aprendizado estatístico do aprendizado automático, ambos termos que podem ser usados para designar <em>Machine Learning</em>.</p>
+<p>Vale mencionar que <em>Machine Learning</em> faz parte do <a href="../anotacoes/12_definicao.html#fig-venn-diagram">Diagrama de Venn</a> da Ciência de Dados. Em seu texto original,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Drew Conway comenta que conhecimentos de matemática e estatística com computação são os ingredientes para formar <em>Machine Learning</em>, mas não o suficiente para chegar na Ciência de Dados. Este tópico será abordado com mais profundidade em textos futuros.</p>
+</section>
+<section id="kdd-e-data-mining" class="level3">
+<h3 class="anchored" data-anchor-id="kdd-e-data-mining">KDD e Data Mining</h3>
+<p>KDD é uma sigla para <em>Knowledge-Discovery in Databases</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> ou descoberta de conhecimento em bases de dados. <em>Data Mining</em> ou mineração de dados é uma das etapas do processo genérico de KDD<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> que, por sua vez, pode ser considerado como um tópicos mais específico dentro da grande área de Ciência de Dados. KDD e <em>Data Mining</em> são termos às vezes usados como sinônimos, visto que a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento. Mais detalhes sobre esse processo em si serão apresentados em textos futuros.</p>
+
 
 
 </section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-carvalho:2024:cdfa" class="csl-entry" role="listitem">
+Carvalho, André C. P. L. F. de, Angelo G. Menezes, e Robson P. Bonidia. 2024. <em>Ci<span>ê</span>ncia de Dados: <span>Fundamentos e Aplica<span>ç</span><span>õ</span>es</span></em>. LTC. <a href="https://books.google.com.br/books?id=HNSn0AEACAAJ">https://books.google.com.br/books?id=HNSn0AEACAAJ</a>.
+</div>
+<div id="ref-sanjiv:2016:data" class="csl-entry" role="listitem">
+Das, Sanjiv R. 2016. <span>“Data Science: Theories, Models, Algorithms, and Analytics”</span>. 2016. <a href="http://srdas.github.io/Papers/DSA_Book.pdf">http://srdas.github.io/Papers/DSA_Book.pdf</a>.
+</div>
+<div id="ref-godsey:2017:think" class="csl-entry" role="listitem">
+Godsey, Brian. 2017. <em>Think Like a Data Scientist: Tackle the Data Science Process Step-by-Step</em>. Manning. <a href="https://www.manning.com/books/think-like-a-data-scientist">https://www.manning.com/books/think-like-a-data-scientist</a>.
+</div>
+<div id="ref-kotu:2018:data" class="csl-entry" role="listitem">
+Kotu, Vijay, e Bala Deshpande. 2018. <em>Data Science: Concepts and Practice</em>. Elsevier Science. <a href="https://books.google.com.br/books?id=V8nBtQEACAAJ">https://books.google.com.br/books?id=V8nBtQEACAAJ</a>.
+</div>
+<div id="ref-morettin:2025:estatistica" class="csl-entry" role="listitem">
+Morettin, Pedro Alberto, e Júlio da Motta Singer. 2025. <em>Estatística e Ciência de Dados</em>. LTC. <a href="https://books.google.com.br/books?id=KRD6zwEACAAJ">https://books.google.com.br/books?id=KRD6zwEACAAJ</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p>Resenha: <a href="../anotacoes/12_definicao.html">Definições de Ciência de Dados</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" class="uri">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://pt.wikipedia.org/wiki/Extração_de_conhecimento" class="uri">https://pt.wikipedia.org/wiki/Extração_de_conhecimento</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://www.datascience-pm.com/kdd-and-data-mining" class="uri">https://www.datascience-pm.com/kdd-and-data-mining</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -979,13 +879,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../meta/index.html" class="pagination-link" aria-label="Outros recursos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Outros recursos</span>
+      <a href="../anotacoes/12_definicao.html" class="pagination-link" aria-label="Definição">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Definição</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../meta/plano-de-ensino.pdf" class="pagination-link" aria-label="Plano de ensino">
-        <span class="nav-page-text">Plano de ensino</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/index.html" class="pagination-link" aria-label="Notebooks">
+        <span class="nav-page-text">Notebooks</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -994,4 +894,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/meta/calendario.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/anotacoes/12_relacionados.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
