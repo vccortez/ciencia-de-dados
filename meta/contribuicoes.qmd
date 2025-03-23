@@ -1,0 +1,27 @@
+---
+title: Contribuições
+---
+
+Lista de contribuições por identificador.
+Interessados em contribuir com as aulas e repositório são encorajados a deixar um breve registro de cada contribuição no arquivo em `dados/contribuicoes.csv`.
+
+```{python}
+# | echo: false
+# | label: tbl-contribs
+# | tbl-cap: Ranking de contribuições
+import pandas as pd
+
+df = pd.read_csv("dados/contribuicoes.csv", parse_dates=["data"], date_format="mixed", dayfirst=True)
+
+df["hora"] = pd.to_datetime(df["hora"], format="%H:%M")
+
+groups = df.groupby("id")
+
+pd.DataFrame(
+    {
+        "Quantidade de contribuições": groups["contribuicao"].count(),
+        "Data mediana": groups["data"].median(),
+        "Horário médio": groups["hora"].mean().apply(lambda x: x.time()),
+    }
+).sort_values(by="Quantidade de contribuições")
+```
