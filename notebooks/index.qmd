@@ -3,7 +3,7 @@ title: Notebooks
 order: 3
 ---
 
-Índice de todos os IPython/Jupyter notebooks publicados na pasta `notebooks/`.
+Índice de todos os IPython/Jupyter notebooks publicados na pasta `notebooks`.
 
 ```{python}
 # | echo: false

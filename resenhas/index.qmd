@@ -3,7 +3,7 @@ title: Resenhas
 order: 2
 ---
 
-Índice de todas as resenhas, resumos e dicussões publicadas na pasta `resenhas/`.
+Índice de todas as resenhas, resumos e documentos publicados na pasta `resenhas`.
 
 ```{python}
 # | echo: false

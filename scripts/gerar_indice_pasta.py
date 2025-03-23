@@ -32,6 +32,7 @@ def run(
         rpath = relpath(file, folder, to_path=True)
         ppath = relpath(file, os.environ["QUARTO_PROJECT_ROOT"], to_path=True)
 
+        meta = {}
         if ppath.suffix == ".ipynb":
             with open(ppath) as fd:
                 ipynb = json.load(fd)
@@ -42,6 +43,6 @@ def run(
                 meta, _ = frontmatter.parse(fd.read())
 
         title = meta.get("title", rpath.stem)
-        out.append(f"| {i} | {title} | [{rpath.name}]({rpath}) |")
+        out.append(f"| {i} | {title} | [Ir para {rpath.name}]({rpath}) |")
 
     return out

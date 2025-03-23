@@ -3,7 +3,7 @@ title: Slides
 order: 4
 ---
 
-Índice de todas as apresentações de _slides_ publicadas na pasta `slides/`.
+Índice de todas as apresentações de _slides_ publicadas na pasta `slides`.
 
 ```{python}
 # | echo: false
