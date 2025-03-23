@@ -7,7 +7,7 @@ project:
     browser: false
   render:
     - index.qmd
-    - anotacoes
+    - resenhas
     - notebooks
     - slides
     - meta

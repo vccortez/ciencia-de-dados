@@ -1,14 +1,14 @@
 ---
-title: Anotações
+title: Resenhas
 order: 2
 ---
 
-Índice de todas as anotações, resenhas e dicussões publicadas na pasta `anotacoes/`.
+Índice de todas as resenhas, resumos e dicussões publicadas na pasta `resenhas/`.
 
 ```{python}
 # | echo: false
-# | label: tbl-anotacoes
-# | tbl-cap: Índice de anotações
+# | label: tbl-resenhas
+# | tbl-cap: Índice de resenhas
 from IPython.display import Markdown, display
 
 from scripts import gerar_indice_pasta
