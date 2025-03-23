@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +51,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../meta/plano-de-ensino.pdf" rel="next">
+<link href="../meta/contribuicoes.html" rel="next">
 <link href="../meta/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -112,8 +132,8 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../anotacoes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Anotações</span></a>
+            <a href="../resenhas/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resenhas</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -121,13 +141,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../anotacoes/12_definicao.html" class="sidebar-item-text sidebar-link">
+  <a href="../resenhas/12_definicao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Definição</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../anotacoes/12_relacionados.html" class="sidebar-item-text sidebar-link">
+  <a href="../resenhas/12_relacionados.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Áreas relacionadas</span></a>
   </div>
 </li>
@@ -173,6 +193,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../meta/contribuicoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contribuições</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../meta/plano-de-ensino.pdf" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plano de ensino</span></a>
   </div>
@@ -195,7 +221,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#aulas" id="toc-aulas" class="nav-link active" data-scroll-target="#aulas">Aulas</a></li>
+  <li><a href="#aulas" id="toc-aulas" class="nav-link active" data-scroll-target="#aulas">Aulas</a>
+  <ul class="collapse">
+  <li><a href="#abertura-da-disciplina" id="toc-abertura-da-disciplina" class="nav-link" data-scroll-target="#abertura-da-disciplina">Aula 1: Abertura da disciplina</a></li>
+  <li><a href="#ciência-de-dados" id="toc-ciência-de-dados" class="nav-link" data-scroll-target="#ciência-de-dados">Aula 2: Ciência de dados</a></li>
+  <li><a href="#fundamentos-de-python" id="toc-fundamentos-de-python" class="nav-link" data-scroll-target="#fundamentos-de-python">Aula 3: Fundamentos de Python</a></li>
+  <li><a href="#python-em-computação-científica" id="toc-python-em-computação-científica" class="nav-link" data-scroll-target="#python-em-computação-científica">Aula 4: Python em computação científica</a></li>
+  <li><a href="#bases-de-dados" id="toc-bases-de-dados" class="nav-link" data-scroll-target="#bases-de-dados">Aula 5: Bases de dados</a></li>
+  <li><a href="#manipulação-de-dados" id="toc-manipulação-de-dados" class="nav-link" data-scroll-target="#manipulação-de-dados">Aula 6: Manipulação de dados</a></li>
+  <li><a href="#descoberta-de-dados" id="toc-descoberta-de-dados" class="nav-link" data-scroll-target="#descoberta-de-dados">Aula 7: Descoberta de dados</a></li>
+  <li><a href="#primeira-avaliação" id="toc-primeira-avaliação" class="nav-link" data-scroll-target="#primeira-avaliação">Aula 8: Primeira avaliação</a></li>
+  <li><a href="#amostragem-de-dados" id="toc-amostragem-de-dados" class="nav-link" data-scroll-target="#amostragem-de-dados">Aula 9: Amostragem de dados</a></li>
+  <li><a href="#estatística-descritiva" id="toc-estatística-descritiva" class="nav-link" data-scroll-target="#estatística-descritiva">Aula 10: Estatística descritiva</a></li>
+  <li><a href="#visualização-de-dados" id="toc-visualização-de-dados" class="nav-link" data-scroll-target="#visualização-de-dados">Aula 11: Visualização de dados</a></li>
+  <li><a href="#qualidade-de-dados" id="toc-qualidade-de-dados" class="nav-link" data-scroll-target="#qualidade-de-dados">Aula 12: Qualidade de dados</a></li>
+  <li><a href="#transformação-de-dados" id="toc-transformação-de-dados" class="nav-link" data-scroll-target="#transformação-de-dados">Aula 13: Transformação de dados</a></li>
+  <li><a href="#segunda-avaliação" id="toc-segunda-avaliação" class="nav-link" data-scroll-target="#segunda-avaliação">Aula 14: Segunda avaliação</a></li>
+  <li><a href="#aprendizado-de-máquina" id="toc-aprendizado-de-máquina" class="nav-link" data-scroll-target="#aprendizado-de-máquina">Aula 15: Aprendizado de máquina</a></li>
+  <li><a href="#modelagem-de-dados" id="toc-modelagem-de-dados" class="nav-link" data-scroll-target="#modelagem-de-dados">Aula 16: Modelagem de dados</a></li>
+  <li><a href="#avaliação-de-modelos" id="toc-avaliação-de-modelos" class="nav-link" data-scroll-target="#avaliação-de-modelos">Aula 17: Avaliação de modelos</a></li>
+  <li><a href="#outros-tópicos" id="toc-outros-tópicos" class="nav-link" data-scroll-target="#outros-tópicos">Aula 18: Outros tópicos</a></li>
+  <li><a href="#terceira-avaliação" id="toc-terceira-avaliação" class="nav-link" data-scroll-target="#terceira-avaliação">Aula 19: Terceira avaliação</a></li>
+  <li><a href="#encerramento-da-disciplina" id="toc-encerramento-da-disciplina" class="nav-link" data-scroll-target="#encerramento-da-disciplina">Aula 20: Encerramento da disciplina</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/meta/calendario.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
     </div>
@@ -239,18 +287,10 @@ Tabela&nbsp;1: Calendário de aulas
 </figcaption>
 <div aria-describedby="tbl-datas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output cell-output-display cell-output-markdown" data-execution_count="3">
-<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 5%">
-<col style="width: 16%">
-<col style="width: 48%">
-<col style="width: 14%">
-<col style="width: 14%">
-</colgroup>
+<table class="cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: right;"></th>
-<th style="text-align: center;">Unidade</th>
 <th style="text-align: center;">Tópico</th>
 <th style="text-align: center;">Início</th>
 <th style="text-align: center;">Fim</th>
@@ -259,141 +299,121 @@ Tabela&nbsp;1: Calendário de aulas
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Abertura da disciplina</td>
+<td style="text-align: center;"><a href="#abertura-da-disciplina">Abertura da disciplina</a></td>
 <td style="text-align: center;">10/03/25</td>
 <td style="text-align: center;">17/03/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">2</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Ciência de dados</td>
+<td style="text-align: center;"><a href="#ciência-de-dados">Ciência de dados</a></td>
 <td style="text-align: center;">19/03/25</td>
 <td style="text-align: center;">24/03/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">3</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Bases de dados</td>
+<td style="text-align: center;"><a href="#fundamentos-de-python">Fundamentos de Python</a></td>
 <td style="text-align: center;">26/03/25</td>
 <td style="text-align: center;">26/03/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Fundamentos de Python</td>
+<td style="text-align: center;"><a href="#python-em-computação-científica">Python em computação científica</a></td>
 <td style="text-align: center;">31/03/25</td>
 <td style="text-align: center;">31/03/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">5</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Python em computação científica</td>
+<td style="text-align: center;"><a href="#bases-de-dados">Bases de dados</a></td>
 <td style="text-align: center;">02/04/25</td>
 <td style="text-align: center;">02/04/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Manipulação de dados</td>
+<td style="text-align: center;"><a href="#manipulação-de-dados">Manipulação de dados</a></td>
 <td style="text-align: center;">07/04/25</td>
 <td style="text-align: center;">07/04/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">7</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Descoberta de dados</td>
+<td style="text-align: center;"><a href="#descoberta-de-dados">Descoberta de dados</a></td>
 <td style="text-align: center;">09/04/25</td>
 <td style="text-align: center;">09/04/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">8</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Primeira avaliação</td>
+<td style="text-align: center;"><a href="#primeira-avaliação">Primeira avaliação</a></td>
 <td style="text-align: center;">14/04/25</td>
 <td style="text-align: center;">16/04/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">9</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Amostragem de dados</td>
+<td style="text-align: center;"><a href="#amostragem-de-dados">Amostragem de dados</a></td>
 <td style="text-align: center;">21/04/25</td>
 <td style="text-align: center;">21/04/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">10</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Estatística descritiva</td>
+<td style="text-align: center;"><a href="#estatística-descritiva">Estatística descritiva</a></td>
 <td style="text-align: center;">23/04/25</td>
 <td style="text-align: center;">23/04/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">11</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Visualização de dados</td>
+<td style="text-align: center;"><a href="#visualização-de-dados">Visualização de dados</a></td>
 <td style="text-align: center;">28/04/25</td>
 <td style="text-align: center;">28/04/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">12</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Qualidade de dados</td>
+<td style="text-align: center;"><a href="#qualidade-de-dados">Qualidade de dados</a></td>
 <td style="text-align: center;">30/04/25</td>
 <td style="text-align: center;">30/04/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">13</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Transformação de dados</td>
+<td style="text-align: center;"><a href="#transformação-de-dados">Transformação de dados</a></td>
 <td style="text-align: center;">05/05/25</td>
 <td style="text-align: center;">05/05/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">14</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Segunda avaliação</td>
+<td style="text-align: center;"><a href="#segunda-avaliação">Segunda avaliação</a></td>
 <td style="text-align: center;">07/05/25</td>
 <td style="text-align: center;">12/05/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">15</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Aprendizado de máquina</td>
+<td style="text-align: center;"><a href="#aprendizado-de-máquina">Aprendizado de máquina</a></td>
 <td style="text-align: center;">14/05/25</td>
 <td style="text-align: center;">14/05/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">16</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Modelagem de dados</td>
+<td style="text-align: center;"><a href="#modelagem-de-dados">Modelagem de dados</a></td>
 <td style="text-align: center;">19/05/25</td>
 <td style="text-align: center;">19/05/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">17</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Avaliação de modelos</td>
+<td style="text-align: center;"><a href="#avaliação-de-modelos">Avaliação de modelos</a></td>
 <td style="text-align: center;">21/05/25</td>
 <td style="text-align: center;">21/05/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">18</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Outros tópicos</td>
+<td style="text-align: center;"><a href="#outros-tópicos">Outros tópicos</a></td>
 <td style="text-align: center;">26/05/25</td>
 <td style="text-align: center;">26/05/25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">19</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Terceira avaliação</td>
+<td style="text-align: center;"><a href="#terceira-avaliação">Terceira avaliação</a></td>
 <td style="text-align: center;">28/05/25</td>
 <td style="text-align: center;">02/06/25</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">20</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Encerramento da disciplina</td>
+<td style="text-align: center;"><a href="#encerramento-da-disciplina">Encerramento da disciplina</a></td>
 <td style="text-align: center;">04/06/25</td>
 <td style="text-align: center;">09/07/25</td>
 </tr>
@@ -404,11 +424,157 @@ Tabela&nbsp;1: Calendário de aulas
 </figure>
 </div>
 </div>
+<p>Mais detalhes sobre cada encontro são apresentados nas subseções abaixo.</p>
+<section id="abertura-da-disciplina" class="level3">
+<h3 class="anchored" data-anchor-id="abertura-da-disciplina">Aula 1: Abertura da disciplina</h3>
+<p>Unidade 1: Apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas.</p>
+<p>Data(s) prevista(s): 10/03/2025, 12/03/2025, 17/03/2025.</p>
+<p>Recurso(s) associado(s):</p>
+<ol type="1">
+<li>Recurso – <a href="../slides/11_abertura.html">Apresentação</a></li>
+</ol>
+</section>
+<section id="ciência-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="ciência-de-dados">Aula 2: Ciência de dados</h3>
+<p>Unidade 1: Histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento.</p>
+<p>Principais tópicos abordados: 1. Introdução à ciência de dados, 2. Áreas e termos relacionados, 3. Processos de desenvolvimento.</p>
+<p>Data(s) prevista(s): 19/03/2025, 24/03/2025.</p>
+<p>Recurso(s) associado(s):</p>
+<ol type="1">
+<li><p>Referência – Livro: <span class="citation" data-cites="carvalho:2024:cdfa">(<a href="#ref-carvalho:2024:cdfa" role="doc-biblioref">Carvalho, Menezes, e Bonidia 2024, cap. 1–2</a>)</span></p></li>
+<li><p>Recurso – <a href="../resenhas/12_definicao.html">Definição</a></p></li>
+<li><p>Recurso – <a href="../resenhas/12_relacionados.html">Termos relacionados</a></p></li>
+</ol>
+</section>
+<section id="fundamentos-de-python" class="level3">
+<h3 class="anchored" data-anchor-id="fundamentos-de-python">Aula 3: Fundamentos de Python</h3>
+<p>Unidade 1: Revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade.</p>
+<p>Principais tópicos abordados: 1. Linguagem Python, 2. Ambientes virtuais.</p>
+<p>Data(s) prevista(s): 26/03/2025.</p>
+<p>Recurso(s) associado(s):</p>
+<ol type="1">
+<li>Referência – Livro: <span class="citation" data-cites="carvalho:2024:cdfa">(<a href="#ref-carvalho:2024:cdfa" role="doc-biblioref">Carvalho, Menezes, e Bonidia 2024, cap. 3</a>)</span></li>
+</ol>
+</section>
+<section id="python-em-computação-científica" class="level3">
+<h3 class="anchored" data-anchor-id="python-em-computação-científica">Aula 4: Python em computação científica</h3>
+<p>Unidade 1: Fundamentos; IPython; Jupyter notebooks.</p>
+<p>Principais tópicos abordados: 1. Ambiente de desenvolvimento, 2. IPython, 3. Jupyter Notebooks.</p>
+<p>Data(s) prevista(s): 31/03/2025.</p>
+<p>Recurso(s) associado(s):</p>
+<ol type="1">
+<li>Referência – Livro: <span class="citation" data-cites="vanderplas:2016:python">(<a href="#ref-vanderplas:2016:python" role="doc-biblioref">VanderPlas 2016, cap. 1</a>)</span></li>
+</ol>
+</section>
+<section id="bases-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="bases-de-dados">Aula 5: Bases de dados</h3>
+<p>Unidade 1: Tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares.</p>
+<p>Principais tópicos abordados: 1. Tipos de dados, 2. Fontes de dados, 3. Estrutura de dados.</p>
+<p>Data(s) prevista(s): 02/04/2025.</p>
+</section>
+<section id="manipulação-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="manipulação-de-dados">Aula 6: Manipulação de dados</h3>
+<p>Unidade 1: Dados tabulares; Pandas; DataFrames.</p>
+<p>Principais tópicos abordados: 1. Dados tabulares, 2. Biblioteca Pandas, 3. Planilhas e DataFrame.</p>
+<p>Data(s) prevista(s): 07/04/2025.</p>
+<p>Recurso(s) associado(s):</p>
+<ol type="1">
+<li>Referência – Livro: <span class="citation" data-cites="carvalho:2024:cdfa">(<a href="#ref-carvalho:2024:cdfa" role="doc-biblioref">Carvalho, Menezes, e Bonidia 2024, cap. 4</a>)</span></li>
+</ol>
+</section>
+<section id="descoberta-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="descoberta-de-dados">Aula 7: Descoberta de dados</h3>
+<p>Unidade 1: Seleção; web crawling ou scraping; Requests; BeautifulSoup.</p>
+<p>Principais tópicos abordados: 1. Seleção de dados, 2. Web scraping, 3. Biblioteca BeautifulSoup.</p>
+<p>Data(s) prevista(s): 09/04/2025.</p>
+</section>
+<section id="primeira-avaliação" class="level3">
+<h3 class="anchored" data-anchor-id="primeira-avaliação">Aula 8: Primeira avaliação</h3>
+<p>Unidade 1: Apresentações de bases de dados.</p>
+<p>Data(s) prevista(s): 14/04/2025, 16/04/2025.</p>
+</section>
+<section id="amostragem-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="amostragem-de-dados">Aula 9: Amostragem de dados</h3>
+<p>Unidade 2: População; amostra; representatividade; variabilidade; inferência dedutiva e indutiva.</p>
+<p>Principais tópicos abordados: 1. População e amostra, 2. Representatividade, 3. Tipos de inferência.</p>
+<p>Data(s) prevista(s): 21/04/2025.</p>
+</section>
+<section id="estatística-descritiva" class="level3">
+<h3 class="anchored" data-anchor-id="estatística-descritiva">Aula 10: Estatística descritiva</h3>
+<p>Unidade 2: Fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy.</p>
+<p>Principais tópicos abordados: 1. Escalas de medida, 2. Medições descritivas, 3. Biblioteca NumPy.</p>
+<p>Data(s) prevista(s): 23/04/2025.</p>
+</section>
+<section id="visualização-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="visualização-de-dados">Aula 11: Visualização de dados</h3>
+<p>Unidade 2: Gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD).</p>
+<p>Principais tópicos abordados: 1. Análise exploratória de dados, 2. Gráficos estatísticos, 3. Biblioteca Matplotlib, 4. Biblioteca Seaborn.</p>
+<p>Data(s) prevista(s): 28/04/2025.</p>
+</section>
+<section id="qualidade-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="qualidade-de-dados">Aula 12: Qualidade de dados</h3>
+<p>Unidade 2: Ausências; ruídos; outliers; limpeza.</p>
+<p>Principais tópicos abordados: 1. Dados faltantes, 2. Dados ruidosos, 3. Pontos fora da curva, 4. Dados enviesados, 5. Limpeza de dados.</p>
+<p>Data(s) prevista(s): 30/04/2025.</p>
+</section>
+<section id="transformação-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="transformação-de-dados">Aula 13: Transformação de dados</h3>
+<p>Unidade 2: Conversão de valores; normalização; padronização.</p>
+<p>Principais tópicos abordados: 1. Conversão de dados, 2. Normalização, 3. Padronização.</p>
+<p>Data(s) prevista(s): 05/05/2025.</p>
+</section>
+<section id="segunda-avaliação" class="level3">
+<h3 class="anchored" data-anchor-id="segunda-avaliação">Aula 14: Segunda avaliação</h3>
+<p>Unidade 2: Prova objetiva sobre unidades I e II.</p>
+<p>Data(s) prevista(s): 07/05/2025, 12/05/2025.</p>
+</section>
+<section id="aprendizado-de-máquina" class="level3">
+<h3 class="anchored" data-anchor-id="aprendizado-de-máquina">Aula 15: Aprendizado de máquina</h3>
+<p>Unidade 3: Definições; treinamento.</p>
+<p>Principais tópicos abordados: 1. Modelagem estatística, 2. Tipos de aprendizado, 3. Tarefas de modelagem.</p>
+<p>Data(s) prevista(s): 14/05/2025.</p>
+</section>
+<section id="modelagem-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="modelagem-de-dados">Aula 16: Modelagem de dados</h3>
+<p>Unidade 3: Regressão linear; classificação; agrupamento; algoritmos; SciKit Learn.</p>
+<p>Principais tópicos abordados: 1. Regressão linear, 2. Classificação, 3. Agrupamento, 4. SciKit Learn.</p>
+<p>Data(s) prevista(s): 19/05/2025.</p>
+</section>
+<section id="avaliação-de-modelos" class="level3">
+<h3 class="anchored" data-anchor-id="avaliação-de-modelos">Aula 17: Avaliação de modelos</h3>
+<p>Unidade 3: Métricas de resultados; hiperparâmetros; hipóteses; SciPy.</p>
+<p>Principais tópicos abordados: 1. Métricas avaliativas, 2. Teste de hipóteses, 3. SciPy.</p>
+<p>Data(s) prevista(s): 21/05/2025.</p>
+</section>
+<section id="outros-tópicos" class="level3">
+<h3 class="anchored" data-anchor-id="outros-tópicos">Aula 18: Outros tópicos</h3>
+<p>Unidade 3: Algoritmos bioinspirados; dados não estruturados; ética.</p>
+<p>Principais tópicos abordados: 1. Algoritmos bioinspirados, 2. Hiperparâmetros, 3. Dados não estruturados, 4. Ética.</p>
+<p>Data(s) prevista(s): 26/05/2025.</p>
+</section>
+<section id="terceira-avaliação" class="level3">
+<h3 class="anchored" data-anchor-id="terceira-avaliação">Aula 19: Terceira avaliação</h3>
+<p>Unidade 3: Apresentações dos projetos finais.</p>
+<p>Data(s) prevista(s): 28/05/2025, 02/06/2025.</p>
+</section>
+<section id="encerramento-da-disciplina" class="level3">
+<h3 class="anchored" data-anchor-id="encerramento-da-disciplina">Aula 20: Encerramento da disciplina</h3>
+<p>Unidade 3: Recuperação e exame final.</p>
+<p>Data(s) prevista(s): 04/06/2025, 09/06/2025, 11/06/2025, 16/06/2025, 18/06/2025, 23/06/2025, 25/06/2025, 30/06/2025, 02/07/2025, 07/07/2025, 09/07/2025.</p>
+
 
 
 </section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-carvalho:2024:cdfa" class="csl-entry" role="listitem">
+Carvalho, André C. P. L. F. de, Angelo G. Menezes, e Robson P. Bonidia. 2024. <em>Ci<span>ê</span>ncia de Dados: <span>Fundamentos e Aplica<span>ç</span><span>õ</span>es</span></em>. LTC. <a href="https://books.google.com.br/books?id=HNSn0AEACAAJ">https://books.google.com.br/books?id=HNSn0AEACAAJ</a>.
+</div>
+<div id="ref-vanderplas:2016:python" class="csl-entry" role="listitem">
+VanderPlas, Jake. 2016. <em>Python Data Science Handbook: Essential Tools for Working with Data</em>. O’Reilly Media. <a href="https://books.google.com.br/books?id=dQgGzQEACAAJ">https://books.google.com.br/books?id=dQgGzQEACAAJ</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -984,8 +1150,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../meta/plano-de-ensino.pdf" class="pagination-link" aria-label="Plano de ensino">
-        <span class="nav-page-text">Plano de ensino</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../meta/contribuicoes.html" class="pagination-link" aria-label="Contribuições">
+        <span class="nav-page-text">Contribuições</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

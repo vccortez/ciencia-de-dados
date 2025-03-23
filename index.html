@@ -110,8 +110,8 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./anotacoes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Anotações</span></a>
+            <a href="./resenhas/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resenhas</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -119,13 +119,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anotacoes/12_definicao.html" class="sidebar-item-text sidebar-link">
+  <a href="./resenhas/12_definicao.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Definição</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anotacoes/12_relacionados.html" class="sidebar-item-text sidebar-link">
+  <a href="./resenhas/12_relacionados.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Áreas relacionadas</span></a>
   </div>
 </li>
@@ -171,6 +171,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./meta/contribuicoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contribuições</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./meta/plano-de-ensino.pdf" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plano de ensino</span></a>
   </div>
@@ -188,17 +194,8 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Nesta página</h2>
-   
-  <ul>
-  <li><a href="#ciência-de-dados" id="toc-ciência-de-dados" class="nav-link active" data-scroll-target="#ciência-de-dados">Ciência de Dados</a>
-  <ul class="collapse">
-  <li><a href="#organização-do-projeto" id="toc-organização-do-projeto" class="nav-link" data-scroll-target="#organização-do-projeto">Organização do projeto</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -228,19 +225,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ciência-de-dados" class="level2">
-<h2 class="anchored" data-anchor-id="ciência-de-dados">Ciência de Dados</h2>
-<p>Repositório de recursos da disciplina de Tópicos em Computação Aplicada a Ciência de Dados. Os principais recursos da disciplina serão publicados neste repositório. Um <em>website</em> da disciplina, gerado com a ferramenta <a href="https://quarto.org/">Quarto</a>, está disponível na <a href="https://vccortez.github.io/ciencia-de-dados">página GitHub</a> deste repositório.</p>
-<section id="organização-do-projeto" class="level3">
-<h3 class="anchored" data-anchor-id="organização-do-projeto">Organização do projeto</h3>
 <p>O projeto se encontra no endereço <a href="https://github.com/vccortez/ciencia-de-dados">vccortez/ciencia-de-dados</a>. Os arquivos estão dispostos em pastas principais temáticas para evitar árvores de diretórios complexas. Frequentemente, o nome de arquivos de recursos da disciplina estarão numerados para indicar a qual unidade e aula esse recurso pertence.</p>
-<div id="4bf53ad8" class="cell" data-execution_count="1">
+<div id="d737e390" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-stdout">
 <pre><code>.
-├── anotacoes
-│&nbsp;&nbsp; ├── 12_definicao.qmd
-│&nbsp;&nbsp; ├── 12_relacionados.qmd
-│&nbsp;&nbsp; └── index.qmd
 ├── dados
 │&nbsp;&nbsp; ├── contribuicoes.csv
 │&nbsp;&nbsp; └── datas.csv
@@ -250,9 +238,9 @@ ul.task-list li input[type="checkbox"] {
 ├── meets
 │&nbsp;&nbsp; ├── meet_11_abertura.py
 │&nbsp;&nbsp; ├── meet_12_ciencia.py
-│&nbsp;&nbsp; ├── meet_13_bases.py
-│&nbsp;&nbsp; ├── meet_14_fundamentos.py
-│&nbsp;&nbsp; ├── meet_15_python.py
+│&nbsp;&nbsp; ├── meet_13_fundamentos.py
+│&nbsp;&nbsp; ├── meet_14_ipython.py
+│&nbsp;&nbsp; ├── meet_15_bases.py
 │&nbsp;&nbsp; ├── meet_16_manipulacao.py
 │&nbsp;&nbsp; ├── meet_17_descoberta.py
 │&nbsp;&nbsp; ├── meet_18_avaliacao.py
@@ -273,6 +261,7 @@ ul.task-list li input[type="checkbox"] {
 │&nbsp;&nbsp; ├── biblio.tex
 │&nbsp;&nbsp; ├── bibliografia.bib
 │&nbsp;&nbsp; ├── calendario.qmd
+│&nbsp;&nbsp; ├── contribuicoes.qmd
 │&nbsp;&nbsp; ├── index.qmd
 │&nbsp;&nbsp; ├── plano-de-ensino.qmd
 │&nbsp;&nbsp; ├── references.bib
@@ -286,6 +275,10 @@ ul.task-list li input[type="checkbox"] {
 │&nbsp;&nbsp; ├── resource.py
 │&nbsp;&nbsp; └── topic.py
 ├── notebooks
+│&nbsp;&nbsp; └── index.qmd
+├── resenhas
+│&nbsp;&nbsp; ├── 12_definicao.qmd
+│&nbsp;&nbsp; ├── 12_relacionados.qmd
 │&nbsp;&nbsp; └── index.qmd
 ├── scripts
 │&nbsp;&nbsp; ├── agendador.py
@@ -306,13 +299,11 @@ ul.task-list li input[type="checkbox"] {
 ├── index.qmd
 └── requirements.txt
 
-11 directories, 58 files</code></pre>
+11 directories, 59 files</code></pre>
 </div>
 </div>
 
 
-</section>
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -888,4 +879,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>

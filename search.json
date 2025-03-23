@@ -15,7 +15,7 @@
     "href": "meta/calendario.html#aulas",
     "title": "Calendário",
     "section": "Aulas",
-    "text": "Aulas\nAs aulas iniciam em 10/03/25 e podem se estender até 09/07/25. O calendário de aulas para o plano atual se encontra na Tabela 1.\n\n\n\n\nTabela 1: Calendário de aulas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnidade\nTópico\nInício\nFim\n\n\n\n\n1\n1\nAbertura da disciplina\n10/03/25\n17/03/25\n\n\n2\n1\nCiência de dados\n19/03/25\n24/03/25\n\n\n3\n1\nBases de dados\n26/03/25\n26/03/25\n\n\n4\n1\nFundamentos de Python\n31/03/25\n31/03/25\n\n\n5\n1\nPython em computação científica\n02/04/25\n02/04/25\n\n\n6\n1\nManipulação de dados\n07/04/25\n07/04/25\n\n\n7\n1\nDescoberta de dados\n09/04/25\n09/04/25\n\n\n8\n1\nPrimeira avaliação\n14/04/25\n16/04/25\n\n\n9\n2\nAmostragem de dados\n21/04/25\n21/04/25\n\n\n10\n2\nEstatística descritiva\n23/04/25\n23/04/25\n\n\n11\n2\nVisualização de dados\n28/04/25\n28/04/25\n\n\n12\n2\nQualidade de dados\n30/04/25\n30/04/25\n\n\n13\n2\nTransformação de dados\n05/05/25\n05/05/25\n\n\n14\n2\nSegunda avaliação\n07/05/25\n12/05/25\n\n\n15\n3\nAprendizado de máquina\n14/05/25\n14/05/25\n\n\n16\n3\nModelagem de dados\n19/05/25\n19/05/25\n\n\n17\n3\nAvaliação de modelos\n21/05/25\n21/05/25\n\n\n18\n3\nOutros tópicos\n26/05/25\n26/05/25\n\n\n19\n3\nTerceira avaliação\n28/05/25\n02/06/25\n\n\n20\n3\nEncerramento da disciplina\n04/06/25\n09/07/25",
+    "text": "Aulas\nAs aulas iniciam em 10/03/25 e podem se estender até 09/07/25. O calendário de aulas para o plano atual se encontra na Tabela 1.\n\n\n\n\nTabela 1: Calendário de aulas\n\n\n\n\n\n\n\nTópico\nInício\nFim\n\n\n\n\n1\nAbertura da disciplina\n10/03/25\n17/03/25\n\n\n2\nCiência de dados\n19/03/25\n24/03/25\n\n\n3\nFundamentos de Python\n26/03/25\n26/03/25\n\n\n4\nPython em computação científica\n31/03/25\n31/03/25\n\n\n5\nBases de dados\n02/04/25\n02/04/25\n\n\n6\nManipulação de dados\n07/04/25\n07/04/25\n\n\n7\nDescoberta de dados\n09/04/25\n09/04/25\n\n\n8\nPrimeira avaliação\n14/04/25\n16/04/25\n\n\n9\nAmostragem de dados\n21/04/25\n21/04/25\n\n\n10\nEstatística descritiva\n23/04/25\n23/04/25\n\n\n11\nVisualização de dados\n28/04/25\n28/04/25\n\n\n12\nQualidade de dados\n30/04/25\n30/04/25\n\n\n13\nTransformação de dados\n05/05/25\n05/05/25\n\n\n14\nSegunda avaliação\n07/05/25\n12/05/25\n\n\n15\nAprendizado de máquina\n14/05/25\n14/05/25\n\n\n16\nModelagem de dados\n19/05/25\n19/05/25\n\n\n17\nAvaliação de modelos\n21/05/25\n21/05/25\n\n\n18\nOutros tópicos\n26/05/25\n26/05/25\n\n\n19\nTerceira avaliação\n28/05/25\n02/06/25\n\n\n20\nEncerramento da disciplina\n04/06/25\n09/07/25\n\n\n\n\n\n\n\n\nMais detalhes sobre cada encontro são apresentados nas subseções abaixo.\n\nAula 1: Abertura da disciplina\nUnidade 1: Apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas.\nData(s) prevista(s): 10/03/2025, 12/03/2025, 17/03/2025.\nRecurso(s) associado(s):\n\nRecurso – Apresentação\n\n\n\nAula 2: Ciência de dados\nUnidade 1: Histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento.\nPrincipais tópicos abordados: 1. Introdução à ciência de dados, 2. Áreas e termos relacionados, 3. Processos de desenvolvimento.\nData(s) prevista(s): 19/03/2025, 24/03/2025.\nRecurso(s) associado(s):\n\nReferência – Livro: (Carvalho, Menezes, e Bonidia 2024, cap. 1–2)\nRecurso – Definição\nRecurso – Termos relacionados\n\n\n\nAula 3: Fundamentos de Python\nUnidade 1: Revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade.\nPrincipais tópicos abordados: 1. Linguagem Python, 2. Ambientes virtuais.\nData(s) prevista(s): 26/03/2025.\nRecurso(s) associado(s):\n\nReferência – Livro: (Carvalho, Menezes, e Bonidia 2024, cap. 3)\n\n\n\nAula 4: Python em computação científica\nUnidade 1: Fundamentos; IPython; Jupyter notebooks.\nPrincipais tópicos abordados: 1. Ambiente de desenvolvimento, 2. IPython, 3. Jupyter Notebooks.\nData(s) prevista(s): 31/03/2025.\nRecurso(s) associado(s):\n\nReferência – Livro: (VanderPlas 2016, cap. 1)\n\n\n\nAula 5: Bases de dados\nUnidade 1: Tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares.\nPrincipais tópicos abordados: 1. Tipos de dados, 2. Fontes de dados, 3. Estrutura de dados.\nData(s) prevista(s): 02/04/2025.\n\n\nAula 6: Manipulação de dados\nUnidade 1: Dados tabulares; Pandas; DataFrames.\nPrincipais tópicos abordados: 1. Dados tabulares, 2. Biblioteca Pandas, 3. Planilhas e DataFrame.\nData(s) prevista(s): 07/04/2025.\nRecurso(s) associado(s):\n\nReferência – Livro: (Carvalho, Menezes, e Bonidia 2024, cap. 4)\n\n\n\nAula 7: Descoberta de dados\nUnidade 1: Seleção; web crawling ou scraping; Requests; BeautifulSoup.\nPrincipais tópicos abordados: 1. Seleção de dados, 2. Web scraping, 3. Biblioteca BeautifulSoup.\nData(s) prevista(s): 09/04/2025.\n\n\nAula 8: Primeira avaliação\nUnidade 1: Apresentações de bases de dados.\nData(s) prevista(s): 14/04/2025, 16/04/2025.\n\n\nAula 9: Amostragem de dados\nUnidade 2: População; amostra; representatividade; variabilidade; inferência dedutiva e indutiva.\nPrincipais tópicos abordados: 1. População e amostra, 2. Representatividade, 3. Tipos de inferência.\nData(s) prevista(s): 21/04/2025.\n\n\nAula 10: Estatística descritiva\nUnidade 2: Fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy.\nPrincipais tópicos abordados: 1. Escalas de medida, 2. Medições descritivas, 3. Biblioteca NumPy.\nData(s) prevista(s): 23/04/2025.\n\n\nAula 11: Visualização de dados\nUnidade 2: Gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD).\nPrincipais tópicos abordados: 1. Análise exploratória de dados, 2. Gráficos estatísticos, 3. Biblioteca Matplotlib, 4. Biblioteca Seaborn.\nData(s) prevista(s): 28/04/2025.\n\n\nAula 12: Qualidade de dados\nUnidade 2: Ausências; ruídos; outliers; limpeza.\nPrincipais tópicos abordados: 1. Dados faltantes, 2. Dados ruidosos, 3. Pontos fora da curva, 4. Dados enviesados, 5. Limpeza de dados.\nData(s) prevista(s): 30/04/2025.\n\n\nAula 13: Transformação de dados\nUnidade 2: Conversão de valores; normalização; padronização.\nPrincipais tópicos abordados: 1. Conversão de dados, 2. Normalização, 3. Padronização.\nData(s) prevista(s): 05/05/2025.\n\n\nAula 14: Segunda avaliação\nUnidade 2: Prova objetiva sobre unidades I e II.\nData(s) prevista(s): 07/05/2025, 12/05/2025.\n\n\nAula 15: Aprendizado de máquina\nUnidade 3: Definições; treinamento.\nPrincipais tópicos abordados: 1. Modelagem estatística, 2. Tipos de aprendizado, 3. Tarefas de modelagem.\nData(s) prevista(s): 14/05/2025.\n\n\nAula 16: Modelagem de dados\nUnidade 3: Regressão linear; classificação; agrupamento; algoritmos; SciKit Learn.\nPrincipais tópicos abordados: 1. Regressão linear, 2. Classificação, 3. Agrupamento, 4. SciKit Learn.\nData(s) prevista(s): 19/05/2025.\n\n\nAula 17: Avaliação de modelos\nUnidade 3: Métricas de resultados; hiperparâmetros; hipóteses; SciPy.\nPrincipais tópicos abordados: 1. Métricas avaliativas, 2. Teste de hipóteses, 3. SciPy.\nData(s) prevista(s): 21/05/2025.\n\n\nAula 18: Outros tópicos\nUnidade 3: Algoritmos bioinspirados; dados não estruturados; ética.\nPrincipais tópicos abordados: 1. Algoritmos bioinspirados, 2. Hiperparâmetros, 3. Dados não estruturados, 4. Ética.\nData(s) prevista(s): 26/05/2025.\n\n\nAula 19: Terceira avaliação\nUnidade 3: Apresentações dos projetos finais.\nData(s) prevista(s): 28/05/2025, 02/06/2025.\n\n\nAula 20: Encerramento da disciplina\nUnidade 3: Recuperação e exame final.\nData(s) prevista(s): 04/06/2025, 09/06/2025, 11/06/2025, 16/06/2025, 18/06/2025, 23/06/2025, 25/06/2025, 30/06/2025, 02/07/2025, 07/07/2025, 09/07/2025.",
     "crumbs": [
       "Outros recursos",
       "Calendário"
@@ -26,9 +26,156 @@
     "href": "meta/index.html",
     "title": "Outros recursos",
     "section": "",
-    "text": "Índice de outros recursos publicados.\n\n\n\n\nTabela 1: Índice de recursos\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nCalendário\ncalendario.qmd\n\n\n2\nPlano de ensino\nplano-de-ensino.qmd\n\n\n3\nRoteiro de aulas\nroteiro-de-aulas.md\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
+    "text": "Índice de outros recursos publicados.\n\n\n\n\nTabela 1: Índice de recursos\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nCalendário\nIr para calendario.qmd\n\n\n2\nContribuições\nIr para contribuicoes.qmd\n\n\n3\nPlano de ensino\nIr para plano-de-ensino.qmd\n\n\n4\nRoteiro de aulas\nIr para roteiro-de-aulas.md\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
     "crumbs": [
       "Outros recursos"
+    ]
+  },
+  {
+    "objectID": "meta/roteiro-de-aulas.html",
+    "href": "meta/roteiro-de-aulas.html",
+    "title": "Roteiro de aulas",
+    "section": "",
+    "text": "Rascunho do roteiro de aulas.",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de aulas"
+    ]
+  },
+  {
+    "objectID": "meta/roteiro-de-aulas.html#conteúdos",
+    "href": "meta/roteiro-de-aulas.html#conteúdos",
+    "title": "Roteiro de aulas",
+    "section": "Conteúdos",
+    "text": "Conteúdos\nLista não exaustiva de conteúdos a serem abordados. Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados. É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização mais complexa.\n\nO que é ciência de dados, definições e termos relacionados\nHistória da ciência de dados\nIntrodução ou revisão da linguagem Python\nIPython\nJupyter Notebooks\nTipos de dados, estruturados (tabulares) e “não estruturados”\nNumPy\nPandas\nSciPy\nSciKit Learn\nMatplotlib\nSeaborn\nColeta de dados, web crawling/scraping\nLimpeza de dados, dados incompletos ou ausentes\nDados categóricos vs numéricos e escalas de medida\nEstatísticas descritivas, média, mediana, medidas de dispersão, variância, correlação\nRuídos, outliers\nNormalização de dados\nRedução de dimensionalidade (?)\nVisualização de dados, gráficos de barras, linha, boxplots, histogramas, etc\nAprendizado de máquina (estatístico), supervisionado e não supervisionado\nModelos de regressão e classificação clássicos\nMétricas de avaliação, acurácia, precisão, recall, etc\nK-means\nProjetos de ciência de dados, modelos como CRISP-DM, ZM\nTransformações de dados, combinações, filtros, conversões de valores, normalização, etc\nKNN (?)\nModelos e processamento de dados “não estruturados” como imagens, texto\nRedes neurais, algoritmos genéticos, colônia de formigas, enfim, bioinspirados",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de aulas"
+    ]
+  },
+  {
+    "objectID": "meta/roteiro-de-aulas.html#unidades",
+    "href": "meta/roteiro-de-aulas.html#unidades",
+    "title": "Roteiro de aulas",
+    "section": "Unidades",
+    "text": "Unidades\nDisciplinas são por padrão organizadas em três unidades. Uma unidade pode ser vista como um subconjunto dos assuntos listados seguindo algum tema especificado. Aqui, com base nos assuntos listados, é tomada a decisão de definir como os temas das unidades:\n\nPreparação ou pré-processamento de dados\nAnálise e visualização de dados\nModelagem e aprendizado de máquina\n\nEssa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais estatística e finalizando com um pouco de aprendizado de máquina. Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos.\n\nConteúdos por unidade\nDefinidos os temas das unidades, fica mais fácil selecionar os conteúdos para cada uma. Ignorando a ordem, na primeira unidade, temos:\n\nO que é ciência de dados, definições e termos relacionados\nHistória da ciência de dados\nProcessos de ciência de dados: CRISP-DM, KDD, mineração de dados\nIntrodução ou revisão da linguagem Python\nTipos de dados: categóricos e numéricos\nFormato de dados: dados estruturados e não estruturados, formatos de arquivos\nColeta de dados: bancos de dados ou bases de dados, web crawling ou scraping, criação de bases de dados\nIntrodução a engenharia de dados\nIPython\nJupyter Notebooks\nPandas\n\nNa segunda unidade:\n\nEscalas de medidas: nominal, ordinal, intervalar e racional\nEstatística descritiva: medidas de tendência, frequência, dispersão, distribuição, etc\nCorrelação e covariância\nVisualização de dados: gráficos de barras, dispersão, linhas, histogramas, boxplots\nQualidade de dados: dados ausentes, ruídos e outliers\nTransformação de dados: conversões de valores, normalização\nIntrodução a modelagem de dados\nNumpy\nMatplotlib\nSeaborn\n\nE na terceira unidade:\n\nAprendizado de máquina\nTreinamento supervisionado e não supervisionado\nRegressão linear\nClassificação\nAvaliação de modelos\nAgrupamento: K-means\nAlgoritmos bioinspirados\nProcessamento de imagens e textos\nSciKit Learn\nSciPy",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de aulas"
+    ]
+  },
+  {
+    "objectID": "meta/roteiro-de-aulas.html#aulas",
+    "href": "meta/roteiro-de-aulas.html#aulas",
+    "title": "Roteiro de aulas",
+    "section": "Aulas",
+    "text": "Aulas\nDefinir quais conteúdos se encaixam em cada aula é um pouco mais complexo, já que depende da quantidade de conteúdo abordado para o tempo de exposição e que, neste caso, não há uma experiência prévia para facilitar previsões. Como plano inicial, temos na primeira unidade:\n\nAbertura da disciplina: apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas\nCiência de dados: histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento\nBases de dados: tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares\nFundamentos de Python: revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade\nPython em computação científica: fundamentos; IPython; Jupyter notebooks\nManipulação de dados: dados tabulares; Pandas; DataFrames\nDescoberta de dados: seleção; web crawling ou scraping; Requests\nAvaliação\n\nNa segunda unidade:\n\nAmostragem de dados: população; amostra; representatividade; variabilidade; inferência dedutiva e indutiva\nEstatística descritiva: fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy\nVisualização de dados: gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD)\nQualidade de dados: ausências; ruídos; outliers; limpeza\nTransformação de dados: conversão de valores; normalização; padronização\nAvaliação\n\nNa terceira unidade:\n\nAprendizado de máquina: definições; treinamento\nModelagem de dados: regressão linear; classificação; agrupamento; algoritmos; SciKit Learn\nAvaliação de modelos: métricas de resultados; hiperparâmetros; hipóteses; SciPy\nOutros tópicos: algoritmos bioinspirados; dados não estruturados; ética\nAvaliação\nEncerramento da disciplina: recuperação e exame final",
+    "crumbs": [
+      "Outros recursos",
+      "Roteiro de aulas"
+    ]
+  },
+  {
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "Slides",
+    "section": "",
+    "text": "Índice de todas as apresentações de slides publicadas na pasta slides.\n\n\n\n\nTabela 1: Índice de slides\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nAbertura da disciplina\nIr para 11_abertura.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_relacionados.html",
+    "href": "resenhas/12_relacionados.html",
+    "title": "Áreas relacionadas",
+    "section": "",
+    "text": "Existem várias outras áreas de conhecimento e campos de estudo que também colocam dados e seu processamento nos holofotes. Por exemplo, Big Data e Machine Learning são umas das mais populares. Considerando a ideia difusa de Ciência de Dados,1 é natural que haja alguma confusão e/ou sobreposição entre os tópicos. Aqui, vamos comentar a relação dessas áreas.",
+    "crumbs": [
+      "Resenhas",
+      "Áreas relacionadas"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_relacionados.html#o-que-não-é-ciência-de-dados",
+    "href": "resenhas/12_relacionados.html#o-que-não-é-ciência-de-dados",
+    "title": "Áreas relacionadas",
+    "section": "O que não é Ciência de Dados?",
+    "text": "O que não é Ciência de Dados?\nO sinal de interrogação no título desta seção é proposital. As áreas de conhecimento comentadas aqui apresentam muitas aspectos em comum com a Ciência de Dados, e não tão menos quanto outras, como a Análise de Dados e a própria Estatística, que não serão comentadas aqui. É comum ser questionado se a Ciência de Dados não é apenas mais uma repaginação de inúmeros outros campos mais antigos que combinam engenharia de software com análise de dados (Godsey 2017).\n\nBig Data\nO termo Big Data costuma ser usado tanto para descrever grandes volumes de dados quanto para nomear a área de estudos e tecnologias voltadas a esses dados. Em Carvalho, Menezes, e Bonidia (2024), os autores apresentam Big Data falando sobre os três Vs que caracterizam seu objeto de estudo: dados com grande volume, velocidade e variedade. Os autores também tentam desambiguar Ciência de Dados de Big Data com o entendimento de que o primeiro lida com a formulação de soluções computacionais para transformar, preprocessar, modelar e extrair conhecimento de dados, e o segundo lida com o estudo de tecnologias para coletar, armazenar, processar e transmitir dados. Na minha visão, essa desambiguação não é clara o suficiente.\nÉ possível que Big Data seja usado como sinônimo de Ciência de Dados e as diferenciações variam de autor para autor. Por exemplo, para Kotu e Deshpande (2018), o termo Ciência de Dados engloba as técnicas de processamento de Big Data que, por sua vez, apenas indica grandes volumes de dados. Já em Das (2016), o autor afirma que a Ciência de Dados está além do Big Data por incluir a criação de dados de várias fontes e sua quantificação em informação. Essas visões não são necessariamente contraditórias, mas também não deixam claro quanta sobreposição há entre os termos.\nEm Morettin e Singer (2025), os autores comentam que ter de lidar com grandes volumes de dados não é o suficiente para marcar a divisão entre Ciência de Dados e Estatística. Por outro lado, essa distinção pode ser o suficiente para desambiguar a Ciência de Dados de Big Data. Em outras palavras, pode-se considerar que Big Data engloba o estudo de questões pertinentes para lidar com grandes volumes de dados, ao passo que a Ciência de Dados pode ou não ter de lidar com grandes volumes de dados, a depender do problema em investigação.\n\n\nAprendizagem de Máquina\nDe maneira semelhante à relação com Big Data, a Aprendizagem de Máquina ou Machine Learning pode ser uma ferramenta usada pela Ciência de Dados. Em Kotu e Deshpande (2018), a Ciência de Dados é tratada como um termo guarda-chuva em que os tipos de modelos de aprendizado tipicamente estudados em Machine Learning são vistos como seus subtópicos. Morettin e Singer (2025) também distingue a ideia de aprendizado estatístico do aprendizado automático, ambos termos que podem ser usados para designar Machine Learning.\nVale mencionar que Machine Learning faz parte do Diagrama de Venn da Ciência de Dados. Em seu texto original,2 Drew Conway comenta que conhecimentos de matemática e estatística com computação são os ingredientes para formar Machine Learning, mas não o suficiente para chegar na Ciência de Dados. Este tópico será abordado com mais profundidade em textos futuros.\n\n\nMineração de Dados\nData Mining ou mineração de dados é uma das etapas do processo geral de descoberta de conhecimento em bases de dados3 que, por sua vez, pode ser considerado como um tópico mais específico dentro da grande área de Ciência de Dados. Extração de conhecimento e Data Mining são termos às vezes usados como sinônimos, visto que a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento. Mais detalhes sobre esse processo em si serão apresentados em textos futuros.",
+    "crumbs": [
+      "Resenhas",
+      "Áreas relacionadas"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_relacionados.html#footnotes",
+    "href": "resenhas/12_relacionados.html#footnotes",
+    "title": "Áreas relacionadas",
+    "section": "Notas de rodapé",
+    "text": "Notas de rodapé\n\n\nResenha: Definições de Ciência de Dados↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://www.datascience-pm.com/kdd-and-data-mining↩︎",
+    "crumbs": [
+      "Resenhas",
+      "Áreas relacionadas"
+    ]
+  },
+  {
+    "objectID": "resenhas/index.html",
+    "href": "resenhas/index.html",
+    "title": "Resenhas",
+    "section": "",
+    "text": "Índice de todas as resenhas, resumos e documentos publicados na pasta resenhas.\n\n\n\n\nTabela 1: Índice de resenhas\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nDefinição\nIr para 12_definicao.qmd\n\n\n2\nÁreas relacionadas\nIr para 12_relacionados.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Resenhas"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Início",
+    "section": "",
+    "text": "O projeto se encontra no endereço vccortez/ciencia-de-dados. Os arquivos estão dispostos em pastas principais temáticas para evitar árvores de diretórios complexas. Frequentemente, o nome de arquivos de recursos da disciplina estarão numerados para indicar a qual unidade e aula esse recurso pertence.\n\n\n.\n├── dados\n│   ├── contribuicoes.csv\n│   └── datas.csv\n├── img\n│   ├── logo-ufpi.pdf\n│   └── what-is-ds.png\n├── meets\n│   ├── meet_11_abertura.py\n│   ├── meet_12_ciencia.py\n│   ├── meet_13_fundamentos.py\n│   ├── meet_14_ipython.py\n│   ├── meet_15_bases.py\n│   ├── meet_16_manipulacao.py\n│   ├── meet_17_descoberta.py\n│   ├── meet_18_avaliacao.py\n│   ├── meet_21_amostragem.py\n│   ├── meet_22_estatistica.py\n│   ├── meet_23_visualizacao.py\n│   ├── meet_24_qualidade.py\n│   ├── meet_25_transformacao.py\n│   ├── meet_26_avaliacao.py\n│   ├── meet_31_aprendizado.py\n│   ├── meet_32_modelagem.py\n│   ├── meet_33_metricas.py\n│   ├── meet_34_outros.py\n│   ├── meet_35_avaliacao.py\n│   └── meet_36_encerramento.py\n├── meta\n│   ├── before-title.tex\n│   ├── biblio.tex\n│   ├── bibliografia.bib\n│   ├── calendario.qmd\n│   ├── contribuicoes.qmd\n│   ├── index.qmd\n│   ├── plano-de-ensino.qmd\n│   ├── references.bib\n│   └── roteiro-de-aulas.md\n├── model\n│   ├── course.py\n│   ├── meet.py\n│   ├── module.py\n│   ├── node.py\n│   ├── plan.py\n│   ├── resource.py\n│   └── topic.py\n├── notebooks\n│   └── index.qmd\n├── resenhas\n│   ├── 12_definicao.qmd\n│   ├── 12_relacionados.qmd\n│   └── index.qmd\n├── scripts\n│   ├── agendador.py\n│   ├── extrair_topicos_aulas.js\n│   ├── gerar_indice_pasta.py\n│   ├── gerar_plano_json.py\n│   ├── preencher_topicos_sigaa.js\n│   ├── scrape_sigaa_dates.js\n│   └── util.py\n├── slides\n│   ├── 11_abertura.qmd\n│   └── index.qmd\n├── web\n│   └── styles.css\n├── LICENSE\n├── Makefile\n├── README.md\n├── index.qmd\n└── requirements.txt\n\n11 directories, 59 files\n\n\n\n\n\n De volta ao topo"
+  },
+  {
+    "objectID": "resenhas/12_definicao.html",
+    "href": "resenhas/12_definicao.html",
+    "title": "Definição",
+    "section": "",
+    "text": "Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição objetiva e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.",
+    "crumbs": [
+      "Resenhas",
+      "Definição"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_definicao.html#o-que-é-ciência-de-dados",
+    "href": "resenhas/12_definicao.html#o-que-é-ciência-de-dados",
+    "title": "Definição",
+    "section": "O que é Ciência de Dados",
+    "text": "O que é Ciência de Dados\n“Ciência de Dados” é frequentemente usado como um termo guarda-chuva para múltiplas áreas que estudam dados por meio da computação. No entanto, as definições para o termo podem ser tão diversas quanto as partes interessadas1 nele. A tirinha na Figura 1 ilustra diferentes percepções sobre o termo.\n\n\n\n\n\n\nFigura 1: Estereótipos sobre Ciência de Dados (Godsey 2017, pág. 4)\n\n\n\nParte dessa diversidade de percepções se dá pela popularização do termo “Ciência de Dados”, por vezes visto como mais uma buzzword,2 uma palavra da moda sem um sentido bem definido. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.\n\nHistória e definições\nA história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo Verri (2024), a história do termo inicia nos anos 60 com Peter Naur3 ao sugerir que o termo ciência de dados ou “dadologia” (datalogy) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época (Blum, Hopcroft, e Kannan 2020).\nOs primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística. Por exemplo, Chien-Fu Jeff Wu e William Cleveland, respectivamente, argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos (Carvalho, Menezes, e Bonidia 2024; Morettin e Singer 2025; Verri 2024).\nHá diversos sabores de definição para a Ciência de Dados na literatura. Para Verri (2024), Ciência de Dados é o estudo da extração de conhecimento de fenômenos mensuráveis usando métodos computacionais. Uma definição simples, mas que destaca elementos importantes para a área de estudo que pode ser vista como uma nova disciplina.\nSegundo Carvalho, Menezes, e Bonidia (2024), a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada e voltada à extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas (Morettin e Singer 2025).\nAlguns autores veem a Ciência de Dados mais como um subconjunto de ferramentas da matemática estatística e da computação e menos como uma nova área de conhecimento. Por exemplo, VanderPlas (2016) sugere que o leitor pense sobre Ciência de Dados não como uma nova área de conhecimento, mas sim um conjunto de habilidades interdisciplinares que podem ser aplicadas a qualquer domínio na busca de perguntas e respostas baseadas em dados. Sob esse ponto de vista, o diagrama de Venn de Drew Conway,4 apresentado na Figura 2, costuma ser invocado para ilustrar os ingredientes da Ciência de Dados.\n\n\n\n\n\n\n\n\nFigura 2: Diagrama de Venn de Drew Conway\n\n\n\n\n\nEm resumo, Conway enfatiza que é a combinação dos três conjuntos de habilidades principais que cria um cientista de dados: as habilidades para lidar com tecnologia em que os dados são codificados; os conhecimentos dos métodos para extração de valor desses dados; e uma experiência de domínio substancial voltada à produção de conhecimento. É a este último conjunto de habilidades que Conway atribui o aspecto científico do termo.\nComplementarmente, Godsey (2017) considera que a Ciência de Dados também engloba o conjunto de processos e conceitos que servem de guia para se fazer progresso e tomar decisões em projetos centrados em dados. A diferença entre essa visão e as outras apresentadas anteriormente é sutil e, basicamente, se resume a qual aspecto da Ciência de Dados é julgado mais relevante na visão dos autores, isto é, o conhecimento técnico e teórico versus a mentalidade e a experiência aplicada do cientista de dados, o que vai de encontro à definição de Conway.\nA figura do cientista de dados também é alvo de grandes expectativas de conhecimentos multidisciplinares. Por exemplo, Das (2016) descreve um cientista de dados como “alguém que levanta questões interessantes sobre dados para gerar conhecimento útil” e que é provavelmente “um indivíduo com treinamento em ciência da computação, negócios, economia, estatística, e munido com a quantidade necessária de conhecimento do domínio relevante para o problema em questão.” Em contrapartida, outros autores consideram que essa visão não é realista, configurando o chamado cientista de dados “unicórnio” (Fayyad e Hamutcu 2022).\nIndependentemente da definição, a interdisciplinaridade é sempre um fator atribuído à Ciência de Dados. Visto que não há um consenso na literatura sobre o que a Ciência de Dados engloba, é natural que a definição de um cientista de dados também seja incerta. Parafraseando a frase frequentemente parafraseada de Josh Wills5, “um cientista de dados é uma pessoa que é melhor em estatística do que qualquer engenheiro de software e melhor em engenharia de software do que qualquer estatístico”.",
+    "crumbs": [
+      "Resenhas",
+      "Definição"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_definicao.html#footnotes",
+    "href": "resenhas/12_definicao.html#footnotes",
+    "title": "Definição",
+    "section": "Notas de rodapé",
+    "text": "Notas de rodapé\n\n\nhttps://pt.wikipedia.org/wiki/Stakeholder↩︎\nhttps://en.wikipedia.org/wiki/Buzzword↩︎\nhttps://en.wikipedia.org/wiki/Peter_Naur↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://youtu.be/U8cl693mREc?si=bnC9sHotmkebkSms&t=256↩︎",
+    "crumbs": [
+      "Resenhas",
+      "Definição"
+    ]
+  },
+  {
+    "objectID": "notebooks/index.html",
+    "href": "notebooks/index.html",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Índice de todos os IPython/Jupyter notebooks publicados na pasta notebooks.\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Notebooks"
     ]
   },
   {
@@ -98,157 +245,14 @@
     ]
   },
   {
-    "objectID": "notebooks/index.html",
-    "href": "notebooks/index.html",
-    "title": "Notebooks",
+    "objectID": "meta/contribuicoes.html",
+    "href": "meta/contribuicoes.html",
+    "title": "Contribuições",
     "section": "",
-    "text": "Índice de todos os IPython/Jupyter notebooks publicados na pasta notebooks/.\n\n\n\n De volta ao topo",
-    "crumbs": [
-      "Notebooks"
-    ]
-  },
-  {
-    "objectID": "anotacoes/12_definicao.html",
-    "href": "anotacoes/12_definicao.html",
-    "title": "Definição",
-    "section": "",
-    "text": "Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição simples e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.",
-    "crumbs": [
-      "Anotações",
-      "Definição"
-    ]
-  },
-  {
-    "objectID": "anotacoes/12_definicao.html#o-que-é-ciência-de-dados",
-    "href": "anotacoes/12_definicao.html#o-que-é-ciência-de-dados",
-    "title": "Definição",
-    "section": "O que é Ciência de Dados",
-    "text": "O que é Ciência de Dados\nAs definições para o termo Ciência de Dados são tão diversas quanto as partes interessadas1 nele. A tirinha na Figura 1 ilustra diferentes percepções sobre o termo.\n\n\n\n\n\n\nFigura 1: Estereótipos sobre Ciência de Dados (Godsey 2017, pág. 4)\n\n\n\nParte dessa diversidade de percepções se dá pela popularização do termo “Ciência de Dados”, por vezes visto como mais uma buzzword,2 uma palavra da moda sem sentido específico. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.\n\nHistória e definições\nA história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo Verri (2024), a história do termo inicia nos anos 60 com Peter Naur3 ao sugerir que o termo ciência de dados ou “dadologia” (datalogy) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época (Blum, Hopcroft, e Kannan 2020). Os primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística, como Chien-Fu Jeff Wu e William Cleveland, que respectivamente argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos (Carvalho, Menezes, e Bonidia 2024; Morettin e Singer 2025; Verri 2024).\nSegundo Carvalho, Menezes, e Bonidia (2024), a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada voltada para a extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas (Morettin e Singer 2025).\nAlguns autores veem a Ciência de Dados mais como um subconjunto de ferramentas da matemática estatística e da computação e menos como uma nova área de conhecimento. Por exemplo, VanderPlas (2016) sugere que o leitor pense sobre Ciência de Dados não como uma nova área de conhecimento, mas sim um conjunto de habilidades interdisciplinares que podem ser aplicadas a qualquer domínio na busca de perguntas e respostas baseadas em dados. Sob esse ponto de vista, o diagrama de Venn de Drew Conway,4 apresentado na Figura 2, costuma ser invocado para ilustrar os ingredientes da Ciência de Dados.\n\n\n\n\n\n\n\n\nFigura 2: Diagrama de Venn de Drew Conway\n\n\n\n\n\nEm resumo, Conway enfatiza que é a combinação dos três conjuntos de habilidades principais que cria um cientista de dados: as habilidades para lidar com tecnologia em que os dados são codificados; os conhecimentos dos métodos para extração de valor desses dados; e uma experiência de domínio substancial voltada à produção de conhecimento. É a este último conjunto de habilidades que Conway atribui o aspecto científico do termo.\nComplementarmente, Godsey (2017) considera que a Ciência de Dados também engloba o conjunto de processos e conceitos que servem de guia para se fazer progresso e tomar decisões em projetos centrados em dados. A diferença entre essa visão e as outras apresentadas anteriormente é sutil e, basicamente, se resume a qual aspecto da Ciência de Dados é julgado mais relevante na visão dos autores, isto é, o conhecimento técnico e teórico versus a mentalidade e a experiência aplicada do cientista de dados, o que vai de encontro à definição de Conway.\nA figura do cientista de dados também é alvo de grandes expectativas de conhecimentos multidisciplinares. Por exemplo, Das (2016) descreve um cientista de dados como “alguém que levanta questões interessantes sobre dados para gerar conhecimento útil” e que é provavelmente “um indivíduo com treinamento em ciência da computação, negócios, economia, estatística, e munido com a quantidade necessária de conhecimento do domínio relevante para o problema em questão.” Em contrapartida, outros autores consideram que essa visão não é realista, configurando o chamado cientista de dados “unicórnio” (Fayyad e Hamutcu 2022).\nIndependentemente da definição, a interdisciplinaridade é sempre um fator atribuído à Ciência de Dados. Visto que não há um consenso na literatura sobre o que a Ciência de Dados engloba, é natural que a definição de um cientista de dados também seja incerta. Parafraseando a frase frequentemente parafraseada de Josh Wills5, “um cientista de dados é uma pessoa que é melhor em estatística do que qualquer engenheiro de software e melhor em engenharia de software do que qualquer estatístico”.",
-    "crumbs": [
-      "Anotações",
-      "Definição"
-    ]
-  },
-  {
-    "objectID": "anotacoes/12_definicao.html#footnotes",
-    "href": "anotacoes/12_definicao.html#footnotes",
-    "title": "Definição",
-    "section": "Notas de rodapé",
-    "text": "Notas de rodapé\n\n\nhttps://pt.wikipedia.org/wiki/Stakeholder↩︎\nhttps://en.wikipedia.org/wiki/Buzzword↩︎\nhttps://en.wikipedia.org/wiki/Peter_Naur↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://youtu.be/U8cl693mREc?si=bnC9sHotmkebkSms&t=256↩︎",
-    "crumbs": [
-      "Anotações",
-      "Definição"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Início",
-    "section": "",
-    "text": "Repositório de recursos da disciplina de Tópicos em Computação Aplicada a Ciência de Dados. Os principais recursos da disciplina serão publicados neste repositório. Um website da disciplina, gerado com a ferramenta Quarto, está disponível na página GitHub deste repositório.\n\n\nO projeto se encontra no endereço vccortez/ciencia-de-dados. Os arquivos estão dispostos em pastas principais temáticas para evitar árvores de diretórios complexas. Frequentemente, o nome de arquivos de recursos da disciplina estarão numerados para indicar a qual unidade e aula esse recurso pertence.\n\n\n.\n├── anotacoes\n│   ├── 12_definicao.qmd\n│   ├── 12_relacionados.qmd\n│   └── index.qmd\n├── dados\n│   ├── contribuicoes.csv\n│   └── datas.csv\n├── img\n│   ├── logo-ufpi.pdf\n│   └── what-is-ds.png\n├── meets\n│   ├── meet_11_abertura.py\n│   ├── meet_12_ciencia.py\n│   ├── meet_13_bases.py\n│   ├── meet_14_fundamentos.py\n│   ├── meet_15_python.py\n│   ├── meet_16_manipulacao.py\n│   ├── meet_17_descoberta.py\n│   ├── meet_18_avaliacao.py\n│   ├── meet_21_amostragem.py\n│   ├── meet_22_estatistica.py\n│   ├── meet_23_visualizacao.py\n│   ├── meet_24_qualidade.py\n│   ├── meet_25_transformacao.py\n│   ├── meet_26_avaliacao.py\n│   ├── meet_31_aprendizado.py\n│   ├── meet_32_modelagem.py\n│   ├── meet_33_metricas.py\n│   ├── meet_34_outros.py\n│   ├── meet_35_avaliacao.py\n│   └── meet_36_encerramento.py\n├── meta\n│   ├── before-title.tex\n│   ├── biblio.tex\n│   ├── bibliografia.bib\n│   ├── calendario.qmd\n│   ├── index.qmd\n│   ├── plano-de-ensino.qmd\n│   ├── references.bib\n│   └── roteiro-de-aulas.md\n├── model\n│   ├── course.py\n│   ├── meet.py\n│   ├── module.py\n│   ├── node.py\n│   ├── plan.py\n│   ├── resource.py\n│   └── topic.py\n├── notebooks\n│   └── index.qmd\n├── scripts\n│   ├── agendador.py\n│   ├── extrair_topicos_aulas.js\n│   ├── gerar_indice_pasta.py\n│   ├── gerar_plano_json.py\n│   ├── preencher_topicos_sigaa.js\n│   ├── scrape_sigaa_dates.js\n│   └── util.py\n├── slides\n│   ├── 11_abertura.qmd\n│   └── index.qmd\n├── web\n│   └── styles.css\n├── LICENSE\n├── Makefile\n├── README.md\n├── index.qmd\n└── requirements.txt\n\n11 directories, 58 files"
-  },
-  {
-    "objectID": "index.html#ciência-de-dados",
-    "href": "index.html#ciência-de-dados",
-    "title": "Início",
-    "section": "",
-    "text": "Repositório de recursos da disciplina de Tópicos em Computação Aplicada a Ciência de Dados. Os principais recursos da disciplina serão publicados neste repositório. Um website da disciplina, gerado com a ferramenta Quarto, está disponível na página GitHub deste repositório.\n\n\nO projeto se encontra no endereço vccortez/ciencia-de-dados. Os arquivos estão dispostos em pastas principais temáticas para evitar árvores de diretórios complexas. Frequentemente, o nome de arquivos de recursos da disciplina estarão numerados para indicar a qual unidade e aula esse recurso pertence.\n\n\n.\n├── anotacoes\n│   ├── 12_definicao.qmd\n│   ├── 12_relacionados.qmd\n│   └── index.qmd\n├── dados\n│   ├── contribuicoes.csv\n│   └── datas.csv\n├── img\n│   ├── logo-ufpi.pdf\n│   └── what-is-ds.png\n├── meets\n│   ├── meet_11_abertura.py\n│   ├── meet_12_ciencia.py\n│   ├── meet_13_bases.py\n│   ├── meet_14_fundamentos.py\n│   ├── meet_15_python.py\n│   ├── meet_16_manipulacao.py\n│   ├── meet_17_descoberta.py\n│   ├── meet_18_avaliacao.py\n│   ├── meet_21_amostragem.py\n│   ├── meet_22_estatistica.py\n│   ├── meet_23_visualizacao.py\n│   ├── meet_24_qualidade.py\n│   ├── meet_25_transformacao.py\n│   ├── meet_26_avaliacao.py\n│   ├── meet_31_aprendizado.py\n│   ├── meet_32_modelagem.py\n│   ├── meet_33_metricas.py\n│   ├── meet_34_outros.py\n│   ├── meet_35_avaliacao.py\n│   └── meet_36_encerramento.py\n├── meta\n│   ├── before-title.tex\n│   ├── biblio.tex\n│   ├── bibliografia.bib\n│   ├── calendario.qmd\n│   ├── index.qmd\n│   ├── plano-de-ensino.qmd\n│   ├── references.bib\n│   └── roteiro-de-aulas.md\n├── model\n│   ├── course.py\n│   ├── meet.py\n│   ├── module.py\n│   ├── node.py\n│   ├── plan.py\n│   ├── resource.py\n│   └── topic.py\n├── notebooks\n│   └── index.qmd\n├── scripts\n│   ├── agendador.py\n│   ├── extrair_topicos_aulas.js\n│   ├── gerar_indice_pasta.py\n│   ├── gerar_plano_json.py\n│   ├── preencher_topicos_sigaa.js\n│   ├── scrape_sigaa_dates.js\n│   └── util.py\n├── slides\n│   ├── 11_abertura.qmd\n│   └── index.qmd\n├── web\n│   └── styles.css\n├── LICENSE\n├── Makefile\n├── README.md\n├── index.qmd\n└── requirements.txt\n\n11 directories, 58 files"
-  },
-  {
-    "objectID": "anotacoes/index.html",
-    "href": "anotacoes/index.html",
-    "title": "Anotações",
-    "section": "",
-    "text": "Índice de todas as anotações, resenhas e dicussões publicadas na pasta anotacoes/.\n\n\n\n\nTabela 1: Índice de anotações\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nDefinição\n12_definicao.qmd\n\n\n2\nÁreas relacionadas\n12_relacionados.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
-    "crumbs": [
-      "Anotações"
-    ]
-  },
-  {
-    "objectID": "anotacoes/12_relacionados.html",
-    "href": "anotacoes/12_relacionados.html",
-    "title": "Áreas relacionadas",
-    "section": "",
-    "text": "Existem várias outras áreas de conhecimento e campos de estudo que também colocam dados e seu processamento nos holofotes. Por exemplo, Big Data e Machine Learning são umas das mais populares. Considerando a ideia difusa de Ciência de Dados,1 é natural que haja alguma confusão e/ou sobreposição entre os tópicos. Aqui, vamos comentar a relação dessas áreas.",
-    "crumbs": [
-      "Anotações",
-      "Áreas relacionadas"
-    ]
-  },
-  {
-    "objectID": "anotacoes/12_relacionados.html#o-que-não-é-ciência-de-dados",
-    "href": "anotacoes/12_relacionados.html#o-que-não-é-ciência-de-dados",
-    "title": "Áreas relacionadas",
-    "section": "O que não é Ciência de Dados?",
-    "text": "O que não é Ciência de Dados?\nO sinal de interrogação no título desta seção é proposital. As áreas de conhecimento comentadas aqui apresentam muitas aspectos em comum com a Ciência de Dados, e não tão menos quanto outras, como a Análise de Dados e a própria Estatística, que não serão comentadas aqui. É comum ser discutido na literatura se Ciência de Dados não é apenas um rebrand de inúmeros outros campos mais antigos que combinam engenharia de software com análise de dados (Godsey 2017).\n\nBig Data\nO termo Big Data costuma ser usado tanto para descrever grandes volumes de dados quanto para nomear a área de estudos e tecnologias voltadas a esses dados. Em Carvalho, Menezes, e Bonidia (2024), os autores apresentam Big Data falando sobre os três Vs que caracterizam seu objeto de estudo: dados com grande volume, velocidade e variedade. Os autores também tentam desambiguar Ciência de Dados de Big Data com o entendimento de que o primeiro lida com a formulação de soluções computacionais para transformar, preprocessar, modelar e extrair conhecimento de dados, e o segundo lida com o estudo de tecnologias para coletar, armazenar, processar e transmitir dados. Na minha visão, essa desambiguação não é clara o suficiente.\nÉ possível que Big Data seja usado como sinônimo de Ciência de Dados e as diferenciações variam de autor para autor. Por exemplo, para Kotu e Deshpande (2018), o termo Ciência de Dados engloba as técnicas de processamento de Big Data que, por sua vez, apenas indica grandes volumes de dados. Já em Das (2016), o autor afirma que a Ciência de Dados está além do Big Data por incluir a criação de dados de várias fontes e sua quantificação em informação. Essas visões não são necessariamente contraditórias, mas também não deixam claro quanta sobreposição há entre os termos.\nEm Morettin e Singer (2025), os autores comentam que ter de lidar com grandes volumes de dados não é o suficiente para marcar a divisão entre Ciência de Dados e Estatística. Por outro lado, essa distinção pode ser o suficiente para desambiguar a Ciência de Dados de Big Data. Em outras palavras, pode-se considerar que Big Data engloba o estudo de questões pertinentes para lidar com grandes volumes de dados, ao passo que a Ciência de Dados pode ou não ter de lidar com grandes volumes de dados, a depender do problema em investigação.\n\n\nMachine Learning\nDe maneira semelhante à relação com Big Data, a Aprendizagem de Máquina ou Machine Learning pode ser uma ferramenta usada pela Ciência de Dados. Em Kotu e Deshpande (2018), a Ciência de Dados é tratada como um termo guarda-chuva em que os tipos de modelos de aprendizado tipicamente estudados em Machine Learning são vistos como seus subtópicos. Morettin e Singer (2025) também distingue a ideia de aprendizado estatístico do aprendizado automático, ambos termos que podem ser usados para designar Machine Learning.\nVale mencionar que Machine Learning faz parte do Diagrama de Venn da Ciência de Dados. Em seu texto original,2 Drew Conway comenta que conhecimentos de matemática e estatística com computação são os ingredientes para formar Machine Learning, mas não o suficiente para chegar na Ciência de Dados. Este tópico será abordado com mais profundidade em textos futuros.\n\n\nKDD e Data Mining\nKDD é uma sigla para Knowledge-Discovery in Databases3 ou descoberta de conhecimento em bases de dados. Data Mining ou mineração de dados é uma das etapas do processo genérico de KDD4 que, por sua vez, pode ser considerado como um tópicos mais específico dentro da grande área de Ciência de Dados. KDD e Data Mining são termos às vezes usados como sinônimos, visto que a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento. Mais detalhes sobre esse processo em si serão apresentados em textos futuros.",
-    "crumbs": [
-      "Anotações",
-      "Áreas relacionadas"
-    ]
-  },
-  {
-    "objectID": "anotacoes/12_relacionados.html#footnotes",
-    "href": "anotacoes/12_relacionados.html#footnotes",
-    "title": "Áreas relacionadas",
-    "section": "Notas de rodapé",
-    "text": "Notas de rodapé\n\n\nResenha: Definições de Ciência de Dados↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://pt.wikipedia.org/wiki/Extração_de_conhecimento↩︎\nhttps://www.datascience-pm.com/kdd-and-data-mining↩︎",
-    "crumbs": [
-      "Anotações",
-      "Áreas relacionadas"
-    ]
-  },
-  {
-    "objectID": "slides/index.html",
-    "href": "slides/index.html",
-    "title": "Slides",
-    "section": "",
-    "text": "Índice de todas as apresentações de slides publicadas na pasta slides/.\n\n\n\n\nTabela 1: Índice de slides\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nAbertura da disciplina\n11_abertura.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
-    "crumbs": [
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "meta/roteiro-de-aulas.html",
-    "href": "meta/roteiro-de-aulas.html",
-    "title": "Roteiro de aulas",
-    "section": "",
-    "text": "Rascunho do roteiro de aulas.",
+    "text": "Lista de contribuições por identificador. Interessados em contribuir com as aulas e repositório são encorajados a deixar um breve registro de cada contribuição no arquivo em dados/contribuicoes.csv.\n\n\n\n\nTabela 1: Ranking de contribuições\n\n\n\n\n\n\n\n\n\n\nQuantidade de contribuições\nData mediana\nHorário médio\n\n\nid\n\n\n\n\n\n\n\n37417\n4\n2025-03-19\n19:03:15\n\n\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
     "crumbs": [
       "Outros recursos",
-      "Roteiro de aulas"
-    ]
-  },
-  {
-    "objectID": "meta/roteiro-de-aulas.html#conteúdos",
-    "href": "meta/roteiro-de-aulas.html#conteúdos",
-    "title": "Roteiro de aulas",
-    "section": "Conteúdos",
-    "text": "Conteúdos\nLista não exaustiva de conteúdos a serem abordados. Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados. É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização mais complexa.\n\nO que é ciência de dados, definições e termos relacionados\nHistória da ciência de dados\nIntrodução ou revisão da linguagem Python\nIPython\nJupyter Notebooks\nTipos de dados, estruturados (tabulares) e “não estruturados”\nNumPy\nPandas\nSciPy\nSciKit Learn\nMatplotlib\nSeaborn\nColeta de dados, web crawling/scraping\nLimpeza de dados, dados incompletos ou ausentes\nDados categóricos vs numéricos e escalas de medida\nEstatísticas descritivas, média, mediana, medidas de dispersão, variância, correlação\nRuídos, outliers\nNormalização de dados\nRedução de dimensionalidade (?)\nVisualização de dados, gráficos de barras, linha, boxplots, histogramas, etc\nAprendizado de máquina (estatístico), supervisionado e não supervisionado\nModelos de regressão e classificação clássicos\nMétricas de avaliação, acurácia, precisão, recall, etc\nK-means\nProjetos de ciência de dados, modelos como CRISP-DM, ZM\nTransformações de dados, combinações, filtros, conversões de valores, normalização, etc\nKNN (?)\nModelos e processamento de dados “não estruturados” como imagens, texto\nRedes neurais, algoritmos genéticos, colônia de formigas, enfim, bioinspirados",
-    "crumbs": [
-      "Outros recursos",
-      "Roteiro de aulas"
-    ]
-  },
-  {
-    "objectID": "meta/roteiro-de-aulas.html#unidades",
-    "href": "meta/roteiro-de-aulas.html#unidades",
-    "title": "Roteiro de aulas",
-    "section": "Unidades",
-    "text": "Unidades\nDisciplinas são por padrão organizadas em três unidades. Uma unidade pode ser vista como um subconjunto dos assuntos listados seguindo algum tema especificado. Aqui, com base nos assuntos listados, é tomada a decisão de definir como os temas das unidades:\n\nPreparação ou pré-processamento de dados\nAnálise e visualização de dados\nModelagem e aprendizado de máquina\n\nEssa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais estatística e finalizando com um pouco de aprendizado de máquina. Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos.\n\nConteúdos por unidade\nDefinidos os temas das unidades, fica mais fácil selecionar os conteúdos para cada uma. Ignorando a ordem, na primeira unidade, temos:\n\nO que é ciência de dados, definições e termos relacionados\nHistória da ciência de dados\nProcessos de ciência de dados: CRISP-DM, KDD, mineração de dados\nIntrodução ou revisão da linguagem Python\nTipos de dados: categóricos e numéricos\nFormato de dados: dados estruturados e não estruturados, formatos de arquivos\nColeta de dados: bancos de dados ou bases de dados, web crawling ou scraping, criação de bases de dados\nIntrodução a engenharia de dados\nIPython\nJupyter Notebooks\nPandas\n\nNa segunda unidade:\n\nEscalas de medidas: nominal, ordinal, intervalar e racional\nEstatística descritiva: medidas de tendência, frequência, dispersão, distribuição, etc\nCorrelação e covariância\nVisualização de dados: gráficos de barras, dispersão, linhas, histogramas, boxplots\nQualidade de dados: dados ausentes, ruídos e outliers\nTransformação de dados: conversões de valores, normalização\nIntrodução a modelagem de dados\nNumpy\nMatplotlib\nSeaborn\n\nE na terceira unidade:\n\nAprendizado de máquina\nTreinamento supervisionado e não supervisionado\nRegressão linear\nClassificação\nAvaliação de modelos\nAgrupamento: K-means\nAlgoritmos bioinspirados\nProcessamento de imagens e textos\nSciKit Learn\nSciPy",
-    "crumbs": [
-      "Outros recursos",
-      "Roteiro de aulas"
-    ]
-  },
-  {
-    "objectID": "meta/roteiro-de-aulas.html#aulas",
-    "href": "meta/roteiro-de-aulas.html#aulas",
-    "title": "Roteiro de aulas",
-    "section": "Aulas",
-    "text": "Aulas\nDefinir quais conteúdos se encaixam em cada aula é um pouco mais complexo, já que depende da quantidade de conteúdo abordado para o tempo de exposição e que, neste caso, não há uma experiência prévia para facilitar previsões. Como plano inicial, temos na primeira unidade:\n\nAbertura da disciplina: apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas\nCiência de dados: histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento\nBases de dados: tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares\nFundamentos de Python: revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade\nPython em computação científica: fundamentos; IPython; Jupyter notebooks\nManipulação de dados: dados tabulares; Pandas; DataFrames\nDescoberta de dados: seleção; web crawling ou scraping; Requests\nAvaliação\n\nNa segunda unidade:\n\nAmostragem de dados: população; amostra; representatividade; variabilidade; inferência dedutiva e indutiva\nEstatística descritiva: fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy\nVisualização de dados: gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD)\nQualidade de dados: ausências; ruídos; outliers; limpeza\nTransformação de dados: conversão de valores; normalização; padronização\nAvaliação\n\nNa terceira unidade:\n\nAprendizado de máquina: definições; treinamento\nModelagem de dados: regressão linear; classificação; agrupamento; algoritmos; SciKit Learn\nAvaliação de modelos: métricas de resultados; hiperparâmetros; hipóteses; SciPy\nOutros tópicos: algoritmos bioinspirados; dados não estruturados; ética\nAvaliação\nEncerramento da disciplina: recuperação e exame final",
-    "crumbs": [
-      "Outros recursos",
-      "Roteiro de aulas"
+      "Contribuições"
     ]
   }
 ]
