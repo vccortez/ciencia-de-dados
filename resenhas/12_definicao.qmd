@@ -1,6 +1,6 @@
 ---
 title: Definição
-order: 12
+order: 121
 keywords:
     - Ciência de Dados
     - Introdução
@@ -8,27 +8,36 @@ keywords:
     - História
 ---
 
-Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição simples e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.
+Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição objetiva e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.
 
 ## O que é Ciência de Dados
 
-As definições para o termo Ciência de Dados são tão diversas quanto as partes interessadas[^1] nele. A tirinha na @fig-what-is-ds ilustra diferentes percepções sobre o termo.
+"Ciência de Dados" é frequentemente usado como um termo guarda-chuva para múltiplas áreas que estudam dados por meio da computação.
+No entanto, as definições para o termo podem ser tão diversas quanto as partes interessadas[^1] nele.
+A tirinha na @fig-what-is-ds ilustra diferentes percepções sobre o termo.
 
 [^1]: <https://pt.wikipedia.org/wiki/Stakeholder>
 
 ![Estereótipos sobre Ciência de Dados [@godsey:2017:think, pág. 4]](../img/what-is-ds.png){#fig-what-is-ds fig-scap="Estereótipos sobre Ciência de Dados" fig-align="center" width="80%"}
 
-Parte dessa diversidade de percepções se dá pela popularização do termo "Ciência de Dados", por vezes visto como mais uma *buzzword*,[^2] uma palavra da moda sem sentido específico. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.
+Parte dessa diversidade de percepções se dá pela popularização do termo "Ciência de Dados", por vezes visto como mais uma *buzzword*,[^2] uma palavra da moda sem um sentido bem definido. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.
 
 [^2]: <https://en.wikipedia.org/wiki/Buzzword>
 
 ### História e definições
 
-A história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo @verri:2024:dsp, a história do termo inicia nos anos 60 com Peter Naur[^3] ao sugerir que o termo ciência de dados ou "dadologia" (*datalogy*) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época [@blum:2020:foundations]. Os primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística, como Chien-Fu Jeff Wu e William Cleveland, que respectivamente argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos [@carvalho:2024:cdfa; @morettin:2025:estatistica; @verri:2024:dsp].
+A história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo @verri:2024:dsp, a história do termo inicia nos anos 60 com Peter Naur[^3] ao sugerir que o termo ciência de dados ou "dadologia" (*datalogy*) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época [@blum:2020:foundations].
+
+Os primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística.
+Por exemplo, Chien-Fu Jeff Wu e William Cleveland, respectivamente, argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos [@carvalho:2024:cdfa; @morettin:2025:estatistica; @verri:2024:dsp].
 
 [^3]: <https://en.wikipedia.org/wiki/Peter_Naur>
 
-Segundo @carvalho:2024:cdfa, a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada voltada para a extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas [@morettin:2025:estatistica].
+Há diversos sabores de definição para a Ciência de Dados na literatura.
+Para @verri:2024:dsp, Ciência de Dados é o estudo da extração de conhecimento de fenômenos mensuráveis usando métodos computacionais.
+Uma definição simples, mas que destaca elementos importantes para a área de estudo que pode ser vista como uma nova disciplina.
+
+Segundo @carvalho:2024:cdfa, a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada e voltada à extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas [@morettin:2025:estatistica].
 
 Alguns autores veem a Ciência de Dados mais como um subconjunto de ferramentas da matemática estatística e da computação e menos como uma nova área de conhecimento. Por exemplo, @vanderplas:2016:python sugere que o leitor pense sobre Ciência de Dados não como uma nova área de conhecimento, mas sim um conjunto de habilidades interdisciplinares que podem ser aplicadas a qualquer domínio na busca de perguntas e respostas baseadas em dados. Sob esse ponto de vista, o diagrama de Venn de Drew Conway,[^4] apresentado na @fig-venn-diagram, costuma ser invocado para ilustrar os ingredientes da Ciência de Dados.
 

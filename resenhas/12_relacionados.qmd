@@ -1,6 +1,6 @@
 ---
 title: Áreas relacionadas
-order: 12
+order: 122
 keywords:
     - Big Data
     - Machine Learning
@@ -19,7 +19,7 @@ Aqui, vamos comentar a relação dessas áreas.
 
 O sinal de interrogação no título desta seção é proposital.
 As áreas de conhecimento comentadas aqui apresentam muitas aspectos em comum com a Ciência de Dados, e não tão menos quanto outras, como a Análise de Dados e a própria Estatística, que não serão comentadas aqui.
-É comum ser discutido na literatura se Ciência de Dados não é apenas um _rebrand_ de inúmeros outros campos mais antigos que combinam engenharia de _software_ com análise de dados [@godsey:2017:think].
+É comum ser questionado se a Ciência de Dados não é apenas mais uma repaginação de inúmeros outros campos mais antigos que combinam engenharia de _software_ com análise de dados [@godsey:2017:think].
 
 ### Big Data
 
@@ -37,7 +37,7 @@ Em @morettin:2025:estatistica, os autores comentam que ter de lidar com grandes 
 Por outro lado, essa distinção pode ser o suficiente para desambiguar a Ciência de Dados de _Big Data_.
 Em outras palavras, pode-se considerar que _Big Data_ engloba o estudo de questões pertinentes para lidar com grandes volumes de dados, ao passo que a Ciência de Dados pode ou não ter de lidar com grandes volumes de dados, a depender do problema em investigação.
 
-### Machine Learning
+### Aprendizagem de Máquina
 
 De maneira semelhante à relação com _Big Data_, a Aprendizagem de Máquina ou _Machine Learning_ pode ser uma ferramenta usada pela Ciência de Dados.
 Em @kotu:2018:data, a Ciência de Dados é tratada como um termo guarda-chuva em que os tipos de modelos de aprendizado tipicamente estudados em _Machine Learning_ são vistos como seus subtópicos.
@@ -49,11 +49,10 @@ Este tópico será abordado com mais profundidade em textos futuros.
 
 [^drew]: <http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram>
 
-### KDD e Data Mining
+### Mineração de Dados
 
-KDD é uma sigla para _Knowledge-Discovery in Databases_[^kdd] ou descoberta de conhecimento em bases de dados.
-_Data Mining_ ou mineração de dados é uma das etapas do processo genérico de KDD[^dm] que, por sua vez, pode ser considerado como um tópicos mais específico dentro da grande área de Ciência de Dados.
-KDD e _Data Mining_ são termos às vezes usados como sinônimos, visto que a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento.
+_Data Mining_ ou mineração de dados é uma das etapas do processo geral de descoberta de conhecimento em bases de dados[^dm] que, por sua vez, pode ser considerado como um tópico mais específico dentro da grande área de Ciência de Dados.
+Extração de conhecimento e _Data Mining_ são termos às vezes usados como sinônimos, visto que a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento.
 Mais detalhes sobre esse processo em si serão apresentados em textos futuros.
 
 [^kdd]: <https://pt.wikipedia.org/wiki/Extração_de_conhecimento>
