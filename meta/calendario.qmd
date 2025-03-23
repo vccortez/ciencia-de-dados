@@ -39,12 +39,10 @@ meets_with_dates = agendador.assign_meet_dates(meets, dates)
 
 # formatação da saída
 json_meets = [m.model_dump() for m in meets_with_dates]
-cols = ["unidade", "topico", "inicio", "fim"]
+cols = ["topico", "inicio", "fim"]
 df = pd.DataFrame.from_dict(json_meets)
 
-df["topico"] = df["title"]
-
-df["unidade"] = df["module_number"]
+df["topico"] = "[" + df["title"] + "](#" + df["title"].replace(" ", "-", regex=True).str.lower() + ")"
 
 df["inicio"] = pd.to_datetime(df["start_date"]).dt.strftime("%d/%m/%y")
 
@@ -55,9 +53,56 @@ Markdown(
     df[cols]
     .set_index(df.index + 1)
     .to_markdown(
-        headers=["Unidade", "Tópico", "Início", "Fim"],
-        colalign=["right", "center", "center", "center", "center"],
+        headers=["Tópico", "Início", "Fim"],
+        colalign=["right", "center", "center", "center"],
     )
 )
+
+```
+
+Mais detalhes sobre cada encontro são apresentados nas subseções abaixo.
+
+```{python}
+# | echo: false
+# | output: asis
+
+import os
+from model import Resource
+from scripts.util import relpath
+
+for i, meet in enumerate(meets_with_dates, start=1):
+    slug = meet.title.lower().replace(" ", "-")
+    print(f"### Aula {i}: {meet.title} {{#{slug}}}")
+
+    if meet.description and meet.module_number:
+        print(f"Unidade {meet.module_number}:", meet.description + ".", "\n")
+
+    if meet.topics and len(meet.topics) > 0:
+        topicos = [f"{i}. {t}" for i, t in enumerate(meet.topics, start=1)]
+        print("Principais tópicos abordados:", ", ".join(topicos) + ".", "\n")
+
+    if meet.dates and len(meet.dates) > 0:
+        datas = [d.strftime("%d/%m/%Y") for d in meet.dates]
+        print("Data(s) prevista(s):", ", ".join(datas) + ".", "\n")
+
+    if meet.resources and len(meet.resources) > 0:
+        print("Recurso(s) associado(s):\n")
+        for i, r in enumerate(meet.resources, start=1):
+            if type(r) == Resource:
+                if r.kind == "file":
+                    fpath = relpath(
+                        r.value, os.environ["QUARTO_DOCUMENT_PATH"], to_path=True
+                    )
+                    print("1. Recurso --", f"[{r.title}]({fpath})", "\n")
+                elif r.kind == "bib":
+                    print("1. Referência --", f"{r.title}: {r.value}", "\n")
+                elif r.kind == "text":
+                    print("1.", f"{r.title} -- {r.value}", "\n")
+                elif r.kind == "video":
+                    print("1.", "Vídeo --", f"[{r.title}]({r.value})", "\n")
+                else:
+                    print("1.", "Link --", f"[{r.title}]({r.value})", "\n")
+            else:
+                print("1. Outros --", r)
 
 ```
