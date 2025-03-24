@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vitor Cortez">
+<meta name="keywords" content="Processos, Prática, Projetos, CRISP-DM, KDD">
 
-<title>Roteiro de aulas – Ciência de Dados</title>
+<title>Processos – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +52,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../meta/plano-de-ensino.pdf" rel="prev">
+<link href="../notebooks/index.html" rel="next">
+<link href="../resenhas/12_relacionados.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -97,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../meta/index.html">Outros recursos</a></li><li class="breadcrumb-item"><a href="../meta/roteiro-de-aulas.html">Roteiro de aulas</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resenhas/index.html">Resenhas</a></li><li class="breadcrumb-item"><a href="../resenhas/12_processos.html">Processos</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -113,11 +135,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../resenhas/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resenhas</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resenhas/12_definicao.html" class="sidebar-item-text sidebar-link">
@@ -132,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resenhas/12_processos.html" class="sidebar-item-text sidebar-link">
+  <a href="../resenhas/12_processos.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Processos</span></a>
   </div>
 </li>
@@ -165,11 +187,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../meta/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Outros recursos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../meta/calendario.html" class="sidebar-item-text sidebar-link">
@@ -190,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../meta/roteiro-de-aulas.html" class="sidebar-item-text sidebar-link active">
+  <a href="../meta/roteiro-de-aulas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Roteiro de aulas</span></a>
   </div>
 </li>
@@ -206,21 +228,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#conteúdos" id="toc-conteúdos" class="nav-link active" data-scroll-target="#conteúdos">Conteúdos</a></li>
-  <li><a href="#unidades" id="toc-unidades" class="nav-link" data-scroll-target="#unidades">Unidades</a>
+  <li><a href="#como-fazer-ciência-de-dados" id="toc-como-fazer-ciência-de-dados" class="nav-link active" data-scroll-target="#como-fazer-ciência-de-dados">Como fazer Ciência de Dados</a>
   <ul class="collapse">
-  <li><a href="#conteúdos-por-unidade" id="toc-conteúdos-por-unidade" class="nav-link" data-scroll-target="#conteúdos-por-unidade">Conteúdos por unidade</a></li>
+  <li><a href="#crisp-dm" id="toc-crisp-dm" class="nav-link" data-scroll-target="#crisp-dm">CRISP-DM</a></li>
+  <li><a href="#outros-processos" id="toc-outros-processos" class="nav-link" data-scroll-target="#outros-processos">Outros processos</a></li>
   </ul></li>
-  <li><a href="#aulas" id="toc-aulas" class="nav-link" data-scroll-target="#aulas">Aulas</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/meta/roteiro-de-aulas.md" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/resenhas/12_processos.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../meta/index.html">Outros recursos</a></li><li class="breadcrumb-item"><a href="../meta/roteiro-de-aulas.html">Roteiro de aulas</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resenhas/index.html">Resenhas</a></li><li class="breadcrumb-item"><a href="../resenhas/12_processos.html">Processos</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Roteiro de aulas</h1>
+<h1 class="title">Processos</h1>
 </div>
 
 
@@ -239,135 +260,171 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Palavras-chave</div>
+    <p>Processos, Prática, Projetos, CRISP-DM, KDD</p>
+  </div>
+</div>
 
 </header>
 
 
-<p>Rascunho do roteiro de aulas.</p>
-<section id="conteúdos" class="level2">
-<h2 class="anchored" data-anchor-id="conteúdos">Conteúdos</h2>
-<p>Lista não exaustiva de conteúdos a serem abordados. Os conteúdos listados aqui não precisam estar em ordem nem hierarquizados. É mais fácil listar o que apresentar antes de fazer qualquer tipo de organização mais complexa.</p>
-<ol type="1">
-<li>O que é ciência de dados, definições e termos relacionados</li>
-<li>História da ciência de dados</li>
-<li>Introdução ou revisão da linguagem Python</li>
-<li>IPython</li>
-<li>Jupyter Notebooks</li>
-<li>Tipos de dados, estruturados (tabulares) e “não estruturados”</li>
-<li>NumPy</li>
-<li>Pandas</li>
-<li>SciPy</li>
-<li>SciKit Learn</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-<li>Coleta de dados, web crawling/scraping</li>
-<li>Limpeza de dados, dados incompletos ou ausentes</li>
-<li>Dados categóricos vs numéricos e escalas de medida</li>
-<li>Estatísticas descritivas, média, mediana, medidas de dispersão, variância, correlação</li>
-<li>Ruídos, outliers</li>
-<li>Normalização de dados</li>
-<li>Redução de dimensionalidade (?)</li>
-<li>Visualização de dados, gráficos de barras, linha, boxplots, histogramas, etc</li>
-<li>Aprendizado de máquina (estatístico), supervisionado e não supervisionado</li>
-<li>Modelos de regressão e classificação clássicos</li>
-<li>Métricas de avaliação, acurácia, precisão, recall, etc</li>
-<li>K-means</li>
-<li>Projetos de ciência de dados, modelos como CRISP-DM, ZM</li>
-<li>Transformações de dados, combinações, filtros, conversões de valores, normalização, etc</li>
-<li>KNN (?)</li>
-<li>Modelos e processamento de dados “não estruturados” como imagens, texto</li>
-<li>Redes neurais, algoritmos genéticos, colônia de formigas, enfim, bioinspirados</li>
-</ol>
+<p>Visto <a href="../resenhas/12_definicao.html">o que é</a> e <a href="../resenhas/12_relacionados.html">o que não é</a> Ciência de Dados, resta saber como conduzir um projeto centrado em dados.</p>
+<section id="como-fazer-ciência-de-dados" class="level2">
+<h2 class="anchored" data-anchor-id="como-fazer-ciência-de-dados">Como fazer Ciência de Dados</h2>
+<p>Simplificando, projetos de Ciência de Dados buscam extrair conhecimento de conjuntos de dados para atingir algum objetivo. Para isso, a literatura apresenta diversos <em>processos</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> que descrevem como isso pode ser feito.</p>
+<section id="crisp-dm" class="level3">
+<h3 class="anchored" data-anchor-id="crisp-dm">CRISP-DM</h3>
+<p>O padrão de processo interindustrial para mineração de dados (do inglês <em>cross-industry standard process for data mining</em>) ou CRISP-DM<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> é uma das abordagens mais conhecidas para organizar projetos de mineração de dados. Trata-se de um processo cíclico e centrado nos dados que envolve 6 (seis) etapas, conforme ilustradas na <a href="#fig-crisp-dm" class="quarto-xref">Figura&nbsp;1</a>.</p>
+<div id="fig-crisp-dm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crisp-dm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 339.78 262.80" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 258.8)">
+<title>CRISPDM</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-258.8 335.78,-258.8 335.78,4 -4,4"></polygon>
+<!-- d -->
+<g id="node1" class="node">
+<title>d</title>
+<ellipse fill="none" stroke="black" cx="186.61" cy="-146.68" rx="35.92" ry="35.92"></ellipse>
+<text text-anchor="middle" x="186.61" y="-142.48" font-family="Times,serif" font-size="14.00">Dados</text>
+</g>
+<!-- p1 -->
+<g id="node2" class="node">
+<title>p1</title>
+<path fill="none" stroke="black" d="M122.63,-240.12C122.63,-240.12 52.55,-240.12 52.55,-240.12 46.55,-240.12 40.55,-234.12 40.55,-228.12 40.55,-228.12 40.55,-210.91 40.55,-210.91 40.55,-204.91 46.55,-198.91 52.55,-198.91 52.55,-198.91 122.63,-198.91 122.63,-198.91 128.63,-198.91 134.63,-204.91 134.63,-210.91 134.63,-210.91 134.63,-228.12 134.63,-228.12 134.63,-234.12 128.63,-240.12 122.63,-240.12"></path>
+<text text-anchor="middle" x="87.59" y="-223.72" font-family="Times,serif" font-size="14.00">Entendimento</text>
+<text text-anchor="middle" x="87.59" y="-206.92" font-family="Times,serif" font-size="14.00">do negócio</text>
+</g>
+<!-- p2 -->
+<g id="node3" class="node">
+<title>p2</title>
+<path fill="none" stroke="black" d="M234.88,-254.6C234.88,-254.6 164.8,-254.6 164.8,-254.6 158.8,-254.6 152.8,-248.6 152.8,-242.6 152.8,-242.6 152.8,-225.4 152.8,-225.4 152.8,-219.4 158.8,-213.4 164.8,-213.4 164.8,-213.4 234.88,-213.4 234.88,-213.4 240.88,-213.4 246.88,-219.4 246.88,-225.4 246.88,-225.4 246.88,-242.6 246.88,-242.6 246.88,-248.6 240.88,-254.6 234.88,-254.6"></path>
+<text text-anchor="middle" x="199.84" y="-238.2" font-family="Times,serif" font-size="14.00">Entendimento</text>
+<text text-anchor="middle" x="199.84" y="-221.4" font-family="Times,serif" font-size="14.00">dos dados</text>
+</g>
+<!-- p1&#45;&gt;p2 -->
+<g id="edge1" class="edge">
+<title>p1-&gt;p2</title>
+<path fill="none" stroke="black" d="M134.66,-232.33C137.27,-232.71 139.89,-233.07 142.53,-233.41"></path>
+<polygon fill="black" stroke="black" points="142.3,-236.91 152.65,-234.62 143.13,-229.96 142.3,-236.91"></polygon>
+</g>
+<!-- p2&#45;&gt;p1 -->
+<g id="edge2" class="edge">
+<title>p2-&gt;p1</title>
+<path fill="none" stroke="black" d="M152.77,-221.18C150.16,-220.81 147.54,-220.45 144.9,-220.11"></path>
+<polygon fill="black" stroke="black" points="145.13,-216.61 134.78,-218.89 144.3,-223.56 145.13,-216.61"></polygon>
+</g>
+<!-- p3 -->
+<g id="node4" class="node">
+<title>p3</title>
+<path fill="none" stroke="black" d="M319.66,-189.05C319.66,-189.05 264.15,-189.05 264.15,-189.05 258.15,-189.05 252.15,-183.05 252.15,-177.05 252.15,-177.05 252.15,-159.85 252.15,-159.85 252.15,-153.85 258.15,-147.85 264.15,-147.85 264.15,-147.85 319.66,-147.85 319.66,-147.85 325.66,-147.85 331.66,-153.85 331.66,-159.85 331.66,-159.85 331.66,-177.05 331.66,-177.05 331.66,-183.05 325.66,-189.05 319.66,-189.05"></path>
+<text text-anchor="middle" x="291.9" y="-172.65" font-family="Times,serif" font-size="14.00">Preparação</text>
+<text text-anchor="middle" x="291.9" y="-155.85" font-family="Times,serif" font-size="14.00">dos dados</text>
+</g>
+<!-- p2&#45;&gt;p3 -->
+<g id="edge3" class="edge">
+<title>p2-&gt;p3</title>
+<path fill="none" stroke="black" d="M228.97,-213.26C237.11,-207.46 246.07,-201.09 254.61,-195"></path>
+<polygon fill="black" stroke="black" points="256.85,-197.71 262.96,-189.05 252.79,-192 256.85,-197.71"></polygon>
+</g>
+<!-- p4 -->
+<g id="node5" class="node">
+<title>p4</title>
+<path fill="none" stroke="black" d="M313.17,-96.02C313.17,-96.02 254.43,-96.02 254.43,-96.02 248.43,-96.02 242.43,-90.02 242.43,-84.02 242.43,-84.02 242.43,-72.02 242.43,-72.02 242.43,-66.02 248.43,-60.02 254.43,-60.02 254.43,-60.02 313.17,-60.02 313.17,-60.02 319.17,-60.02 325.17,-66.02 325.17,-72.02 325.17,-72.02 325.17,-84.02 325.17,-84.02 325.17,-90.02 319.17,-96.02 313.17,-96.02"></path>
+<text text-anchor="middle" x="283.8" y="-73.82" font-family="Times,serif" font-size="14.00">Modelagem</text>
+</g>
+<!-- p3&#45;&gt;p4 -->
+<g id="edge4" class="edge">
+<title>p3-&gt;p4</title>
+<path fill="none" stroke="black" d="M295.8,-147.41C295.8,-135.15 294.59,-119.51 292.69,-106.19"></path>
+<polygon fill="black" stroke="black" points="296.11,-105.41 291.03,-96.11 289.2,-106.55 296.11,-105.41"></polygon>
+</g>
+<!-- p4&#45;&gt;p3 -->
+<g id="edge5" class="edge">
+<title>p4-&gt;p3</title>
+<path fill="none" stroke="black" d="M279.92,-96.37C279.75,-108.21 280.83,-123.91 282.66,-137.63"></path>
+<polygon fill="black" stroke="black" points="279.22,-138.28 284.19,-147.64 286.14,-137.23 279.22,-138.28"></polygon>
+</g>
+<!-- p5 -->
+<g id="node6" class="node">
+<title>p5</title>
+<path fill="none" stroke="black" d="M225.16,-36C225.16,-36 174.52,-36 174.52,-36 168.52,-36 162.52,-30 162.52,-24 162.52,-24 162.52,-12 162.52,-12 162.52,-6 168.52,0 174.52,0 174.52,0 225.16,0 225.16,0 231.16,0 237.16,-6 237.16,-12 237.16,-12 237.16,-24 237.16,-24 237.16,-30 231.16,-36 225.16,-36"></path>
+<text text-anchor="middle" x="199.84" y="-13.8" font-family="Times,serif" font-size="14.00">Avaliação</text>
+</g>
+<!-- p4&#45;&gt;p5 -->
+<g id="edge6" class="edge">
+<title>p4-&gt;p5</title>
+<path fill="none" stroke="black" d="M258.61,-60.01C250.71,-54.36 241.87,-48.04 233.48,-42.05"></path>
+<polygon fill="black" stroke="black" points="235.47,-39.17 225.3,-36.2 231.4,-44.86 235.47,-39.17"></polygon>
+</g>
+<!-- p5&#45;&gt;p1 -->
+<g id="edge8" class="edge">
+<title>p5-&gt;p1</title>
+<path fill="none" stroke="black" d="M189.68,-36.24C170.26,-71.1 127.72,-147.47 104.15,-189.8"></path>
+<polygon fill="black" stroke="black" points="100.95,-188.34 99.14,-198.78 107.06,-191.75 100.95,-188.34"></polygon>
+</g>
+<!-- p6 -->
+<g id="node7" class="node">
+<title>p6</title>
+<path fill="none" stroke="black" d="M74.64,-128.27C74.64,-128.27 12.12,-128.27 12.12,-128.27 6.12,-128.27 0.12,-122.27 0.12,-116.27 0.12,-116.27 0.12,-104.27 0.12,-104.27 0.12,-98.27 6.12,-92.27 12.12,-92.27 12.12,-92.27 74.64,-92.27 74.64,-92.27 80.64,-92.27 86.64,-98.27 86.64,-104.27 86.64,-104.27 86.64,-116.27 86.64,-116.27 86.64,-122.27 80.64,-128.27 74.64,-128.27"></path>
+<text text-anchor="middle" x="43.38" y="-106.07" font-family="Times,serif" font-size="14.00">Implantação</text>
+</g>
+<!-- p5&#45;&gt;p6 -->
+<g id="edge7" class="edge">
+<title>p5-&gt;p6</title>
+<path fill="none" stroke="black" d="M169.3,-36.01C144.61,-50.57 109.68,-71.17 82.86,-86.99"></path>
+<polygon fill="black" stroke="black" points="80.94,-84.06 74.11,-92.15 84.5,-90.09 80.94,-84.06"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crisp-dm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Ciclo de etapas do CRISP-DM, adaptado de <span class="citation" data-cites="verri:2024:dsp">(<a href="#ref-verri:2024:dsp" role="doc-biblioref">Verri 2024</a>, pág. 34)</span>
+</figcaption>
+</figure>
+</div>
+<p>O ciclo se inicia com uma troca iterativa entre as etapas de entendimento do negócio e dos dados. Entender o negócio inclui definir os objetivos mensuráveis do projeto. Entender os dados inclui coletar e explorar as características dos dados de acordo com os requisitos dos dados.</p>
+<p>Em seguida, dá-se uma troca entre as etapas de preparação e modelagem dos dados. Na preparação, os dados são limpados, transformados e/ou agregados para se adequar aos requisitos da modelagem. Na modelagem, um modelo é treinado e validado de acordo com os requisitos de avaliação.</p>
+<p>Por fim, a fase de avaliação dos modelos determina se o resultado pode ser implantado ou se é preciso reiniciar o ciclo. A avaliação deve ser realizada com dados diferentes dos dados de treinamento e validação.</p>
 </section>
-<section id="unidades" class="level2">
-<h2 class="anchored" data-anchor-id="unidades">Unidades</h2>
-<p>Disciplinas são por padrão organizadas em três unidades. Uma unidade pode ser vista como um subconjunto dos assuntos listados seguindo algum tema especificado. Aqui, com base nos assuntos listados, é tomada a decisão de definir como os temas das unidades:</p>
-<ol type="1">
-<li>Preparação ou pré-processamento de dados</li>
-<li>Análise e visualização de dados</li>
-<li>Modelagem e aprendizado de máquina</li>
-</ol>
-<p>Essa divisão possibilita um momento inicial de aclimatação ao conteúdo e às tecnologias (que podem ou não ser conhecidas pelos alunos), seguida de uma parte com mais estatística e finalizando com um pouco de aprendizado de máquina. Pode ocorrer de alguns assuntos pertencerem a múltiplos temas das unidades e a decisão de quando e o quanto desses assuntos.</p>
-<section id="conteúdos-por-unidade" class="level3">
-<h3 class="anchored" data-anchor-id="conteúdos-por-unidade">Conteúdos por unidade</h3>
-<p>Definidos os temas das unidades, fica mais fácil selecionar os conteúdos para cada uma. Ignorando a ordem, na primeira unidade, temos:</p>
-<ol type="1">
-<li>O que é ciência de dados, definições e termos relacionados</li>
-<li>História da ciência de dados</li>
-<li>Processos de ciência de dados: CRISP-DM, KDD, mineração de dados</li>
-<li>Introdução ou revisão da linguagem Python</li>
-<li>Tipos de dados: categóricos e numéricos</li>
-<li>Formato de dados: dados estruturados e não estruturados, formatos de arquivos</li>
-<li>Coleta de dados: bancos de dados ou bases de dados, web crawling ou scraping, criação de bases de dados</li>
-<li>Introdução a engenharia de dados</li>
-<li>IPython</li>
-<li>Jupyter Notebooks</li>
-<li>Pandas</li>
-</ol>
-<p>Na segunda unidade:</p>
-<ol type="1">
-<li>Escalas de medidas: nominal, ordinal, intervalar e racional</li>
-<li>Estatística descritiva: medidas de tendência, frequência, dispersão, distribuição, etc</li>
-<li>Correlação e covariância</li>
-<li>Visualização de dados: gráficos de barras, dispersão, linhas, histogramas, boxplots</li>
-<li>Qualidade de dados: dados ausentes, ruídos e outliers</li>
-<li>Transformação de dados: conversões de valores, normalização</li>
-<li>Introdução a modelagem de dados</li>
-<li>Numpy</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-</ol>
-<p>E na terceira unidade:</p>
-<ol type="1">
-<li>Aprendizado de máquina</li>
-<li>Treinamento supervisionado e não supervisionado</li>
-<li>Regressão linear</li>
-<li>Classificação</li>
-<li>Avaliação de modelos</li>
-<li>Agrupamento: K-means</li>
-<li>Algoritmos bioinspirados</li>
-<li>Processamento de imagens e textos</li>
-<li>SciKit Learn</li>
-<li>SciPy</li>
-</ol>
-</section>
-</section>
-<section id="aulas" class="level2">
-<h2 class="anchored" data-anchor-id="aulas">Aulas</h2>
-<p>Definir quais conteúdos se encaixam em cada aula é um pouco mais complexo, já que depende da quantidade de conteúdo abordado para o tempo de exposição e que, neste caso, não há uma experiência prévia para facilitar previsões. Como plano inicial, temos na primeira unidade:</p>
-<ol type="1">
-<li>Abertura da disciplina: apresentações; plano de ensino; ambiente de desenvolvimento; próximas aulas</li>
-<li>Ciência de dados: histórico; definições; KDD e CRISP-DM; Big Data; Data mining; processos de desenvolvimento</li>
-<li>Bases de dados: tipos de dados; formatos e arquivos; armazenamento; bancos de dados; dados tabulares</li>
-<li>Fundamentos de Python: revisão da linguagem; entrada e saída; ambientes virtuais; interoperabilidade</li>
-<li>Python em computação científica: fundamentos; IPython; Jupyter notebooks</li>
-<li>Manipulação de dados: dados tabulares; Pandas; DataFrames</li>
-<li>Descoberta de dados: seleção; web crawling ou scraping; Requests</li>
-<li>Avaliação</li>
-</ol>
-<p>Na segunda unidade:</p>
-<ol type="1">
-<li>Amostragem de dados: população; amostra; representatividade; variabilidade; inferência dedutiva e indutiva</li>
-<li>Estatística descritiva: fundamentos; escalas de medida; medidas descritivas: tendência e dispersão; coeficiente de variação; NumPy</li>
-<li>Visualização de dados: gráficos; Matplotlib; Seaborn; análise exploratória de dados (EAD)</li>
-<li>Qualidade de dados: ausências; ruídos; outliers; limpeza</li>
-<li>Transformação de dados: conversão de valores; normalização; padronização</li>
-<li>Avaliação</li>
-</ol>
-<p>Na terceira unidade:</p>
-<ol type="1">
-<li>Aprendizado de máquina: definições; treinamento</li>
-<li>Modelagem de dados: regressão linear; classificação; agrupamento; algoritmos; SciKit Learn</li>
-<li>Avaliação de modelos: métricas de resultados; hiperparâmetros; hipóteses; SciPy</li>
-<li>Outros tópicos: algoritmos bioinspirados; dados não estruturados; ética</li>
-<li>Avaliação</li>
-<li>Encerramento da disciplina: recuperação e exame final</li>
-</ol>
+<section id="outros-processos" class="level3">
+<h3 class="anchored" data-anchor-id="outros-processos">Outros processos</h3>
+<p>Esta resenha pode ser expandida para comentar outros processos aplicáveis a projetos no contexto de Ciência de Dados, como o processo genérico de descoberta de conhecimento em bases de dados<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, e SEMMA<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, assim como processos sintetizados por outros autores, como os de Zumel &amp; Mount, Verri <span class="citation" data-cites="verri:2024:dsp">(<a href="#ref-verri:2024:dsp" role="doc-biblioref">Verri 2024</a>, págs. 35, 42)</span> e o de Godsey <span class="citation" data-cites="godsey:2017:think">(<a href="#ref-godsey:2017:think" role="doc-biblioref">Godsey 2017</a>)</span>.</p>
 
 
+
+</section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-godsey:2017:think" class="csl-entry" role="listitem">
+Godsey, Brian. 2017. <em>Think Like a Data Scientist: Tackle the Data Science Process Step-by-Step</em>. Manning. <a href="https://www.manning.com/books/think-like-a-data-scientist">https://www.manning.com/books/think-like-a-data-scientist</a>.
+</div>
+<div id="ref-verri:2024:dsp" class="csl-entry" role="listitem">
+Verri, Filipe Alves Neto. 2024. <em>Data Science Project: An Inductive Learning Approach</em> (versão 0.1.0). Leanpub. <a href="https://doi.org/10.5281/zenodo.14498011">https://doi.org/10.5281/zenodo.14498011</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://dictionary.cambridge.org/dictionary/english/process" class="uri">https://dictionary.cambridge.org/dictionary/english/process</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://www.datascience-pm.com/crisp-dm-2/" class="uri">https://www.datascience-pm.com/crisp-dm-2/</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://www.datascience-pm.com/kdd-and-data-mining/" class="uri">https://www.datascience-pm.com/kdd-and-data-mining/</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://www.datascience-pm.com/semma/" class="uri">https://www.datascience-pm.com/semma/</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -938,11 +995,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../meta/plano-de-ensino.pdf" class="pagination-link" aria-label="Plano de ensino">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Plano de ensino</span>
+      <a href="../resenhas/12_relacionados.html" class="pagination-link" aria-label="Áreas relacionadas">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Áreas relacionadas</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../notebooks/index.html" class="pagination-link" aria-label="Notebooks">
+        <span class="nav-page-text">Notebooks</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -950,4 +1010,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/meta/roteiro-de-aulas.md" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/resenhas/12_processos.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
