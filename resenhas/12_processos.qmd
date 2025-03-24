@@ -1,0 +1,71 @@
+---
+title: Processos
+order: 123
+keywords:
+    - Processos
+    - Prática
+    - Projetos
+    - CRISP-DM
+    - KDD
+---
+
+Visto [o que é](12_definicao.qmd) e [o que não é](12_relacionados.qmd) Ciência de Dados, resta saber como conduzir um projeto centrado em dados.
+
+## Como fazer Ciência de Dados
+
+Simplificando, projetos de Ciência de Dados buscam extrair conhecimento de conjuntos de dados para atingir algum objetivo.
+Para isso, a literatura apresenta diversos _processos_^[<https://dictionary.cambridge.org/dictionary/english/process>] que descrevem como isso pode ser feito.
+
+### CRISP-DM
+
+O padrão de processo interindustrial para mineração de dados (do inglês _cross-industry standard process for data mining_) ou CRISP-DM^[<https://www.datascience-pm.com/crisp-dm-2/>] é uma das abordagens mais conhecidas para organizar projetos de mineração de dados.
+Trata-se de um processo cíclico e centrado nos dados que envolve 6 (seis) etapas, conforme ilustradas na @fig-crisp-dm.
+
+::: {#fig-crisp-dm}
+
+```{dot}
+digraph CRISPDM {
+    layout = neato
+    overlap = false
+    
+    node [shape=box style=rounded];
+
+    d [shape=circle label="Dados" pos="5,5!"];
+    p1 [label="Entendimento\ndo negócio" pos="3.5,5.5!"];
+    p2 [label="Entendimento\ndos dados" pos="5,6!"];
+    p3 [label="Preparação\ndos dados" pos="6,4.5!"];
+    p4 [label="Modelagem" pos="6,4.4!"];
+    p5 [label="Avaliação" pos="5,3!"];
+    p6 [label="Implantação" pos="3,5!"];
+
+    p1->p2;
+    p2->p1;
+
+    p2->p3;
+
+    p3->p4;
+    p4->p3;
+
+    p4->p5;
+    p5->p6;
+    p5->p1;
+}
+```
+
+Ciclo de etapas do CRISP-DM, adaptado de [@verri:2024:dsp, pág. 34]
+:::
+
+O ciclo se inicia com uma troca iterativa entre as etapas de entendimento do negócio e dos dados.
+Entender o negócio inclui definir os objetivos mensuráveis do projeto.
+Entender os dados inclui coletar e explorar as características dos dados de acordo com os requisitos dos dados.
+
+Em seguida, dá-se uma troca entre as etapas de preparação e modelagem dos dados.
+Na preparação, os dados são limpados, transformados e/ou agregados para se adequar aos requisitos da modelagem.
+Na modelagem, um modelo é treinado e validado de acordo com os requisitos de avaliação.
+
+Por fim, a fase de avaliação dos modelos determina se o resultado pode ser implantado ou se é preciso reiniciar o ciclo.
+A avaliação deve ser realizada com dados diferentes dos dados de treinamento e validação.
+
+### Outros processos
+
+Esta resenha pode ser expandida para comentar outros processos aplicáveis a projetos no contexto de Ciência de Dados, como o processo genérico de descoberta de conhecimento em bases de dados^[<https://www.datascience-pm.com/kdd-and-data-mining/>], e SEMMA^[<https://www.datascience-pm.com/semma/>], assim como processos sintetizados por outros autores, como os de Zumel & Mount, Verri [@verri:2024:dsp, págs. 35, 42] e o de Godsey [@godsey:2017:think].
