@@ -1,4 +1,4 @@
-from model import Meet
+from model import Meet, Resource
 
 meet = Meet(
     title="Visualização de dados",
@@ -9,5 +9,8 @@ meet = Meet(
         "Gráficos estatísticos",
         "Biblioteca Matplotlib",
         "Biblioteca Seaborn",
+    ],
+    resources=[
+        Resource(title="Capítulo", value="[@carvalho:2024:cdfa, cap. 6]", kind="bib")
     ],
 )

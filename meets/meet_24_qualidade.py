@@ -1,4 +1,4 @@
-from model import Meet
+from model import Meet, Resource
 
 meet = Meet(
     title="Qualidade de dados",
@@ -10,5 +10,8 @@ meet = Meet(
         "Pontos fora da curva",
         "Dados enviesados",
         "Limpeza de dados",
+    ],
+    resources=[
+        Resource(title="Capítulo", value="[@carvalho:2024:cdfa, cap. 7]", kind="bib")
     ],
 )
