@@ -23,5 +23,5 @@ pd.DataFrame(
         "Data mediana": groups["data"].median(),
         "Horário médio": groups["hora"].mean().apply(lambda x: x.time()),
     }
-).sort_values(by="Quantidade de contribuições")
+).sort_values(by="Quantidade de contribuições", ascending=False)
 ```
