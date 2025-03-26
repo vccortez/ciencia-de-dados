@@ -1,0 +1,47 @@
+---
+title: Ferramentas
+order: 131
+engine: jupyter
+keywords:
+    - Python
+    - Introdução
+    - Ferramentas
+---
+
+Ferramentas que serão usadas no decorrer da disciplina.
+
+## Instalação
+
+O mínimo a se instalar é um interpretador da linguagem Python (versão 3) e um editor de texto.
+Instruções mais detalhadas são apresentadas a seguir.
+
+### Python
+
+Primeiro passo: navegar até <https://www.python.org> e seguir as instruções para instalar uma versão de Python 3 no seu sistema operacional.
+Caso já tenha Python instalado, recomenda-se verificar qual versão com a linha de comando `python3 --version`.
+
+Por exemplo, a versão de Python usada neste projeto é a `{python} __import__('sys').version.split(" ")[0]`.
+Para manter o máximo de compatibilidade com os materiais da disciplina, recomenda-se baixar a mesma versão ou, se não for possível, a versão mais atual que comece com os dois primeiros valores iguais ao da versão do projeto, ou seja, começando com `{python} ".".join(str(d) for d in __import__('sys').version_info[:2])`.
+
+A depender do sistema operacional, também pode ser necessário instalar algumas dependências adicionais para conseguir fazer uso de _ambientes virtuais_.
+Feito isso, Python está pronta pra ser usada.
+
+#### Anaconda
+
+Uma outra forma de instalação é por meio da distribuição Anaconda que funciona como um pacote contendo Python e várias bibliotecas e ferramentas embutidas num ambiente de execução pré-configurado.
+Especificamente, recomenda-se a versão mini cujas instruções de instalação podem ser encontradas em <https://www.anaconda.com/docs/getting-started/miniconda/install>.
+
+O uso de Anaconda aqui será opcional.
+As instruções neste projeto em geral não focam na instalação Anaconda, mas desde que as versões de Python e das bibliotecas usadas sejam as mesmas, tudo deve funcionar da mesma forma.
+
+### Editor de texto
+
+Qualquer editor de texto da preferência do usuário pode ser usado para acompanhar os materiais.
+No entanto, deixo como recomendação o Visual Studio Code, que pode ser encontrado em <https://code.visualstudio.com>, por oferecer diversas extensões que integram as principais ferramentas a serem usadas.
+Especificamente, as extensões padrões de Python, Jupyter, WSL (se estiver usando Linux no Windows), e Rainbow CSV.
+
+### Outras ferramentas
+
+Além do básico mencionado acima, outras ferramentas adicionais podem ser úteis, como leitores de planilhas de dados tabulados (LibreOffice Calc, Microsoft Excel, Google Sheets) e um navegador web (Firefox, Chrome, etc).
+O navegador pode ser necessário caso o seu editor de texto não consiga exibir e executar Notebooks Jupyter.
+Também é possível usar ferramentas em nuvem como o Google Colab para executar Notebooks.
