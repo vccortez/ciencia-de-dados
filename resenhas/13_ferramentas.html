@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vitor Cortez">
+<meta name="keywords" content="Python, Introdução, Ferramentas">
 
-<title>Notebooks – Ciência de Dados</title>
+<title>Ferramentas – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../slides/index.html" rel="next">
-<link href="../resenhas/13_ferramentas.html" rel="prev">
+<link href="../notebooks/index.html" rel="next">
+<link href="../resenhas/12_processos.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -98,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/index.html">Notebooks</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resenhas/index.html">Resenhas</a></li><li class="breadcrumb-item"><a href="../resenhas/13_ferramentas.html">Ferramentas</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -114,11 +115,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../resenhas/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resenhas</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resenhas/12_definicao.html" class="sidebar-item-text sidebar-link">
@@ -139,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resenhas/13_ferramentas.html" class="sidebar-item-text sidebar-link">
+  <a href="../resenhas/13_ferramentas.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Ferramentas</span></a>
   </div>
 </li>
@@ -147,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../notebooks/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notebooks</span></a>
   </div>
 </li>
@@ -214,15 +215,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#instalação" id="toc-instalação" class="nav-link active" data-scroll-target="#instalação">Instalação</a>
+  <ul class="collapse">
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
+  <li><a href="#editor-de-texto" id="toc-editor-de-texto" class="nav-link" data-scroll-target="#editor-de-texto">Editor de texto</a></li>
+  <li><a href="#outras-ferramentas" id="toc-outras-ferramentas" class="nav-link" data-scroll-target="#outras-ferramentas">Outras ferramentas</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/resenhas/13_ferramentas.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resenhas/index.html">Resenhas</a></li><li class="breadcrumb-item"><a href="../resenhas/13_ferramentas.html">Ferramentas</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Notebooks</h1>
+<h1 class="title">Ferramentas</h1>
 </div>
 
 
@@ -241,13 +253,42 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Palavras-chave</div>
+    <p>Python, Introdução, Ferramentas</p>
+  </div>
+</div>
 
 </header>
 
 
-<p>Índice de todos os IPython/Jupyter notebooks publicados na pasta <code>notebooks</code>.</p>
+<p>Ferramentas que serão usadas no decorrer da disciplina.</p>
+<section id="instalação" class="level2">
+<h2 class="anchored" data-anchor-id="instalação">Instalação</h2>
+<p>O mínimo a se instalar é um interpretador da linguagem Python (versão 3) e um editor de texto. Instruções mais detalhadas são apresentadas a seguir.</p>
+<section id="python" class="level3">
+<h3 class="anchored" data-anchor-id="python">Python</h3>
+<p>Primeiro passo: navegar até <a href="https://www.python.org" class="uri">https://www.python.org</a> e seguir as instruções para instalar uma versão de Python 3 no seu sistema operacional. Caso já tenha Python instalado, recomenda-se verificar qual versão com a linha de comando <code>python3 --version</code>.</p>
+<p>Por exemplo, a versão de Python usada neste projeto é a 3.10.16. Para manter o máximo de compatibilidade com os materiais da disciplina, recomenda-se baixar a mesma versão ou, se não for possível, a versão mais atual que comece com os dois primeiros valores iguais ao da versão do projeto, ou seja, começando com 3.10.</p>
+<p>A depender do sistema operacional, também pode ser necessário instalar algumas dependências adicionais para conseguir fazer uso de <em>ambientes virtuais</em>. Feito isso, Python está pronta pra ser usada.</p>
+<section id="anaconda" class="level4">
+<h4 class="anchored" data-anchor-id="anaconda">Anaconda</h4>
+<p>Uma outra forma de instalação é por meio da distribuição Anaconda que funciona como um pacote contendo Python e várias bibliotecas e ferramentas embutidas num ambiente de execução pré-configurado. Especificamente, recomenda-se a versão mini cujas instruções de instalação podem ser encontradas em <a href="https://www.anaconda.com/docs/getting-started/miniconda/install" class="uri">https://www.anaconda.com/docs/getting-started/miniconda/install</a>.</p>
+<p>O uso de Anaconda aqui será opcional. As instruções neste projeto em geral não focam na instalação Anaconda, mas desde que as versões de Python e das bibliotecas usadas sejam as mesmas, tudo deve funcionar da mesma forma.</p>
+</section>
+</section>
+<section id="editor-de-texto" class="level3">
+<h3 class="anchored" data-anchor-id="editor-de-texto">Editor de texto</h3>
+<p>Qualquer editor de texto da preferência do usuário pode ser usado para acompanhar os materiais. No entanto, deixo como recomendação o Visual Studio Code, que pode ser encontrado em <a href="https://code.visualstudio.com" class="uri">https://code.visualstudio.com</a>, por oferecer diversas extensões que integram as principais ferramentas a serem usadas. Especificamente, as extensões padrões de Python, Jupyter, WSL (se estiver usando Linux no Windows), e Rainbow CSV.</p>
+</section>
+<section id="outras-ferramentas" class="level3">
+<h3 class="anchored" data-anchor-id="outras-ferramentas">Outras ferramentas</h3>
+<p>Além do básico mencionado acima, outras ferramentas adicionais podem ser úteis, como leitores de planilhas de dados tabulados (LibreOffice Calc, Microsoft Excel, Google Sheets) e um navegador web (Firefox, Chrome, etc). O navegador pode ser necessário caso o seu editor de texto não consiga exibir e executar Notebooks Jupyter. Também é possível usar ferramentas em nuvem como o Google Colab para executar Notebooks.</p>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -820,13 +861,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../resenhas/13_ferramentas.html" class="pagination-link" aria-label="Ferramentas">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Ferramentas</span>
+      <a href="../resenhas/12_processos.html" class="pagination-link" aria-label="Processos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Processos</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../slides/index.html" class="pagination-link" aria-label="Slides">
-        <span class="nav-page-text">Slides</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../notebooks/index.html" class="pagination-link" aria-label="Notebooks">
+        <span class="nav-page-text">Notebooks</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -835,4 +876,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/notebooks/index.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/resenhas/13_ferramentas.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
