@@ -22,10 +22,10 @@ jobs:
 
       - run: |
           ~/.TinyTeX/bin/x86_64-linux/tlmgr update --self
-          ~/.TinyTeX/bin/x86_64-linux/tlmgr install hyphen-portuguese
+          ~/.TinyTeX/bin/x86_64-linux/tlmgr install hyphen-portuguese tex-gyre
       
-      - name: install texlive dependencies
-        run: sudo apt -q install texlive-fonts-recommended texlive-lang-portuguese
+      # - name: install texlive dependencies
+      #   run: sudo apt -q install texlive-fonts-recommended texlive-lang-portuguese --ignore-missing
 
       - name: install python
         uses: actions/setup-python@v5
