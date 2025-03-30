@@ -1,19 +1,19 @@
 ---
-title: Turma
-order: 1
+title: Outros
+order: 5
 ---
 
-Índice de recursos sobre a disciplina e turma atual.
+Índice de outros recursos não categorizados.
 
 ```{python}
 # | echo: false
-# | label: tbl-recursos
+# | label: tbl-outros
 # | tbl-cap: Índice de recursos
 from IPython.display import Markdown, display
 
 from scripts import gerar_indice_pasta
 
-indice = gerar_indice_pasta.run(["*.md", "*.qmd", "*.ipynb"])
+indice = gerar_indice_pasta.run(["*.md", "*.qmd"])
 
 if len(indice) > 0:
     display(Markdown("\n".join(indice)))

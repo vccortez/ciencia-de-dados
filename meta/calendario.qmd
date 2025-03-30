@@ -97,7 +97,7 @@ for i, meet in enumerate(meets_with_dates, start=1):
                 elif r.kind == "bib":
                     print("1. Referência --", f"{r.title}: {r.value}", "\n")
                 elif r.kind == "text":
-                    print("1.", f"{r.title} -- {r.value}", "\n")
+                    print(f"{r.title}: {r.value}", "\n")
                 elif r.kind == "video":
                     print("1.", "Vídeo --", f"[{r.title}]({r.value})", "\n")
                 else:

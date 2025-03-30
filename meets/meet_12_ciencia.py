@@ -10,10 +10,12 @@ meet = Meet(
     ],
     date_span=2,
     resources=[
-        Resource(title="Livro", value="[@carvalho:2024:cdfa, cap. 1--2]", kind="bib"),
+        Resource(
+            title="Capítulos", value="[@carvalho:2024:cdfa, cap. 1--2]", kind="bib"
+        ),
         Resource(title="Definição", value="resenhas/12_definicao.qmd", kind="file"),
         Resource(
-            title="Termos relacionados",
+            title="Relacionados",
             value="resenhas/12_relacionados.qmd",
             kind="file",
         ),

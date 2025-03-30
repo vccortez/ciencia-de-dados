@@ -1,17 +1,21 @@
 ---
 title: Contribuições
+order: 2
 ---
 
-Lista de contribuições por identificador.
+Contagem de contribuições por identificador.
 Interessados em contribuir com as aulas e repositório são encorajados a deixar um breve registro de cada contribuição no arquivo em `dados/contribuicoes.csv`.
 
 ```{python}
 # | echo: false
 # | label: tbl-contribs
-# | tbl-cap: Ranking de contribuições
+# | tbl-cap: Contagem de contribuições
 import pandas as pd
+import numpy as np
 
-df = pd.read_csv("dados/contribuicoes.csv", parse_dates=["data"], date_format="mixed", dayfirst=True)
+df = pd.read_csv(
+    "dados/contribuicoes.csv", parse_dates=["data"], date_format="mixed", dayfirst=True
+)
 
 df["hora"] = pd.to_datetime(df["hora"], format="%H:%M")
 
@@ -19,9 +23,21 @@ groups = df.groupby("id")
 
 pd.DataFrame(
     {
-        "Quantidade de contribuições": groups["contribuicao"].count(),
-        "Data mediana": groups["data"].median(),
-        "Horário médio": groups["hora"].mean().apply(lambda x: x.time()),
+        "count": groups["contribuicao"].count(),
+        "max_date": groups["data"].max().apply(lambda x: x.date().strftime("%d-%m-%y")),
+        "mean_time": groups["hora"].mean().apply(lambda x: x.time().strftime("%H:%M")),
+        "mean_wc": groups["contribuicao"].apply(
+            lambda x: f"{x.str.split().str.len().mean():.0f}"
+        ),
     }
-).sort_values(by="Quantidade de contribuições")
+).sort_values(by="count", ascending=False)[
+    ["count", "mean_wc", "mean_time", "max_date"]
+].rename(
+    columns={
+        "count": "Contribuições",
+        "max_date": "Última data",
+        "mean_time": "Horário médio",
+        "mean_wc": "Média de palavras",
+    }
+)
 ```

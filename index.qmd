@@ -3,10 +3,13 @@ title: Início
 order: 1
 ---
 
-O projeto se encontra no endereço [{{< var link.repo-name >}}]({{< var link.repo >}}).
-Os arquivos estão dispostos em pastas principais temáticas para evitar árvores de diretórios complexas.
-Frequentemente, o nome de arquivos de recursos da disciplina estarão numerados para indicar a qual unidade e aula esse recurso pertence.
+Boas-vindas à página inicial da disciplina.
+Todo o conteúdo apresentado aqui se encontra no repositório em [{{< var link.repo-name >}}]({{< var link.repo >}}).
 
+A organização das pastas busca simplificar futuras buscas por conteúdos.
+Frequentemente, o nome dos arquivos estarão numerados para indicar a qual unidade e aula o recurso pertence.
+
+Uma visão da árvore de arquivos é apresentada abaixo:
 ```{python}
 # | echo: false
 !tree -L 2 --gitignore -I "_*" --dirsfirst

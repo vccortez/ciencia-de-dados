@@ -2,7 +2,7 @@ from model import Meet
 
 meet = Meet(
     title="Segunda avaliação",
-    description="Prova objetiva sobre unidades I e II",
+    description="Prova objetiva sobre os assuntos abordados nas unidades I e II",
     module_number=2,
     has_content=False,
     is_exam=True,

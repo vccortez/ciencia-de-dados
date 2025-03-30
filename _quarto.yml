@@ -11,6 +11,7 @@ project:
     - notebooks
     - slides
     - meta
+    - outros
 
 website:
   title: "Ciência de Dados"
