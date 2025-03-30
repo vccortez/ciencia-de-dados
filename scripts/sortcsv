@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+
+import csv
+import argparse
+import pandas as pd
+
+
+def format_csv(
+    in_file: str,
+    out_file: str = None,
+    date_cols: list[str] = None,
+    time_cols: list[str] = None,
+    zpad_cols: list[str] = None,
+) -> None:
+    std_out = False
+    parse_dates = False
+
+    if date_cols is None and time_cols is None:
+        pass
+    elif date_cols is not None and time_cols is not None:
+        parse_dates = date_cols + time_cols
+    else:
+        parse_dates = date_cols or time_cols
+
+    if out_file is None:
+        from io import StringIO
+
+        std_out = True
+        out_file = StringIO()
+
+    df = pd.read_csv(
+        in_file,
+        parse_dates=parse_dates,
+        date_format="mixed",
+        dayfirst=True,
+        skipinitialspace=True,
+    )
+
+    parsed_cols = df.select_dtypes(include=["datetime", "datetime64"]).columns.to_list()
+
+    if parsed_cols and len(parsed_cols) > 0:
+        df.sort_values(by=parsed_cols, inplace=True)
+
+    for col in parsed_cols:
+        if col in date_cols:
+            df[col] = df[col].apply(lambda x: x.date().strftime("%d-%m-%Y"))
+        else:
+            df[col] = df[col].apply(lambda x: x.time().strftime("%H:%M"))
+
+    if zpad_cols is not None:
+        for col in zpad_cols:
+            maxlen = df[col].astype(str).str.len().max()
+            df[col] = df[col].astype(str).str.pad(maxlen, side="left", fillchar="0")
+
+    df.to_csv(out_file, index=False, quoting=csv.QUOTE_MINIMAL)
+
+    if std_out:
+        print(out_file.getvalue(), end="")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("filename")
+    parser.add_argument("-o", "--output-file", default=None)
+    parser.add_argument("-d", "--date-cols", nargs="+")
+    parser.add_argument("-t", "--time-cols", nargs="+")
+    parser.add_argument("-z", "--zpad-cols", nargs="+")
+
+    args = parser.parse_args()
+
+    format_csv(
+        args.filename, args.output_file, args.date_cols, args.time_cols, args.zpad_cols
+    )

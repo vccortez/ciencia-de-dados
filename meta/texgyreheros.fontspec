@@ -1,0 +1,8 @@
+\defaultfontfeatures[TeX Gyre Heros]
+{
+  Extension      = .otf ,
+  UprightFont    = texgyreheros-regular,
+  BoldFont       = texgyreheros-bold,
+  ItalicFont     = texgyreheros-italic,
+  BoldItalicFont = texgyreheros-bolditalic,
+}
