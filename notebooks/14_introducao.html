@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vitor Cortez">
-<meta name="keywords" content="Python, Introdução, Ferramentas">
 
-<title>Ferramentas – Ciência de Dados</title>
+<title>Introdução teórica – Ciência de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +21,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -32,8 +85,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../notebooks/index.html" rel="next">
-<link href="../resenhas/12_processos.html" rel="prev">
+<link href="../slides/index.html" rel="next">
+<link href="../notebooks/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -99,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resenhas/index.html">Resenhas</a></li><li class="breadcrumb-item"><a href="../resenhas/13_ferramentas.html">Ferramentas</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../notebooks/14_introducao.html">Introdução teórica</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -144,11 +197,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../resenhas/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resenhas</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resenhas/12_definicao.html" class="sidebar-item-text sidebar-link">
@@ -169,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resenhas/13_ferramentas.html" class="sidebar-item-text sidebar-link active">
+  <a href="../resenhas/13_ferramentas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Ferramentas</span></a>
   </div>
 </li>
@@ -179,14 +232,14 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../notebooks/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notebooks</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar seção">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notebooks/14_introducao.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/14_introducao.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Introdução teórica</span></a>
   </div>
 </li>
@@ -242,21 +295,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#instalação" id="toc-instalação" class="nav-link active" data-scroll-target="#instalação">Instalação</a>
-  <ul class="collapse">
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
-  <li><a href="#editor-de-texto" id="toc-editor-de-texto" class="nav-link" data-scroll-target="#editor-de-texto">Editor de texto</a></li>
-  <li><a href="#outras-ferramentas" id="toc-outras-ferramentas" class="nav-link" data-scroll-target="#outras-ferramentas">Outras ferramentas</a></li>
-  </ul></li>
+  <li><a href="#notebooks" id="toc-notebooks" class="nav-link active" data-scroll-target="#notebooks">Notebooks</a></li>
+  <li><a href="#ipython" id="toc-ipython" class="nav-link" data-scroll-target="#ipython">IPython</a></li>
+  <li><a href="#computação-científica" id="toc-computação-científica" class="nav-link" data-scroll-target="#computação-científica">Computação científica</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/resenhas/13_ferramentas.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/notebooks/14_introducao.ipynb" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resenhas/index.html">Resenhas</a></li><li class="breadcrumb-item"><a href="../resenhas/13_ferramentas.html">Ferramentas</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/index.html">Notebooks</a></li><li class="breadcrumb-item"><a href="../notebooks/14_introducao.html">Introdução teórica</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Ferramentas</h1>
+<h1 class="title">Introdução teórica</h1>
 </div>
 
 
@@ -275,44 +325,72 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-<div>
-  <div class="keywords">
-    <div class="block-title">Palavras-chave</div>
-    <p>Python, Introdução, Ferramentas</p>
-  </div>
-</div>
 
 </header>
 
 
-<p>Ferramentas que serão usadas no decorrer da disciplina.</p>
-<section id="instalação" class="level2">
-<h2 class="anchored" data-anchor-id="instalação">Instalação</h2>
-<p>O mínimo a se instalar é um interpretador da linguagem Python (versão 3) e um editor de texto. Instruções mais detalhadas são apresentadas a seguir.</p>
-<section id="python" class="level3">
-<h3 class="anchored" data-anchor-id="python">Python</h3>
-<p>Primeiro passo: navegar até <a href="https://www.python.org" class="uri">https://www.python.org</a> e seguir as instruções para instalar uma versão de Python 3 no seu sistema operacional. Caso já tenha Python instalado, recomenda-se verificar qual versão com a linha de comando <code>python3 --version</code>.</p>
-<p>Por exemplo, a versão de Python usada neste projeto é a 3.10.16. Para manter o máximo de compatibilidade com os materiais da disciplina, recomenda-se baixar a mesma versão ou, se não for possível, a versão mais atual que comece com os dois primeiros valores iguais ao da versão do projeto, ou seja, começando com 3.10.</p>
-<p>A depender do sistema operacional, também pode ser necessário instalar algumas dependências adicionais para conseguir fazer uso de <em>ambientes virtuais</em>. Feito isso, Python está pronta pra ser usada.</p>
-<section id="anaconda" class="level4">
-<h4 class="anchored" data-anchor-id="anaconda">Anaconda</h4>
-<p>Uma outra forma de instalação é por meio da distribuição Anaconda que funciona como um pacote contendo Python e várias bibliotecas e ferramentas embutidas num ambiente de execução pré-configurado. Especificamente, recomenda-se a versão mini cujas instruções de instalação podem ser encontradas em <a href="https://www.anaconda.com/docs/getting-started/miniconda/install" class="uri">https://www.anaconda.com/docs/getting-started/miniconda/install</a>.</p>
-<p>O uso de Anaconda aqui será opcional. As instruções neste projeto em geral não focam na instalação Anaconda, mas desde que as versões de Python e das bibliotecas usadas sejam as mesmas, tudo deve funcionar da mesma forma.</p>
+<p>Boas-vindas ao nosso primeiro Notebook IPython/Jupyter. O objetivo deste documento é apresentar alguns conceitos fundamentais para abrirmos as práticas da disciplina.</p>
+<p>Embora seja possível ler este e outros <em>notebooks</em> no <em>site</em> da disciplina, a minha recomendação é que o arquivo <code>.ipynb</code> seja baixado e executado na sua máquina (ou em algum serviço como o Colab) para que a experiência seja realmente interativa. No <em>site</em>, você deve encontrar uma versão, compilada em HTML pela ferramenta Quarto,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> na qual várias formatações em Markdown,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> específicas dessa ferramenta, são usadas pra melhorar a experiência de leitura, mas que não fazem muita diferença pra quem for executar o <em>notebook</em> interativamente.</p>
+<section id="notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="notebooks">Notebooks</h2>
+<p>Primeiramente, um <em>notebook</em> nada mais é do que um arquivo de texto em formato JSON<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> que guarda uma lista de objetos. Cada objeto dessa lista representa uma célula de conteúdo do <em>notebook</em>. Por exemplo, estas presentes letrinhas, que com a luz dos olhos teus resolvem se encontrar, estão dentro de uma célula de texto em formato Markdown, como podemos ver abaixo.</p>
+<div id="cell-3" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"notebooks/14_introducao.ipynb"</span>) <span class="im">as</span> nb_file:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> json</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    nb <span class="op">=</span> json.load(nb_file)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(nb[<span class="st">"cells"</span>][<span class="dv">1</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'cell_type': 'markdown', 'metadata': {}, 'source': ['## Notebooks\n', '\n', 'Primeiramente, um _notebook_ nada mais é do que um arquivo de texto em formato JSON^[&lt;https://en.wikipedia.org/wiki/JSON&gt;] que guarda uma lista de objetos.\n', 'Cada objeto dessa lista representa uma célula de conteúdo do *notebook*.\n', 'Por exemplo, estas presentes letrinhas, que com a luz dos olhos teus resolvem se encontrar, estão dentro de uma célula de texto em formato Markdown, como podemos ver abaixo.']}</code></pre>
+</div>
+</div>
+<p>E como você pode ver, a célula acima (e a logo abaixo) contém textos na sintaxe de Python. O legal sobre essas células com Python é que elas são executáveis quando o <em>notebook</em> é aberto por um programa que saiba interpretá-lo.</p>
+<div id="cell-5" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Você deve ver o resultado desta chamada "</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>      <span class="st">"a print num espaço pra saídas logo abaixo."</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Você deve ver o resultado desta chamada a print num espaço pra saídas logo abaixo.</code></pre>
+</div>
+</div>
+<p>Quem já conhece a função <code>print</code> de Python deve lembrar que ela redireciona seus argumentos de entrada como um texto a ser exibido na saída padrão do processo Python em execução. No entanto, aqui podemos ver essa saída diretamente no <em>notebook</em>. Isso é possível graças a uma mágica desse programa que executa os <em>notebooks</em> e, em geral, essa mágica leva o nome de IPython.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
 </section>
+<section id="ipython" class="level2">
+<h2 class="anchored" data-anchor-id="ipython">IPython</h2>
+<p>De forma resumida, o IPython é uma versão melhorada e mais interativa da <em>shell</em><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> do Python. Originalmente, o projeto IPython tinha como objetivo prover um ambiente interativo para computação científica usando a linguagem Python <span class="citation" data-cites="perez:2007:ipython">(<a href="#ref-perez:2007:ipython" role="doc-biblioref">Pérez e Granger 2007</a>)</span>. Ou seja, os <em>notebooks</em> IPython são uma combinação de células em linguagem de marcação com células em Python que são executadas pela <em>shell</em> do IPython.</p>
+<p>Com o tempo, a popularidade e o escopo do projeto cresceram, os <em>notebooks</em> evoluíram para serem agnósticos em linguagem de programação, o que resultou no projeto Jupyter.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> No Jupyter, o que determina se a linguagem de programação pode ser executada no <em>notebook</em> é um processo independente chamado de <em>kernel</em>.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Hoje em dia, é possível escrever <em>notebooks</em> Jupyter que usem diversas outras linguagens como Julia, R, Scala, etc, e quando a linguagem escolhida for Python, provavelmente se usará um <em>kernel</em> IPython.</p>
+<p>Para uma visão prática das melhorias implementadas pelo IPython, indico o primeiro capítulo de <span class="citation" data-cites="vanderplas:2016:python">VanderPlas (<a href="#ref-vanderplas:2016:python" role="doc-biblioref">2016</a>)</span>.</p>
 </section>
-<section id="editor-de-texto" class="level3">
-<h3 class="anchored" data-anchor-id="editor-de-texto">Editor de texto</h3>
-<p>Qualquer editor de texto da preferência do usuário pode ser usado para acompanhar os materiais. No entanto, deixo como recomendação o Visual Studio Code, que pode ser encontrado em <a href="https://code.visualstudio.com" class="uri">https://code.visualstudio.com</a>, por oferecer diversas extensões que integram as principais ferramentas a serem usadas. Especificamente, as extensões padrões de Python, Jupyter, WSL (se estiver usando Linux no Windows), e Rainbow CSV.</p>
-</section>
-<section id="outras-ferramentas" class="level3">
-<h3 class="anchored" data-anchor-id="outras-ferramentas">Outras ferramentas</h3>
-<p>Além do básico mencionado acima, outras ferramentas adicionais podem ser úteis, como leitores de planilhas de dados tabulados (LibreOffice Calc, Microsoft Excel, Google Sheets) e um navegador web (Firefox, Chrome, etc). O navegador pode ser necessário caso o seu editor de texto não consiga exibir e executar Notebooks Jupyter. Também é possível usar ferramentas em nuvem como o Google Colab para executar Notebooks.</p>
+<section id="computação-científica" class="level2">
+<h2 class="anchored" data-anchor-id="computação-científica">Computação científica</h2>
+<p>Mas o que significa “computação científica”?<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Segundo <span class="citation" data-cites="golub:1992:scientific">Golub e Ortega (<a href="#ref-golub:1992:scientific" role="doc-biblioref">1992</a>)</span>, trata-se da coleção de ferramentas, técnicas e teorias necessárias para resolver, por meio de computadores, modelos matemáticos de problemas das ciências e engenharias. Ou seja, uma aplicação da ciência da computação a problemas científicos e que tem muito a ver com ciência de dados.</p>
 
 
-</section>
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-golub:1992:scientific" class="csl-entry" role="listitem">
+Golub, G. H., e J. M. Ortega. 1992. <em>Scientific Computing and Differential Equations: An Introduction to Numerical Methods</em>. Elsevier Science. <a href="https://books.google.com.br/books?id=Ai70s9DkfI8C">https://books.google.com.br/books?id=Ai70s9DkfI8C</a>.
+</div>
+<div id="ref-perez:2007:ipython" class="csl-entry" role="listitem">
+Pérez, Fernando, e Brian E. Granger. 2007. <span>“<span>IP</span>ython: a System for Interactive Scientific Computing”</span>. <em>Computing in Science and Engineering</em> 9 (3): 21–29. <a href="https://doi.org/10.1109/MCSE.2007.53">https://doi.org/10.1109/MCSE.2007.53</a>.
+</div>
+<div id="ref-vanderplas:2016:python" class="csl-entry" role="listitem">
+VanderPlas, Jake. 2016. <em>Python Data Science Handbook: Essential Tools for Working with Data</em>. O’Reilly Media. <a href="https://books.google.com.br/books?id=dQgGzQEACAAJ">https://books.google.com.br/books?id=dQgGzQEACAAJ</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://quarto.org" class="uri">https://quarto.org</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://en.wikipedia.org/wiki/Markdown" class="uri">https://en.wikipedia.org/wiki/Markdown</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://en.wikipedia.org/wiki/JSON" class="uri">https://en.wikipedia.org/wiki/JSON</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://ipython.org" class="uri">https://ipython.org</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><a href="https://en.wikipedia.org/wiki/Shell_(computing)" class="uri">https://en.wikipedia.org/wiki/Shell_(computing)</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><a href="https://jupyter.org/about" class="uri">https://jupyter.org/about</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><a href="https://docs.jupyter.org/en/stable/projects/kernels.html" class="uri">https://docs.jupyter.org/en/stable/projects/kernels.html</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><a href="https://scicomp.rptu.de/about/scientific-computing" class="uri">https://scicomp.rptu.de/about/scientific-computing</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -883,13 +961,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../resenhas/12_processos.html" class="pagination-link" aria-label="Processos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Processos</span>
+      <a href="../notebooks/index.html" class="pagination-link" aria-label="Notebooks">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Notebooks</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notebooks/index.html" class="pagination-link" aria-label="Notebooks">
-        <span class="nav-page-text">Notebooks</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../slides/index.html" class="pagination-link" aria-label="Slides">
+        <span class="nav-page-text">Slides</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -898,4 +976,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/resenhas/13_ferramentas.qmd" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/vccortez/ciencia-de-dados/blob/main/notebooks/14_introducao.ipynb" class="toc-action"><i class="bi bi-github"></i>Ver o código fonte</a></li></ul></div></div></div></footer></body></html>
