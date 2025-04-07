@@ -8,3 +8,4 @@ Uma lista de fontes para conjuntos de dados abertos.
 - Awesome public datasets: <https://github.com/awesomedata/awesome-public-datasets>
 - Portal brasileiro de dados abertos: <https://dados.gov.br/home>
 - Dataset search: <https://datasetsearch.research.google.com/>
+- Datasets do Brasil.io <https://brasil.io/datasets/>
