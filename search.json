@@ -109,240 +109,13 @@
     ]
   },
   {
-    "objectID": "notebooks/14_introducao.html",
-    "href": "notebooks/14_introducao.html",
-    "title": "Introdução teórica",
+    "objectID": "notebooks/index.html",
+    "href": "notebooks/index.html",
+    "title": "Notebooks",
     "section": "",
-    "text": "Boas-vindas ao nosso primeiro Notebook IPython/Jupyter. O objetivo deste documento é apresentar alguns conceitos fundamentais para abrirmos as práticas da disciplina.\nEmbora seja possível ler este e outros notebooks no site da disciplina, a minha recomendação é que o arquivo .ipynb seja baixado e executado na sua máquina (ou em algum serviço como o Colab) para que a experiência seja realmente interativa. No site, você deve encontrar uma versão, compilada em HTML pela ferramenta Quarto,1 na qual várias formatações em Markdown,2 específicas dessa ferramenta, são usadas pra melhorar a experiência de leitura, mas que não fazem muita diferença pra quem for executar o notebook interativamente.",
+    "text": "Índice de todos os IPython/Jupyter notebooks publicados na pasta notebooks.\n\n\n\n\nTabela 1: Índice de notebooks\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nIntrodução teórica\nIr para 14_introducao.ipynb\n\n\n2\nAnálise descritiva de dados\nIr para 21_analise_descritiva.ipynb\n\n\n3\nVisualização de dados\nIr para 21_visualizacao.ipynb\n\n\n4\nModelos de dados\nIr para 31_modelos.ipynb\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
     "crumbs": [
-      "Notebooks",
-      "Introdução teórica"
-    ]
-  },
-  {
-    "objectID": "notebooks/14_introducao.html#notebooks",
-    "href": "notebooks/14_introducao.html#notebooks",
-    "title": "Introdução teórica",
-    "section": "Notebooks",
-    "text": "Notebooks\nPrimeiramente, um notebook nada mais é do que um arquivo de texto em formato JSON3 que guarda uma lista de objetos. Cada objeto dessa lista representa uma célula de conteúdo do notebook. Por exemplo, estas presentes letrinhas, que com a luz dos olhos teus resolvem se encontrar, estão dentro de uma célula de texto em formato Markdown, como podemos ver abaixo.\n\nwith open(\"notebooks/14_introducao.ipynb\") as nb_file:\n    import json\n    nb = json.load(nb_file)\n    print(nb[\"cells\"][1])\n\n{'cell_type': 'markdown', 'metadata': {}, 'source': ['## Notebooks\\n', '\\n', 'Primeiramente, um _notebook_ nada mais é do que um arquivo de texto em formato JSON^[&lt;https://en.wikipedia.org/wiki/JSON&gt;] que guarda uma lista de objetos.\\n', 'Cada objeto dessa lista representa uma célula de conteúdo do *notebook*.\\n', 'Por exemplo, estas presentes letrinhas, que com a luz dos olhos teus resolvem se encontrar, estão dentro de uma célula de texto em formato Markdown, como podemos ver abaixo.']}\n\n\nE como você pode ver, a célula acima (e a logo abaixo) contém textos na sintaxe de Python. O legal sobre essas células com Python é que elas são executáveis quando o notebook é aberto por um programa que saiba interpretá-lo.\n\nprint(\"Você deve ver o resultado desta chamada \"\n      \"a print num espaço pra saídas logo abaixo.\")\n\nVocê deve ver o resultado desta chamada a print num espaço pra saídas logo abaixo.\n\n\nQuem já conhece a função print de Python deve lembrar que ela redireciona seus argumentos de entrada como um texto a ser exibido na saída padrão do processo Python em execução. No entanto, aqui podemos ver essa saída diretamente no notebook. Isso é possível graças a uma mágica desse programa que executa os notebooks e, em geral, essa mágica leva o nome de IPython.4",
-    "crumbs": [
-      "Notebooks",
-      "Introdução teórica"
-    ]
-  },
-  {
-    "objectID": "notebooks/14_introducao.html#ipython",
-    "href": "notebooks/14_introducao.html#ipython",
-    "title": "Introdução teórica",
-    "section": "IPython",
-    "text": "IPython\nDe forma resumida, o IPython é uma versão melhorada e mais interativa da shell5 do Python. Originalmente, o projeto IPython tinha como objetivo prover um ambiente interativo para computação científica usando a linguagem Python (Pérez e Granger 2007). Ou seja, os notebooks IPython são uma combinação de células em linguagem de marcação com células em Python que são executadas pela shell do IPython.\nCom o tempo, a popularidade e o escopo do projeto cresceram, os notebooks evoluíram para serem agnósticos em linguagem de programação, o que resultou no projeto Jupyter.6 No Jupyter, o que determina se a linguagem de programação pode ser executada no notebook é um processo independente chamado de kernel.7 Hoje em dia, é possível escrever notebooks Jupyter que usem diversas outras linguagens como Julia, R, Scala, etc, e quando a linguagem escolhida for Python, provavelmente se usará um kernel IPython.\nPara uma visão prática das melhorias implementadas pelo IPython, indico o primeiro capítulo de VanderPlas (2016).",
-    "crumbs": [
-      "Notebooks",
-      "Introdução teórica"
-    ]
-  },
-  {
-    "objectID": "notebooks/14_introducao.html#computação-científica",
-    "href": "notebooks/14_introducao.html#computação-científica",
-    "title": "Introdução teórica",
-    "section": "Computação científica",
-    "text": "Computação científica\nMas o que significa “computação científica”?8 Segundo Golub e Ortega (1992), trata-se da coleção de ferramentas, técnicas e teorias necessárias para resolver, por meio de computadores, modelos matemáticos de problemas das ciências e engenharias. Ou seja, uma aplicação da ciência da computação a problemas científicos e que tem muito a ver com ciência de dados.",
-    "crumbs": [
-      "Notebooks",
-      "Introdução teórica"
-    ]
-  },
-  {
-    "objectID": "notebooks/14_introducao.html#footnotes",
-    "href": "notebooks/14_introducao.html#footnotes",
-    "title": "Introdução teórica",
-    "section": "Notas de rodapé",
-    "text": "Notas de rodapé\n\n\nhttps://quarto.org↩︎\nhttps://en.wikipedia.org/wiki/Markdown↩︎\nhttps://en.wikipedia.org/wiki/JSON↩︎\nhttps://ipython.org↩︎\nhttps://en.wikipedia.org/wiki/Shell_(computing)↩︎\nhttps://jupyter.org/about↩︎\nhttps://docs.jupyter.org/en/stable/projects/kernels.html↩︎\nhttps://scicomp.rptu.de/about/scientific-computing↩︎",
-    "crumbs": [
-      "Notebooks",
-      "Introdução teórica"
-    ]
-  },
-  {
-    "objectID": "notebooks/31_modelos.html",
-    "href": "notebooks/31_modelos.html",
-    "title": "Modelos de dados",
-    "section": "",
-    "text": "Quantificar o relacionamento entre diferentes medidas nos permite usar uma medida para prever outras. Por exemplo, há uma relação entre o tamanho da nadadeira de um pinguim e o seu peso? Podemos encontrar uma resposta a essa pergunta por meio do dataset palmerpenguins.\n\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"dados/penguins_size.csv\")\n\ndf.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nMALE\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nFEMALE\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nFEMALE\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nFEMALE\n\n\n\n\n\n\n\n\n# tipos e dados ausentes\ndf.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 344 entries, 0 to 343\nData columns (total 7 columns):\n #   Column             Non-Null Count  Dtype  \n---  ------             --------------  -----  \n 0   species            344 non-null    object \n 1   island             344 non-null    object \n 2   culmen_length_mm   342 non-null    float64\n 3   culmen_depth_mm    342 non-null    float64\n 4   flipper_length_mm  342 non-null    float64\n 5   body_mass_g        342 non-null    float64\n 6   sex                334 non-null    object \ndtypes: float64(4), object(3)\nmemory usage: 18.9+ KB\n\n\n\n# valores nulos\ndf.isnull().sum()\n\nspecies               0\nisland                0\nculmen_length_mm      2\nculmen_depth_mm       2\nflipper_length_mm     2\nbody_mass_g           2\nsex                  10\ndtype: int64\n\n\n\n# estatísticas descritivas\ndf.describe()\n\n\n\n\n\n\n\n\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\n\n\n\n\ncount\n342.000000\n342.000000\n342.000000\n342.000000\n\n\nmean\n43.921930\n17.151170\n200.915205\n4201.754386\n\n\nstd\n5.459584\n1.974793\n14.061714\n801.954536\n\n\nmin\n32.100000\n13.100000\n172.000000\n2700.000000\n\n\n25%\n39.225000\n15.600000\n190.000000\n3550.000000\n\n\n50%\n44.450000\n17.300000\n197.000000\n4050.000000\n\n\n75%\n48.500000\n18.700000\n213.000000\n4750.000000\n\n\nmax\n59.600000\n21.500000\n231.000000\n6300.000000\n\n\n\n\n\n\n\nVocê consegue perceber alguma relação entre o tamanho da nadadeira e o peso dos pinguins?\n\n# filtrar apenas pinguins adelie\nadelie = df[df[\"species\"] == \"Adelie\"]\n\n# scatter plot: massa corporal vs comprimento da nadadeira\nsns.scatterplot(data=adelie, x=\"flipper_length_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Comprimento da Nadadeira\")\nplt.xlabel(\"Comprimento da Nadadeira (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nTambém podemos relacionar a profundidade do bico com o peso.\n\n\n\n\nProfundidade do bico\n\n\n\n# scatter plot: massa corporal vs comprimento do bico\nsns.scatterplot(data=adelie, x=\"culmen_depth_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Profundidade do Bico\")\nplt.xlabel(\"Profundidade do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nQual das duas características tem uma relação mais forte com o peso?\nNão é muito simples de responder só observando os gráficos, mas podemos calcular a correlação para quantificar essa relação.\n\n# cálculo da correlação entre as variáveis\ncorrelation = adelie[[\"flipper_length_mm\", \"culmen_depth_mm\", \"body_mass_g\"]].corr()\nprint(\"Correlação entre as variáveis:\")\nprint(correlation)\n\n# heatmap da correlação\nplt.figure(figsize=(8, 6))\nsns.heatmap(correlation, annot=True, cmap=\"coolwarm\", fmt=\".2f\")\nplt.title(\"Heatmap da Correlação entre Variáveis\")\nplt.show()\n\nCorrelação entre as variáveis:\n                   flipper_length_mm  culmen_depth_mm  body_mass_g\nflipper_length_mm           1.000000         0.307620     0.468202\nculmen_depth_mm             0.307620         1.000000     0.576138\nbody_mass_g                 0.468202         0.576138     1.000000\n\n\n\n\n\n\n\n\n\nBasicamente, quanto mais próximo de 1 ou -1, mais forte é a relação entre as duas medidas e mais parecido com uma linha é o gráfico de dispersão.\n\n# exemplos de scatter plots com seaborn mostrando correlações diferentes com dados simulados\n\n# correlação positiva\nimport numpy as np\nnp.random.seed(42)\nx_pos = np.random.rand(100)\ny_pos = x_pos + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_pos, y=y_pos)\nplt.title(\"Correlação Positiva\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# correlação negativa\nx_neg = np.random.rand(100)\ny_neg = -x_neg + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_neg, y=y_neg)\nplt.title(\"Correlação Negativa\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# sem correlação\nx_no_corr = np.random.rand(100)\ny_no_corr = np.random.rand(100)\nsns.scatterplot(x=x_no_corr, y=y_no_corr)\nplt.title(\"Sem Correlação\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nE o relacionamento das variáveis para as outras espécies de pinguins?\n\n# relação entre massa corporal e comprimento do bico\nsns.scatterplot(data=df, x=\"culmen_length_mm\", y=\"body_mass_g\", hue=\"species\")\nplt.title(\"Comprimento do bico vs Massa corporal\")\nplt.xlabel(\"Comprimento do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.legend(title=\"Espécie\")\nplt.show()",
-    "crumbs": [
-      "Notebooks",
-      "Modelos de dados"
-    ]
-  },
-  {
-    "objectID": "notebooks/31_modelos.html#correlação-entre-dados",
-    "href": "notebooks/31_modelos.html#correlação-entre-dados",
-    "title": "Modelos de dados",
-    "section": "",
-    "text": "Quantificar o relacionamento entre diferentes medidas nos permite usar uma medida para prever outras. Por exemplo, há uma relação entre o tamanho da nadadeira de um pinguim e o seu peso? Podemos encontrar uma resposta a essa pergunta por meio do dataset palmerpenguins.\n\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"dados/penguins_size.csv\")\n\ndf.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nMALE\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nFEMALE\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nFEMALE\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nFEMALE\n\n\n\n\n\n\n\n\n# tipos e dados ausentes\ndf.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 344 entries, 0 to 343\nData columns (total 7 columns):\n #   Column             Non-Null Count  Dtype  \n---  ------             --------------  -----  \n 0   species            344 non-null    object \n 1   island             344 non-null    object \n 2   culmen_length_mm   342 non-null    float64\n 3   culmen_depth_mm    342 non-null    float64\n 4   flipper_length_mm  342 non-null    float64\n 5   body_mass_g        342 non-null    float64\n 6   sex                334 non-null    object \ndtypes: float64(4), object(3)\nmemory usage: 18.9+ KB\n\n\n\n# valores nulos\ndf.isnull().sum()\n\nspecies               0\nisland                0\nculmen_length_mm      2\nculmen_depth_mm       2\nflipper_length_mm     2\nbody_mass_g           2\nsex                  10\ndtype: int64\n\n\n\n# estatísticas descritivas\ndf.describe()\n\n\n\n\n\n\n\n\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\n\n\n\n\ncount\n342.000000\n342.000000\n342.000000\n342.000000\n\n\nmean\n43.921930\n17.151170\n200.915205\n4201.754386\n\n\nstd\n5.459584\n1.974793\n14.061714\n801.954536\n\n\nmin\n32.100000\n13.100000\n172.000000\n2700.000000\n\n\n25%\n39.225000\n15.600000\n190.000000\n3550.000000\n\n\n50%\n44.450000\n17.300000\n197.000000\n4050.000000\n\n\n75%\n48.500000\n18.700000\n213.000000\n4750.000000\n\n\nmax\n59.600000\n21.500000\n231.000000\n6300.000000\n\n\n\n\n\n\n\nVocê consegue perceber alguma relação entre o tamanho da nadadeira e o peso dos pinguins?\n\n# filtrar apenas pinguins adelie\nadelie = df[df[\"species\"] == \"Adelie\"]\n\n# scatter plot: massa corporal vs comprimento da nadadeira\nsns.scatterplot(data=adelie, x=\"flipper_length_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Comprimento da Nadadeira\")\nplt.xlabel(\"Comprimento da Nadadeira (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nTambém podemos relacionar a profundidade do bico com o peso.\n\n\n\n\nProfundidade do bico\n\n\n\n# scatter plot: massa corporal vs comprimento do bico\nsns.scatterplot(data=adelie, x=\"culmen_depth_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Profundidade do Bico\")\nplt.xlabel(\"Profundidade do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nQual das duas características tem uma relação mais forte com o peso?\nNão é muito simples de responder só observando os gráficos, mas podemos calcular a correlação para quantificar essa relação.\n\n# cálculo da correlação entre as variáveis\ncorrelation = adelie[[\"flipper_length_mm\", \"culmen_depth_mm\", \"body_mass_g\"]].corr()\nprint(\"Correlação entre as variáveis:\")\nprint(correlation)\n\n# heatmap da correlação\nplt.figure(figsize=(8, 6))\nsns.heatmap(correlation, annot=True, cmap=\"coolwarm\", fmt=\".2f\")\nplt.title(\"Heatmap da Correlação entre Variáveis\")\nplt.show()\n\nCorrelação entre as variáveis:\n                   flipper_length_mm  culmen_depth_mm  body_mass_g\nflipper_length_mm           1.000000         0.307620     0.468202\nculmen_depth_mm             0.307620         1.000000     0.576138\nbody_mass_g                 0.468202         0.576138     1.000000\n\n\n\n\n\n\n\n\n\nBasicamente, quanto mais próximo de 1 ou -1, mais forte é a relação entre as duas medidas e mais parecido com uma linha é o gráfico de dispersão.\n\n# exemplos de scatter plots com seaborn mostrando correlações diferentes com dados simulados\n\n# correlação positiva\nimport numpy as np\nnp.random.seed(42)\nx_pos = np.random.rand(100)\ny_pos = x_pos + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_pos, y=y_pos)\nplt.title(\"Correlação Positiva\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# correlação negativa\nx_neg = np.random.rand(100)\ny_neg = -x_neg + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_neg, y=y_neg)\nplt.title(\"Correlação Negativa\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# sem correlação\nx_no_corr = np.random.rand(100)\ny_no_corr = np.random.rand(100)\nsns.scatterplot(x=x_no_corr, y=y_no_corr)\nplt.title(\"Sem Correlação\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nE o relacionamento das variáveis para as outras espécies de pinguins?\n\n# relação entre massa corporal e comprimento do bico\nsns.scatterplot(data=df, x=\"culmen_length_mm\", y=\"body_mass_g\", hue=\"species\")\nplt.title(\"Comprimento do bico vs Massa corporal\")\nplt.xlabel(\"Comprimento do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.legend(title=\"Espécie\")\nplt.show()",
-    "crumbs": [
-      "Notebooks",
-      "Modelos de dados"
-    ]
-  },
-  {
-    "objectID": "notebooks/31_modelos.html#regressão-linear",
-    "href": "notebooks/31_modelos.html#regressão-linear",
-    "title": "Modelos de dados",
-    "section": "Regressão linear",
-    "text": "Regressão linear\nVamos prever a massa corporal dos pinguins com base no comprimento do bico.\n\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n\n# remover valores nulos\ndf_reg = df[[\"culmen_length_mm\", \"body_mass_g\", \"species\"]].dropna()\n\n# variáveis independentes e dependentes\nX = df_reg[[\"culmen_length_mm\"]]\ny = df_reg[\"body_mass_g\"]\n\n# separar em treino e teste\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n# criar e treinar o modelo\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n\n# avaliação do modelo\nr2 = model.score(X_test, y_test)\nprint(f\"Coeficiente de determinação R²: {r2:.2f}\")\nprint(f\"Coeficiente angular: {model.coef_[0]:.2f}, Intercepto: {model.intercept_:.2f}\")\n\nCoeficiente de determinação R²: 0.37\nCoeficiente angular: 85.06, Intercepto: 473.40\n\n\n\n# previsão\ny_pred = model.predict(X_test)\n\n# gráfico\nsns.scatterplot(data=df_reg, x=\"culmen_length_mm\", y=\"body_mass_g\", hue=\"species\")\nplt.plot(X_test, y_pred, color=\"red\", linewidth=2, label=\"Modelo\")\nplt.xlabel(\"Comprimento do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.title(\"Regressão Linear\")\nplt.legend()\nplt.show()",
-    "crumbs": [
-      "Notebooks",
-      "Modelos de dados"
-    ]
-  },
-  {
-    "objectID": "notebooks/31_modelos.html#classificação-linear",
-    "href": "notebooks/31_modelos.html#classificação-linear",
-    "title": "Modelos de dados",
-    "section": "Classificação linear",
-    "text": "Classificação linear\nAgora, vamos prever a espécie do pinguim com base em duas características físicas.\n\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.metrics import classification_report, ConfusionMatrixDisplay\n\n# selecionar dados\ndf_clf = df[[\"culmen_length_mm\", \"flipper_length_mm\", \"species\"]].dropna()\n\nX = df_clf[[\"culmen_length_mm\", \"flipper_length_mm\"]]\ny = df_clf[\"species\"]\n\n# normalizar\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n\n# separar conjuntos\nX_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.25, random_state=42)\n\n# treinar o modelo de classificação\nclf = LogisticRegression(max_iter=1000)\nclf.fit(X_train, y_train)\n\n# avaliar\ny_pred = clf.predict(X_test)\nprint(classification_report(y_test, y_pred))\n\n# matriz de confusão\nConfusionMatrixDisplay.from_estimator(clf, X_test, y_test)\nplt.show()\n\n              precision    recall  f1-score   support\n\n      Adelie       0.95      0.93      0.94        44\n   Chinstrap       0.85      0.85      0.85        13\n      Gentoo       0.97      1.00      0.98        29\n\n    accuracy                           0.94        86\n   macro avg       0.92      0.93      0.92        86\nweighted avg       0.94      0.94      0.94        86",
-    "crumbs": [
-      "Notebooks",
-      "Modelos de dados"
-    ]
-  },
-  {
-    "objectID": "resenhas/13_ferramentas.html",
-    "href": "resenhas/13_ferramentas.html",
-    "title": "Ferramentas",
-    "section": "",
-    "text": "Ferramentas que serão usadas no decorrer da disciplina.",
-    "crumbs": [
-      "Resenhas",
-      "Ferramentas"
-    ]
-  },
-  {
-    "objectID": "resenhas/13_ferramentas.html#instalação",
-    "href": "resenhas/13_ferramentas.html#instalação",
-    "title": "Ferramentas",
-    "section": "Instalação",
-    "text": "Instalação\nO mínimo a se instalar é um interpretador da linguagem Python (versão 3) e um editor de texto. Instruções mais detalhadas são apresentadas a seguir.\n\nPython\nPrimeiro passo: navegar até https://www.python.org e seguir as instruções para instalar uma versão de Python 3 no seu sistema operacional. Caso já tenha Python instalado, recomenda-se verificar qual versão com a linha de comando python3 --version.\nPor exemplo, a versão de Python usada neste projeto é a 3.10.17. Para manter o máximo de compatibilidade com os materiais da disciplina, recomenda-se baixar a mesma versão ou, se não for possível, a versão mais atual que comece com os dois primeiros valores iguais ao da versão do projeto, ou seja, começando com 3.10.\nA depender do sistema operacional, também pode ser necessário instalar algumas dependências adicionais para conseguir fazer uso de ambientes virtuais. Feito isso, Python está pronta pra ser usada.\n\nAnaconda\nUma outra forma de instalação é por meio da distribuição Anaconda que funciona como um pacote contendo Python e várias bibliotecas e ferramentas embutidas num ambiente de execução pré-configurado. Especificamente, recomenda-se a versão mini cujas instruções de instalação podem ser encontradas em https://www.anaconda.com/docs/getting-started/miniconda/install.\nO uso de Anaconda aqui será opcional. As instruções neste projeto em geral não focam na instalação Anaconda, mas desde que as versões de Python e das bibliotecas usadas sejam as mesmas, tudo deve funcionar da mesma forma.\n\n\n\nEditor de texto\nQualquer editor de texto da preferência do usuário pode ser usado para acompanhar os materiais. No entanto, deixo como recomendação o Visual Studio Code, que pode ser encontrado em https://code.visualstudio.com, por oferecer diversas extensões que integram as principais ferramentas a serem usadas. Especificamente, as extensões padrões de Python, Jupyter, WSL (se estiver usando Linux no Windows), e Rainbow CSV.\n\n\nOutras ferramentas\nAlém do básico mencionado acima, outras ferramentas adicionais podem ser úteis, como leitores de planilhas de dados tabulados (LibreOffice Calc, Microsoft Excel, Google Sheets) e um navegador web (Firefox, Chrome, etc). O navegador pode ser necessário caso o seu editor de texto não consiga exibir e executar Notebooks Jupyter. Também é possível usar ferramentas em nuvem como o Google Colab para executar Notebooks.",
-    "crumbs": [
-      "Resenhas",
-      "Ferramentas"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_relacionados.html",
-    "href": "resenhas/12_relacionados.html",
-    "title": "Áreas relacionadas",
-    "section": "",
-    "text": "Existem várias outras áreas de conhecimento e campos de estudo que também colocam dados e seu processamento nos holofotes. Por exemplo, Big Data e Machine Learning são umas das mais populares. Considerando a ideia difusa de Ciência de Dados,1 é natural que haja alguma confusão e/ou sobreposição entre os tópicos.",
-    "crumbs": [
-      "Resenhas",
-      "Áreas relacionadas"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_relacionados.html#o-que-não-é-ciência-de-dados",
-    "href": "resenhas/12_relacionados.html#o-que-não-é-ciência-de-dados",
-    "title": "Áreas relacionadas",
-    "section": "O que não é Ciência de Dados?",
-    "text": "O que não é Ciência de Dados?\nO sinal de interrogação no título desta seção é proposital. É comum ser questionado se a Ciência de Dados não é apenas mais uma repaginação de inúmeros outros campos mais antigos que combinam engenharia de software com análise de dados (Godsey 2017). As áreas de conhecimento comentadas a seguir têm muito em comum com a Ciência de Dados, mas vamos procurar desambiguá-las.\n\nBig Data\nO termo Big Data costuma ser usado tanto para descrever grandes volumes de dados quanto para nomear a área de estudos e tecnologias voltadas a esses dados. Em Carvalho, Menezes, e Bonidia (2024), os autores apresentam Big Data falando sobre os três Vs que caracterizam seu objeto de estudo: dados com grande volume, velocidade e variedade. Os autores também tentam desambiguar Ciência de Dados de Big Data com o entendimento de que o primeiro lida com a formulação de soluções computacionais para transformar, preprocessar, modelar e extrair conhecimento de dados, e o segundo lida com o estudo de tecnologias para coletar, armazenar, processar e transmitir dados. Na minha visão, essa desambiguação não é clara o suficiente.\nÉ possível que Big Data seja usado como sinônimo de Ciência de Dados e as diferenciações variam de autor para autor. Por exemplo, para Kotu e Deshpande (2018), o termo Ciência de Dados engloba as técnicas de processamento de Big Data que, por sua vez, apenas indica grandes volumes de dados. Já em Das (2016), o autor afirma que a Ciência de Dados está além do Big Data por incluir a criação de dados de várias fontes e sua quantificação em informação. Essas visões não são necessariamente contraditórias, mas também não deixam claro quanta sobreposição há entre os termos.\nEm Morettin e Singer (2025), os autores comentam que ter de lidar com grandes volumes de dados não é o suficiente para marcar a divisão entre Ciência de Dados e Estatística. Por outro lado, essa distinção pode ser o suficiente para desambiguar a Ciência de Dados de Big Data. Em outras palavras, pode-se considerar que Big Data engloba o estudo de questões pertinentes para lidar com grandes volumes de dados, ao passo que a Ciência de Dados pode ou não ter de lidar com grandes volumes de dados, a depender do problema em investigação.\n\n\nAprendizagem de Máquina\nDe maneira semelhante à relação com Big Data, a Aprendizagem de Máquina ou Machine Learning pode ser uma ferramenta usada pela Ciência de Dados. Em Kotu e Deshpande (2018), a Ciência de Dados é tratada como um termo guarda-chuva em que os tipos de modelos de aprendizado tipicamente estudados em Machine Learning são vistos como seus subtópicos. Morettin e Singer (2025) também distingue a ideia de aprendizado estatístico do aprendizado automático, ambos termos que podem ser usados para designar Machine Learning.\nVale mencionar que Machine Learning faz parte do Diagrama de Venn da Ciência de Dados. Em seu texto original,2 Drew Conway comenta que conhecimentos de matemática e estatística com computação são os ingredientes para formar Machine Learning, mas não o suficiente para chegar na Ciência de Dados. Este tópico será abordado com mais profundidade em textos futuros.\n\n\nMineração de Dados\nMineração de dados ou data mining é uma das etapas do processo geral de descoberta de conhecimento em bases de dados3 que, por sua vez, pode ser considerado como um tópico mais específico dentro da grande área de Ciência de Dados. Assim como a Ciência de Dados, a mineração de dados também objetiva extrair conhecimento de conjuntos de dados. Mais expecificamente, extração de conhecimento e data mining4 são termos às vezes usados como sinônimos, pois a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento. Mais detalhes sobre esse processo em si serão apresentados em textos futuros.\n\n\nOutras áreas\nEsta resenha pode ser expandida para fazer um paralelo e esclarecer a diferença entre Ciência de Dados e diversas outras áreas semelhantes. Por exemplo, pesquisa operacional, data analytics, business intelligence.",
-    "crumbs": [
-      "Resenhas",
-      "Áreas relacionadas"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_relacionados.html#footnotes",
-    "href": "resenhas/12_relacionados.html#footnotes",
-    "title": "Áreas relacionadas",
-    "section": "Notas de rodapé",
-    "text": "Notas de rodapé\n\n\nResenha: Definições de Ciência de Dados↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://pt.wikipedia.org/wiki/Extração_de_conhecimento↩︎\nhttps://www.datascience-pm.com/kdd-and-data-mining↩︎",
-    "crumbs": [
-      "Resenhas",
-      "Áreas relacionadas"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Início",
-    "section": "",
-    "text": "Boas-vindas à página inicial da disciplina. Todo o conteúdo apresentado aqui se encontra no repositório em vccortez/ciencia-de-dados.\nA organização das pastas busca simplificar futuras buscas por conteúdos. Frequentemente, o nome dos arquivos estarão numerados para indicar a qual unidade e aula o recurso pertence.\nUma visão da árvore de arquivos é apresentada abaixo:\n\n\n.\n├── dados\n│   ├── 2015.csv\n│   ├── 2017.csv\n│   ├── 2019.csv\n│   ├── Coffee_domestic_consumption.csv\n│   ├── contribuicoes.csv\n│   ├── datas.csv\n│   ├── penguins_size.csv\n│   ├── restaurante-cafeteria-bar-e-similares.xlsx\n│   └── twitchdata-update.csv\n├── img\n│   ├── logo-ufpi.pdf\n│   └── what-is-ds.png\n├── meets\n│   ├── meet_11_abertura.py\n│   ├── meet_12_ciencia.py\n│   ├── meet_13_fundamentos.py\n│   ├── meet_14_ipython.py\n│   ├── meet_15_bases.py\n│   ├── meet_16_descoberta.py\n│   ├── meet_17_acompanhamento.py\n│   ├── meet_18_avaliacao.py\n│   ├── meet_21_manipulacao.py\n│   ├── meet_22_amostragem.py\n│   ├── meet_23_estatistica.py\n│   ├── meet_24_visualizacao.py\n│   ├── meet_25_qualidade.py\n│   ├── meet_26_transformacao.py\n│   ├── meet_27_avaliacao.py\n│   ├── meet_31_aprendizado.py\n│   ├── meet_32_modelagem.py\n│   ├── meet_33_metricas.py\n│   ├── meet_34_outros.py\n│   ├── meet_35_avaliacao.py\n│   └── meet_36_encerramento.py\n├── meta\n│   ├── before-title.tex\n│   ├── biblio.tex\n│   ├── bibliografia.bib\n│   ├── calendario.qmd\n│   ├── contribuicoes.qmd\n│   ├── index.qmd\n│   ├── plano-de-ensino.qmd\n│   ├── references.bib\n│   └── texgyreheros.fontspec\n├── model\n│   ├── course.py\n│   ├── meet.py\n│   ├── module.py\n│   ├── node.py\n│   ├── plan.py\n│   ├── resource.py\n│   └── topic.py\n├── notebooks\n│   ├── 14_introducao.ipynb\n│   ├── 21_visualizacao.ipynb\n│   ├── 31_modelos.ipynb\n│   └── index.qmd\n├── outros\n│   ├── bases-de-dados.md\n│   ├── index.qmd\n│   └── roteiro-de-aulas.md\n├── resenhas\n│   ├── 12_definicao.qmd\n│   ├── 12_processos.qmd\n│   ├── 12_relacionados.qmd\n│   ├── 13_ferramentas.qmd\n│   └── index.qmd\n├── scripts\n│   ├── agendador.py\n│   ├── extrair_topicos_aulas.js\n│   ├── gerar_indice_pasta.py\n│   ├── gerar_plano_json.py\n│   ├── preencher_topicos_sigaa.js\n│   ├── scrape_sigaa_dates.js\n│   ├── sortcsv\n│   └── util.py\n├── slides\n│   ├── 11_abertura.qmd\n│   └── index.qmd\n├── web\n│   └── styles.css\n├── LICENSE\n├── Makefile\n├── README.md\n├── index.qmd\n└── requirements.txt\n\n12 directories, 76 files\n\n\n\n\n\n De volta ao topo"
-  },
-  {
-    "objectID": "resenhas/12_definicao.html",
-    "href": "resenhas/12_definicao.html",
-    "title": "Definição",
-    "section": "",
-    "text": "Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição objetiva e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.",
-    "crumbs": [
-      "Resenhas",
-      "Definição"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_definicao.html#o-que-é-ciência-de-dados",
-    "href": "resenhas/12_definicao.html#o-que-é-ciência-de-dados",
-    "title": "Definição",
-    "section": "O que é Ciência de Dados",
-    "text": "O que é Ciência de Dados\n“Ciência de Dados” é frequentemente usado como um termo guarda-chuva para múltiplas áreas que estudam dados por meio da computação. No entanto, as definições para o termo podem ser tão diversas quanto as partes interessadas1 nele. A tirinha na Figura 1 ilustra diferentes percepções sobre o termo.\n\n\n\n\n\n\nFigura 1: Estereótipos sobre Ciência de Dados (Godsey 2017, pág. 4)\n\n\n\nParte dessa diversidade de percepções se dá pela popularização do termo “Ciência de Dados”, por vezes visto como mais uma buzzword,2 uma palavra da moda sem um sentido bem definido. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.\n\nHistória e definições\nA história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo Verri (2024), a história do termo inicia nos anos 60 com Peter Naur3 ao sugerir que o termo ciência de dados ou “dadologia” (datalogy) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época (Blum, Hopcroft, e Kannan 2020).\nOs primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística. Por exemplo, Chien-Fu Jeff Wu e William Cleveland, respectivamente, argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos (Carvalho, Menezes, e Bonidia 2024; Morettin e Singer 2025; Verri 2024).\nHá diversos sabores de definição para a Ciência de Dados na literatura. Para Verri (2024), Ciência de Dados é o estudo da extração de conhecimento de fenômenos mensuráveis usando métodos computacionais. Uma definição simples, mas que destaca elementos importantes para a área de estudo que pode ser vista como uma nova disciplina.\nSegundo Carvalho, Menezes, e Bonidia (2024), a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada e voltada à extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas (Morettin e Singer 2025).\nAlguns autores veem a Ciência de Dados mais como um subconjunto de ferramentas da matemática estatística e da computação e menos como uma nova área de conhecimento. Por exemplo, VanderPlas (2016) sugere que o leitor pense sobre Ciência de Dados não como uma nova área de conhecimento, mas sim um conjunto de habilidades interdisciplinares que podem ser aplicadas a qualquer domínio na busca de perguntas e respostas baseadas em dados. Sob esse ponto de vista, o diagrama de Venn de Drew Conway,4 apresentado na Figura 2, costuma ser invocado para ilustrar os ingredientes da Ciência de Dados.\n\n\n\n\n\n\n\n\nFigura 2: Diagrama de Venn de Drew Conway\n\n\n\n\n\nEm resumo, Conway enfatiza que é a combinação dos três conjuntos de habilidades principais que cria um cientista de dados: as habilidades para lidar com tecnologia em que os dados são codificados; os conhecimentos dos métodos para extração de valor desses dados; e uma experiência de domínio substancial voltada à produção de conhecimento. É a este último conjunto de habilidades que Conway atribui o aspecto científico do termo.\nComplementarmente, Godsey (2017) considera que a Ciência de Dados também engloba o conjunto de processos e conceitos que servem de guia para se fazer progresso e tomar decisões em projetos centrados em dados. A diferença entre essa visão e as outras apresentadas anteriormente é sutil e, basicamente, se resume a qual aspecto da Ciência de Dados é julgado mais relevante na visão dos autores, isto é, o conhecimento técnico e teórico versus a mentalidade e a experiência aplicada do cientista de dados, o que vai de encontro à definição de Conway.\nA figura do cientista de dados também é alvo de grandes expectativas de conhecimentos multidisciplinares. Por exemplo, Das (2016) descreve um cientista de dados como “alguém que levanta questões interessantes sobre dados para gerar conhecimento útil” e que é provavelmente “um indivíduo com treinamento em ciência da computação, negócios, economia, estatística, e munido com a quantidade necessária de conhecimento do domínio relevante para o problema em questão.” Em contrapartida, outros autores consideram que essa visão não é realista, configurando o chamado cientista de dados “unicórnio” (Fayyad e Hamutcu 2022).\nIndependentemente da definição, a interdisciplinaridade é sempre um fator atribuído à Ciência de Dados. Visto que não há um consenso na literatura sobre o que a Ciência de Dados engloba, é natural que a definição de um cientista de dados também seja incerta. Parafraseando a frase frequentemente parafraseada de Josh Wills5, “um cientista de dados é uma pessoa que é melhor em estatística do que qualquer engenheiro de software e melhor em engenharia de software do que qualquer estatístico”.",
-    "crumbs": [
-      "Resenhas",
-      "Definição"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_definicao.html#footnotes",
-    "href": "resenhas/12_definicao.html#footnotes",
-    "title": "Definição",
-    "section": "Notas de rodapé",
-    "text": "Notas de rodapé\n\n\nhttps://pt.wikipedia.org/wiki/Stakeholder↩︎\nhttps://en.wikipedia.org/wiki/Buzzword↩︎\nhttps://en.wikipedia.org/wiki/Peter_Naur↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://youtu.be/U8cl693mREc?si=bnC9sHotmkebkSms&t=256↩︎",
-    "crumbs": [
-      "Resenhas",
-      "Definição"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_processos.html",
-    "href": "resenhas/12_processos.html",
-    "title": "Processos",
-    "section": "",
-    "text": "Visto o que é e o que não é Ciência de Dados, resta saber como conduzir um projeto centrado em dados.",
-    "crumbs": [
-      "Resenhas",
-      "Processos"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_processos.html#como-fazer-ciência-de-dados",
-    "href": "resenhas/12_processos.html#como-fazer-ciência-de-dados",
-    "title": "Processos",
-    "section": "Como fazer Ciência de Dados",
-    "text": "Como fazer Ciência de Dados\nSimplificando, projetos de Ciência de Dados buscam extrair conhecimento de conjuntos de dados para atingir algum objetivo. Para isso, a literatura apresenta diversos processos1 que descrevem como isso pode ser feito.\n\nCRISP-DM\nO padrão de processo interindustrial para mineração de dados (do inglês cross-industry standard process for data mining) ou CRISP-DM2 é uma das abordagens mais conhecidas para organizar projetos de mineração de dados. Trata-se de um processo cíclico e centrado nos dados que envolve 6 (seis) etapas, conforme ilustradas na Figura 1.\n\n\n\n\n\n\n\n\n\n\nCRISPDM\n\n\n\nd\n\nDados\n\n\n\np1\n\nEntendimento\ndo negócio\n\n\n\np2\n\nEntendimento\ndos dados\n\n\n\np1-&gt;p2\n\n\n\n\n\np2-&gt;p1\n\n\n\n\n\np3\n\nPreparação\ndos dados\n\n\n\np2-&gt;p3\n\n\n\n\n\np4\n\nModelagem\n\n\n\np3-&gt;p4\n\n\n\n\n\np4-&gt;p3\n\n\n\n\n\np5\n\nAvaliação\n\n\n\np4-&gt;p5\n\n\n\n\n\np5-&gt;p1\n\n\n\n\n\np6\n\nImplantação\n\n\n\np5-&gt;p6\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Ciclo de etapas do CRISP-DM, adaptado de (Verri 2024, pág. 34)\n\n\n\nO ciclo se inicia com uma troca iterativa entre as etapas de entendimento do negócio e dos dados. Entender o negócio inclui definir os objetivos mensuráveis do projeto. Entender os dados inclui coletar e explorar as características dos dados de acordo com os requisitos dos dados.\nEm seguida, dá-se uma troca entre as etapas de preparação e modelagem dos dados. Na preparação, os dados são limpados, transformados e/ou agregados para se adequar aos requisitos da modelagem. Na modelagem, um modelo é treinado e validado de acordo com os requisitos de avaliação.\nPor fim, a fase de avaliação dos modelos determina se o resultado pode ser implantado ou se é preciso reiniciar o ciclo. A avaliação deve ser realizada com dados diferentes dos dados de treinamento e validação.\n\n\nOutros processos\nEsta resenha pode ser expandida para comentar outros processos aplicáveis a projetos no contexto de Ciência de Dados, como o processo genérico de descoberta de conhecimento em bases de dados3, e SEMMA4, assim como processos sintetizados por outros autores, como os de Zumel & Mount, Verri (Verri 2024, págs. 35, 42) e o de Godsey (Godsey 2017).",
-    "crumbs": [
-      "Resenhas",
-      "Processos"
-    ]
-  },
-  {
-    "objectID": "resenhas/12_processos.html#footnotes",
-    "href": "resenhas/12_processos.html#footnotes",
-    "title": "Processos",
-    "section": "Notas de rodapé",
-    "text": "Notas de rodapé\n\n\nhttps://dictionary.cambridge.org/dictionary/english/process↩︎\nhttps://www.datascience-pm.com/crisp-dm-2/↩︎\nhttps://www.datascience-pm.com/kdd-and-data-mining/↩︎\nhttps://www.datascience-pm.com/semma/↩︎",
-    "crumbs": [
-      "Resenhas",
-      "Processos"
-    ]
-  },
-  {
-    "objectID": "resenhas/index.html",
-    "href": "resenhas/index.html",
-    "title": "Resenhas",
-    "section": "",
-    "text": "Índice de todas as resenhas, resumos e documentos publicados na pasta resenhas.\n\n\n\n\nTabela 1: Índice de resenhas\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nDefinição\nIr para 12_definicao.qmd\n\n\n2\nProcessos\nIr para 12_processos.qmd\n\n\n3\nÁreas relacionadas\nIr para 12_relacionados.qmd\n\n\n4\nFerramentas\nIr para 13_ferramentas.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
-    "crumbs": [
-      "Resenhas"
+      "Notebooks"
     ]
   },
   {
@@ -423,13 +196,262 @@
     ]
   },
   {
-    "objectID": "notebooks/index.html",
-    "href": "notebooks/index.html",
-    "title": "Notebooks",
+    "objectID": "resenhas/index.html",
+    "href": "resenhas/index.html",
+    "title": "Resenhas",
     "section": "",
-    "text": "Índice de todos os IPython/Jupyter notebooks publicados na pasta notebooks.\n\n\n\n\nTabela 1: Índice de notebooks\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nIntrodução teórica\nIr para 14_introducao.ipynb\n\n\n2\nVisualização de dados\nIr para 21_visualizacao.ipynb\n\n\n3\nModelos de dados\nIr para 31_modelos.ipynb\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
+    "text": "Índice de todas as resenhas, resumos e documentos publicados na pasta resenhas.\n\n\n\n\nTabela 1: Índice de resenhas\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nDefinição\nIr para 12_definicao.qmd\n\n\n2\nProcessos\nIr para 12_processos.qmd\n\n\n3\nÁreas relacionadas\nIr para 12_relacionados.qmd\n\n\n4\nFerramentas\nIr para 13_ferramentas.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
     "crumbs": [
-      "Notebooks"
+      "Resenhas"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_processos.html",
+    "href": "resenhas/12_processos.html",
+    "title": "Processos",
+    "section": "",
+    "text": "Visto o que é e o que não é Ciência de Dados, resta saber como conduzir um projeto centrado em dados.",
+    "crumbs": [
+      "Resenhas",
+      "Processos"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_processos.html#como-fazer-ciência-de-dados",
+    "href": "resenhas/12_processos.html#como-fazer-ciência-de-dados",
+    "title": "Processos",
+    "section": "Como fazer Ciência de Dados",
+    "text": "Como fazer Ciência de Dados\nSimplificando, projetos de Ciência de Dados buscam extrair conhecimento de conjuntos de dados para atingir algum objetivo. Para isso, a literatura apresenta diversos processos1 que descrevem como isso pode ser feito.\n\nCRISP-DM\nO padrão de processo interindustrial para mineração de dados (do inglês cross-industry standard process for data mining) ou CRISP-DM2 é uma das abordagens mais conhecidas para organizar projetos de mineração de dados. Trata-se de um processo cíclico e centrado nos dados que envolve 6 (seis) etapas, conforme ilustradas na Figura 1.\n\n\n\n\n\n\n\n\n\n\nCRISPDM\n\n\n\nd\n\nDados\n\n\n\np1\n\nEntendimento\ndo negócio\n\n\n\np2\n\nEntendimento\ndos dados\n\n\n\np1-&gt;p2\n\n\n\n\n\np2-&gt;p1\n\n\n\n\n\np3\n\nPreparação\ndos dados\n\n\n\np2-&gt;p3\n\n\n\n\n\np4\n\nModelagem\n\n\n\np3-&gt;p4\n\n\n\n\n\np4-&gt;p3\n\n\n\n\n\np5\n\nAvaliação\n\n\n\np4-&gt;p5\n\n\n\n\n\np5-&gt;p1\n\n\n\n\n\np6\n\nImplantação\n\n\n\np5-&gt;p6\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Ciclo de etapas do CRISP-DM, adaptado de (Verri 2024, pág. 34)\n\n\n\nO ciclo se inicia com uma troca iterativa entre as etapas de entendimento do negócio e dos dados. Entender o negócio inclui definir os objetivos mensuráveis do projeto. Entender os dados inclui coletar e explorar as características dos dados de acordo com os requisitos dos dados.\nEm seguida, dá-se uma troca entre as etapas de preparação e modelagem dos dados. Na preparação, os dados são limpados, transformados e/ou agregados para se adequar aos requisitos da modelagem. Na modelagem, um modelo é treinado e validado de acordo com os requisitos de avaliação.\nPor fim, a fase de avaliação dos modelos determina se o resultado pode ser implantado ou se é preciso reiniciar o ciclo. A avaliação deve ser realizada com dados diferentes dos dados de treinamento e validação.\n\n\nOutros processos\nEsta resenha pode ser expandida para comentar outros processos aplicáveis a projetos no contexto de Ciência de Dados, como o processo genérico de descoberta de conhecimento em bases de dados3, e SEMMA4, assim como processos sintetizados por outros autores, como os de Zumel & Mount, Verri (Verri 2024, págs. 35, 42) e o de Godsey (Godsey 2017).",
+    "crumbs": [
+      "Resenhas",
+      "Processos"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_processos.html#footnotes",
+    "href": "resenhas/12_processos.html#footnotes",
+    "title": "Processos",
+    "section": "Notas de rodapé",
+    "text": "Notas de rodapé\n\n\nhttps://dictionary.cambridge.org/dictionary/english/process↩︎\nhttps://www.datascience-pm.com/crisp-dm-2/↩︎\nhttps://www.datascience-pm.com/kdd-and-data-mining/↩︎\nhttps://www.datascience-pm.com/semma/↩︎",
+    "crumbs": [
+      "Resenhas",
+      "Processos"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_definicao.html",
+    "href": "resenhas/12_definicao.html",
+    "title": "Definição",
+    "section": "",
+    "text": "Antes de começar a estudar qualquer coisa, faz sentido começar pelo que é, ou seja, pela definição daquilo que se pretende estudar. No entanto, nem sempre é possível encontrar uma única definição objetiva e clara pra tudo, o que aparenta ser o caso para a Ciência de Dados.",
+    "crumbs": [
+      "Resenhas",
+      "Definição"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_definicao.html#o-que-é-ciência-de-dados",
+    "href": "resenhas/12_definicao.html#o-que-é-ciência-de-dados",
+    "title": "Definição",
+    "section": "O que é Ciência de Dados",
+    "text": "O que é Ciência de Dados\n“Ciência de Dados” é frequentemente usado como um termo guarda-chuva para múltiplas áreas que estudam dados por meio da computação. No entanto, as definições para o termo podem ser tão diversas quanto as partes interessadas1 nele. A tirinha na Figura 1 ilustra diferentes percepções sobre o termo.\n\n\n\n\n\n\nFigura 1: Estereótipos sobre Ciência de Dados (Godsey 2017, pág. 4)\n\n\n\nParte dessa diversidade de percepções se dá pela popularização do termo “Ciência de Dados”, por vezes visto como mais uma buzzword,2 uma palavra da moda sem um sentido bem definido. Para esclarecer melhor o termo, a próxima subseção apresenta algumas definições e um pouco da história.\n\nHistória e definições\nA história da Ciência de Dados é frequentemente associada com a da Ciência da Computação. Segundo Verri (2024), a história do termo inicia nos anos 60 com Peter Naur3 ao sugerir que o termo ciência de dados ou “dadologia” (datalogy) fosse mais adequado do que ciência da computação. Naur acreditava que a área deveria enfatizar, como conceitos fundamentais, a importância dos dados e aspectos relacionados de seu processamento, em oposição ao foco nas linguagens de programação e algoritmos predominantes na época (Blum, Hopcroft, e Kannan 2020).\nOs primeiros usos do termo também são atribuídos a diversos cientistas do campo da estatística. Por exemplo, Chien-Fu Jeff Wu e William Cleveland, respectivamente, argumentavam pela renomeação da estatística em ciência de dados e pela expansão da estatística em direção campos mais técnicos (Carvalho, Menezes, e Bonidia 2024; Morettin e Singer 2025; Verri 2024).\nHá diversos sabores de definição para a Ciência de Dados na literatura. Para Verri (2024), Ciência de Dados é o estudo da extração de conhecimento de fenômenos mensuráveis usando métodos computacionais. Uma definição simples, mas que destaca elementos importantes para a área de estudo que pode ser vista como uma nova disciplina.\nSegundo Carvalho, Menezes, e Bonidia (2024), a Ciência de Dados pode ser vista como uma evolução da área de Análise de Dados ao se unir com a Computação e se beneficiar de seus avanços. Os autores também chegam a considerar a Ciência de Dados como uma nova área de conhecimento aplicada e voltada à extração de conhecimento a partir de dados. Essa visão não é incomum na literatura e remete ao fato de que, na prática, a Ciência de Dados aborda a aplicação de conhecimentos, técnicas e tecnologias já conhecidas e estudadas por outras áreas (Morettin e Singer 2025).\nAlguns autores veem a Ciência de Dados mais como um subconjunto de ferramentas da matemática estatística e da computação e menos como uma nova área de conhecimento. Por exemplo, VanderPlas (2016) sugere que o leitor pense sobre Ciência de Dados não como uma nova área de conhecimento, mas sim um conjunto de habilidades interdisciplinares que podem ser aplicadas a qualquer domínio na busca de perguntas e respostas baseadas em dados. Sob esse ponto de vista, o diagrama de Venn de Drew Conway,4 apresentado na Figura 2, costuma ser invocado para ilustrar os ingredientes da Ciência de Dados.\n\n\n\n\n\n\n\n\nFigura 2: Diagrama de Venn de Drew Conway\n\n\n\n\n\nEm resumo, Conway enfatiza que é a combinação dos três conjuntos de habilidades principais que cria um cientista de dados: as habilidades para lidar com tecnologia em que os dados são codificados; os conhecimentos dos métodos para extração de valor desses dados; e uma experiência de domínio substancial voltada à produção de conhecimento. É a este último conjunto de habilidades que Conway atribui o aspecto científico do termo.\nComplementarmente, Godsey (2017) considera que a Ciência de Dados também engloba o conjunto de processos e conceitos que servem de guia para se fazer progresso e tomar decisões em projetos centrados em dados. A diferença entre essa visão e as outras apresentadas anteriormente é sutil e, basicamente, se resume a qual aspecto da Ciência de Dados é julgado mais relevante na visão dos autores, isto é, o conhecimento técnico e teórico versus a mentalidade e a experiência aplicada do cientista de dados, o que vai de encontro à definição de Conway.\nA figura do cientista de dados também é alvo de grandes expectativas de conhecimentos multidisciplinares. Por exemplo, Das (2016) descreve um cientista de dados como “alguém que levanta questões interessantes sobre dados para gerar conhecimento útil” e que é provavelmente “um indivíduo com treinamento em ciência da computação, negócios, economia, estatística, e munido com a quantidade necessária de conhecimento do domínio relevante para o problema em questão.” Em contrapartida, outros autores consideram que essa visão não é realista, configurando o chamado cientista de dados “unicórnio” (Fayyad e Hamutcu 2022).\nIndependentemente da definição, a interdisciplinaridade é sempre um fator atribuído à Ciência de Dados. Visto que não há um consenso na literatura sobre o que a Ciência de Dados engloba, é natural que a definição de um cientista de dados também seja incerta. Parafraseando a frase frequentemente parafraseada de Josh Wills5, “um cientista de dados é uma pessoa que é melhor em estatística do que qualquer engenheiro de software e melhor em engenharia de software do que qualquer estatístico”.",
+    "crumbs": [
+      "Resenhas",
+      "Definição"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_definicao.html#footnotes",
+    "href": "resenhas/12_definicao.html#footnotes",
+    "title": "Definição",
+    "section": "Notas de rodapé",
+    "text": "Notas de rodapé\n\n\nhttps://pt.wikipedia.org/wiki/Stakeholder↩︎\nhttps://en.wikipedia.org/wiki/Buzzword↩︎\nhttps://en.wikipedia.org/wiki/Peter_Naur↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://youtu.be/U8cl693mREc?si=bnC9sHotmkebkSms&t=256↩︎",
+    "crumbs": [
+      "Resenhas",
+      "Definição"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Início",
+    "section": "",
+    "text": "Boas-vindas à página inicial da disciplina. Todo o conteúdo apresentado aqui se encontra no repositório em vccortez/ciencia-de-dados.\nA organização das pastas busca simplificar futuras buscas por conteúdos. Frequentemente, o nome dos arquivos estarão numerados para indicar a qual unidade e aula o recurso pertence.\nUma visão da árvore de arquivos é apresentada abaixo:\n\n\n.\n├── dados\n│   ├── 2015.csv\n│   ├── 2017.csv\n│   ├── 2019.csv\n│   ├── Ano-2025.csv\n│   ├── Coffee_domestic_consumption.csv\n│   ├── contribuicoes.csv\n│   ├── culmen_depth.png\n│   ├── datas.csv\n│   ├── penguins_size.csv\n│   ├── restaurante-cafeteria-bar-e-similares.xlsx\n│   └── twitchdata-update.csv\n├── img\n│   ├── logo-ufpi.pdf\n│   └── what-is-ds.png\n├── meets\n│   ├── meet_11_abertura.py\n│   ├── meet_12_ciencia.py\n│   ├── meet_13_fundamentos.py\n│   ├── meet_14_ipython.py\n│   ├── meet_15_bases.py\n│   ├── meet_16_descoberta.py\n│   ├── meet_17_acompanhamento.py\n│   ├── meet_18_avaliacao.py\n│   ├── meet_21_manipulacao.py\n│   ├── meet_22_amostragem.py\n│   ├── meet_23_estatistica.py\n│   ├── meet_24_visualizacao.py\n│   ├── meet_25_qualidade.py\n│   ├── meet_26_transformacao.py\n│   ├── meet_27_avaliacao.py\n│   ├── meet_31_aprendizado.py\n│   ├── meet_32_modelagem.py\n│   ├── meet_33_metricas.py\n│   ├── meet_34_outros.py\n│   ├── meet_35_avaliacao.py\n│   └── meet_36_encerramento.py\n├── meta\n│   ├── before-title.tex\n│   ├── biblio.tex\n│   ├── bibliografia.bib\n│   ├── calendario.qmd\n│   ├── contribuicoes.qmd\n│   ├── index.qmd\n│   ├── plano-de-ensino.qmd\n│   ├── references.bib\n│   └── texgyreheros.fontspec\n├── model\n│   ├── course.py\n│   ├── meet.py\n│   ├── module.py\n│   ├── node.py\n│   ├── plan.py\n│   ├── resource.py\n│   └── topic.py\n├── notebooks\n│   ├── 14_introducao.ipynb\n│   ├── 21_analise_descritiva.ipynb\n│   ├── 21_visualizacao.ipynb\n│   ├── 31_modelos.ipynb\n│   └── index.qmd\n├── outros\n│   ├── bases-de-dados.md\n│   ├── index.qmd\n│   └── roteiro-de-aulas.md\n├── resenhas\n│   ├── 12_definicao.qmd\n│   ├── 12_processos.qmd\n│   ├── 12_relacionados.qmd\n│   ├── 13_ferramentas.qmd\n│   └── index.qmd\n├── scripts\n│   ├── agendador.py\n│   ├── extrair_topicos_aulas.js\n│   ├── gerar_indice_pasta.py\n│   ├── gerar_plano_json.py\n│   ├── preencher_topicos_sigaa.js\n│   ├── scrape_sigaa_dates.js\n│   ├── sortcsv\n│   └── util.py\n├── slides\n│   ├── 11_abertura.qmd\n│   ├── 21_estatistica_descritiva.pdf\n│   └── index.qmd\n├── web\n│   └── styles.css\n├── LICENSE\n├── Makefile\n├── README.md\n├── index.qmd\n└── requirements.txt\n\n12 directories, 80 files\n\n\n\n\n\n De volta ao topo"
+  },
+  {
+    "objectID": "resenhas/12_relacionados.html",
+    "href": "resenhas/12_relacionados.html",
+    "title": "Áreas relacionadas",
+    "section": "",
+    "text": "Existem várias outras áreas de conhecimento e campos de estudo que também colocam dados e seu processamento nos holofotes. Por exemplo, Big Data e Machine Learning são umas das mais populares. Considerando a ideia difusa de Ciência de Dados,1 é natural que haja alguma confusão e/ou sobreposição entre os tópicos.",
+    "crumbs": [
+      "Resenhas",
+      "Áreas relacionadas"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_relacionados.html#o-que-não-é-ciência-de-dados",
+    "href": "resenhas/12_relacionados.html#o-que-não-é-ciência-de-dados",
+    "title": "Áreas relacionadas",
+    "section": "O que não é Ciência de Dados?",
+    "text": "O que não é Ciência de Dados?\nO sinal de interrogação no título desta seção é proposital. É comum ser questionado se a Ciência de Dados não é apenas mais uma repaginação de inúmeros outros campos mais antigos que combinam engenharia de software com análise de dados (Godsey 2017). As áreas de conhecimento comentadas a seguir têm muito em comum com a Ciência de Dados, mas vamos procurar desambiguá-las.\n\nBig Data\nO termo Big Data costuma ser usado tanto para descrever grandes volumes de dados quanto para nomear a área de estudos e tecnologias voltadas a esses dados. Em Carvalho, Menezes, e Bonidia (2024), os autores apresentam Big Data falando sobre os três Vs que caracterizam seu objeto de estudo: dados com grande volume, velocidade e variedade. Os autores também tentam desambiguar Ciência de Dados de Big Data com o entendimento de que o primeiro lida com a formulação de soluções computacionais para transformar, preprocessar, modelar e extrair conhecimento de dados, e o segundo lida com o estudo de tecnologias para coletar, armazenar, processar e transmitir dados. Na minha visão, essa desambiguação não é clara o suficiente.\nÉ possível que Big Data seja usado como sinônimo de Ciência de Dados e as diferenciações variam de autor para autor. Por exemplo, para Kotu e Deshpande (2018), o termo Ciência de Dados engloba as técnicas de processamento de Big Data que, por sua vez, apenas indica grandes volumes de dados. Já em Das (2016), o autor afirma que a Ciência de Dados está além do Big Data por incluir a criação de dados de várias fontes e sua quantificação em informação. Essas visões não são necessariamente contraditórias, mas também não deixam claro quanta sobreposição há entre os termos.\nEm Morettin e Singer (2025), os autores comentam que ter de lidar com grandes volumes de dados não é o suficiente para marcar a divisão entre Ciência de Dados e Estatística. Por outro lado, essa distinção pode ser o suficiente para desambiguar a Ciência de Dados de Big Data. Em outras palavras, pode-se considerar que Big Data engloba o estudo de questões pertinentes para lidar com grandes volumes de dados, ao passo que a Ciência de Dados pode ou não ter de lidar com grandes volumes de dados, a depender do problema em investigação.\n\n\nAprendizagem de Máquina\nDe maneira semelhante à relação com Big Data, a Aprendizagem de Máquina ou Machine Learning pode ser uma ferramenta usada pela Ciência de Dados. Em Kotu e Deshpande (2018), a Ciência de Dados é tratada como um termo guarda-chuva em que os tipos de modelos de aprendizado tipicamente estudados em Machine Learning são vistos como seus subtópicos. Morettin e Singer (2025) também distingue a ideia de aprendizado estatístico do aprendizado automático, ambos termos que podem ser usados para designar Machine Learning.\nVale mencionar que Machine Learning faz parte do Diagrama de Venn da Ciência de Dados. Em seu texto original,2 Drew Conway comenta que conhecimentos de matemática e estatística com computação são os ingredientes para formar Machine Learning, mas não o suficiente para chegar na Ciência de Dados. Este tópico será abordado com mais profundidade em textos futuros.\n\n\nMineração de Dados\nMineração de dados ou data mining é uma das etapas do processo geral de descoberta de conhecimento em bases de dados3 que, por sua vez, pode ser considerado como um tópico mais específico dentro da grande área de Ciência de Dados. Assim como a Ciência de Dados, a mineração de dados também objetiva extrair conhecimento de conjuntos de dados. Mais expecificamente, extração de conhecimento e data mining4 são termos às vezes usados como sinônimos, pois a mineração de dados é vista como um passo crucial dentro do processo de descoberta de conhecimento. Mais detalhes sobre esse processo em si serão apresentados em textos futuros.\n\n\nOutras áreas\nEsta resenha pode ser expandida para fazer um paralelo e esclarecer a diferença entre Ciência de Dados e diversas outras áreas semelhantes. Por exemplo, pesquisa operacional, data analytics, business intelligence.",
+    "crumbs": [
+      "Resenhas",
+      "Áreas relacionadas"
+    ]
+  },
+  {
+    "objectID": "resenhas/12_relacionados.html#footnotes",
+    "href": "resenhas/12_relacionados.html#footnotes",
+    "title": "Áreas relacionadas",
+    "section": "Notas de rodapé",
+    "text": "Notas de rodapé\n\n\nResenha: Definições de Ciência de Dados↩︎\nhttp://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram↩︎\nhttps://pt.wikipedia.org/wiki/Extração_de_conhecimento↩︎\nhttps://www.datascience-pm.com/kdd-and-data-mining↩︎",
+    "crumbs": [
+      "Resenhas",
+      "Áreas relacionadas"
+    ]
+  },
+  {
+    "objectID": "resenhas/13_ferramentas.html",
+    "href": "resenhas/13_ferramentas.html",
+    "title": "Ferramentas",
+    "section": "",
+    "text": "Ferramentas que serão usadas no decorrer da disciplina.",
+    "crumbs": [
+      "Resenhas",
+      "Ferramentas"
+    ]
+  },
+  {
+    "objectID": "resenhas/13_ferramentas.html#instalação",
+    "href": "resenhas/13_ferramentas.html#instalação",
+    "title": "Ferramentas",
+    "section": "Instalação",
+    "text": "Instalação\nO mínimo a se instalar é um interpretador da linguagem Python (versão 3) e um editor de texto. Instruções mais detalhadas são apresentadas a seguir.\n\nPython\nPrimeiro passo: navegar até https://www.python.org e seguir as instruções para instalar uma versão de Python 3 no seu sistema operacional. Caso já tenha Python instalado, recomenda-se verificar qual versão com a linha de comando python3 --version.\nPor exemplo, a versão de Python usada neste projeto é a 3.10.17. Para manter o máximo de compatibilidade com os materiais da disciplina, recomenda-se baixar a mesma versão ou, se não for possível, a versão mais atual que comece com os dois primeiros valores iguais ao da versão do projeto, ou seja, começando com 3.10.\nA depender do sistema operacional, também pode ser necessário instalar algumas dependências adicionais para conseguir fazer uso de ambientes virtuais. Feito isso, Python está pronta pra ser usada.\n\nAnaconda\nUma outra forma de instalação é por meio da distribuição Anaconda que funciona como um pacote contendo Python e várias bibliotecas e ferramentas embutidas num ambiente de execução pré-configurado. Especificamente, recomenda-se a versão mini cujas instruções de instalação podem ser encontradas em https://www.anaconda.com/docs/getting-started/miniconda/install.\nO uso de Anaconda aqui será opcional. As instruções neste projeto em geral não focam na instalação Anaconda, mas desde que as versões de Python e das bibliotecas usadas sejam as mesmas, tudo deve funcionar da mesma forma.\n\n\n\nEditor de texto\nQualquer editor de texto da preferência do usuário pode ser usado para acompanhar os materiais. No entanto, deixo como recomendação o Visual Studio Code, que pode ser encontrado em https://code.visualstudio.com, por oferecer diversas extensões que integram as principais ferramentas a serem usadas. Especificamente, as extensões padrões de Python, Jupyter, WSL (se estiver usando Linux no Windows), e Rainbow CSV.\n\n\nOutras ferramentas\nAlém do básico mencionado acima, outras ferramentas adicionais podem ser úteis, como leitores de planilhas de dados tabulados (LibreOffice Calc, Microsoft Excel, Google Sheets) e um navegador web (Firefox, Chrome, etc). O navegador pode ser necessário caso o seu editor de texto não consiga exibir e executar Notebooks Jupyter. Também é possível usar ferramentas em nuvem como o Google Colab para executar Notebooks.",
+    "crumbs": [
+      "Resenhas",
+      "Ferramentas"
+    ]
+  },
+  {
+    "objectID": "notebooks/31_modelos.html",
+    "href": "notebooks/31_modelos.html",
+    "title": "Modelos de dados",
+    "section": "",
+    "text": "Quantificar o relacionamento entre diferentes medidas nos permite usar uma medida para prever outras. Por exemplo, há uma relação entre o tamanho da nadadeira de um pinguim e o seu peso? Podemos encontrar uma resposta a essa pergunta por meio do dataset palmerpenguins.\n\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"dados/penguins_size.csv\")\n\ndf.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nMALE\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nFEMALE\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nFEMALE\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nFEMALE\n\n\n\n\n\n\n\n\n# tipos e dados ausentes\ndf.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 344 entries, 0 to 343\nData columns (total 7 columns):\n #   Column             Non-Null Count  Dtype  \n---  ------             --------------  -----  \n 0   species            344 non-null    object \n 1   island             344 non-null    object \n 2   culmen_length_mm   342 non-null    float64\n 3   culmen_depth_mm    342 non-null    float64\n 4   flipper_length_mm  342 non-null    float64\n 5   body_mass_g        342 non-null    float64\n 6   sex                334 non-null    object \ndtypes: float64(4), object(3)\nmemory usage: 18.9+ KB\n\n\n\n# valores nulos\ndf.isnull().sum()\n\nspecies               0\nisland                0\nculmen_length_mm      2\nculmen_depth_mm       2\nflipper_length_mm     2\nbody_mass_g           2\nsex                  10\ndtype: int64\n\n\n\n# estatísticas descritivas\ndf.describe()\n\n\n\n\n\n\n\n\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\n\n\n\n\ncount\n342.000000\n342.000000\n342.000000\n342.000000\n\n\nmean\n43.921930\n17.151170\n200.915205\n4201.754386\n\n\nstd\n5.459584\n1.974793\n14.061714\n801.954536\n\n\nmin\n32.100000\n13.100000\n172.000000\n2700.000000\n\n\n25%\n39.225000\n15.600000\n190.000000\n3550.000000\n\n\n50%\n44.450000\n17.300000\n197.000000\n4050.000000\n\n\n75%\n48.500000\n18.700000\n213.000000\n4750.000000\n\n\nmax\n59.600000\n21.500000\n231.000000\n6300.000000\n\n\n\n\n\n\n\nVocê consegue perceber alguma relação entre o tamanho da nadadeira e o peso dos pinguins?\n\n# filtrar apenas pinguins adelie\nadelie = df[df[\"species\"] == \"Adelie\"]\n\n# scatter plot: massa corporal vs comprimento da nadadeira\nsns.scatterplot(data=adelie, x=\"flipper_length_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Comprimento da Nadadeira\")\nplt.xlabel(\"Comprimento da Nadadeira (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nTambém podemos relacionar a profundidade do bico com o peso.\n\n\n\n\nProfundidade do bico\n\n\n\n# scatter plot: massa corporal vs comprimento do bico\nsns.scatterplot(data=adelie, x=\"culmen_depth_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Profundidade do Bico\")\nplt.xlabel(\"Profundidade do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nQual das duas características tem uma relação mais forte com o peso?\nNão é muito simples de responder só observando os gráficos, mas podemos calcular a correlação para quantificar essa relação.\n\n# cálculo da correlação entre as variáveis\ncorrelation = adelie[[\"flipper_length_mm\", \"culmen_depth_mm\", \"body_mass_g\"]].corr()\nprint(\"Correlação entre as variáveis:\")\nprint(correlation)\n\n# heatmap da correlação\nplt.figure(figsize=(8, 6))\nsns.heatmap(correlation, annot=True, cmap=\"coolwarm\", fmt=\".2f\")\nplt.title(\"Heatmap da Correlação entre Variáveis\")\nplt.show()\n\nCorrelação entre as variáveis:\n                   flipper_length_mm  culmen_depth_mm  body_mass_g\nflipper_length_mm           1.000000         0.307620     0.468202\nculmen_depth_mm             0.307620         1.000000     0.576138\nbody_mass_g                 0.468202         0.576138     1.000000\n\n\n\n\n\n\n\n\n\nBasicamente, quanto mais próximo de 1 ou -1, mais forte é a relação entre as duas medidas e mais parecido com uma linha é o gráfico de dispersão.\n\n# exemplos de scatter plots com seaborn mostrando correlações diferentes com dados simulados\n\n# correlação positiva\nimport numpy as np\nnp.random.seed(42)\nx_pos = np.random.rand(100)\ny_pos = x_pos + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_pos, y=y_pos)\nplt.title(\"Correlação Positiva\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# correlação negativa\nx_neg = np.random.rand(100)\ny_neg = -x_neg + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_neg, y=y_neg)\nplt.title(\"Correlação Negativa\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# sem correlação\nx_no_corr = np.random.rand(100)\ny_no_corr = np.random.rand(100)\nsns.scatterplot(x=x_no_corr, y=y_no_corr)\nplt.title(\"Sem Correlação\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nE o relacionamento das variáveis para as outras espécies de pinguins?\n\n# relação entre massa corporal e comprimento do bico\nsns.scatterplot(data=df, x=\"culmen_length_mm\", y=\"body_mass_g\", hue=\"species\")\nplt.title(\"Comprimento do bico vs Massa corporal\")\nplt.xlabel(\"Comprimento do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.legend(title=\"Espécie\")\nplt.show()",
+    "crumbs": [
+      "Notebooks",
+      "Modelos de dados"
+    ]
+  },
+  {
+    "objectID": "notebooks/31_modelos.html#correlação-entre-dados",
+    "href": "notebooks/31_modelos.html#correlação-entre-dados",
+    "title": "Modelos de dados",
+    "section": "",
+    "text": "Quantificar o relacionamento entre diferentes medidas nos permite usar uma medida para prever outras. Por exemplo, há uma relação entre o tamanho da nadadeira de um pinguim e o seu peso? Podemos encontrar uma resposta a essa pergunta por meio do dataset palmerpenguins.\n\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"dados/penguins_size.csv\")\n\ndf.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nMALE\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nFEMALE\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nFEMALE\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nFEMALE\n\n\n\n\n\n\n\n\n# tipos e dados ausentes\ndf.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nRangeIndex: 344 entries, 0 to 343\nData columns (total 7 columns):\n #   Column             Non-Null Count  Dtype  \n---  ------             --------------  -----  \n 0   species            344 non-null    object \n 1   island             344 non-null    object \n 2   culmen_length_mm   342 non-null    float64\n 3   culmen_depth_mm    342 non-null    float64\n 4   flipper_length_mm  342 non-null    float64\n 5   body_mass_g        342 non-null    float64\n 6   sex                334 non-null    object \ndtypes: float64(4), object(3)\nmemory usage: 18.9+ KB\n\n\n\n# valores nulos\ndf.isnull().sum()\n\nspecies               0\nisland                0\nculmen_length_mm      2\nculmen_depth_mm       2\nflipper_length_mm     2\nbody_mass_g           2\nsex                  10\ndtype: int64\n\n\n\n# estatísticas descritivas\ndf.describe()\n\n\n\n\n\n\n\n\nculmen_length_mm\nculmen_depth_mm\nflipper_length_mm\nbody_mass_g\n\n\n\n\ncount\n342.000000\n342.000000\n342.000000\n342.000000\n\n\nmean\n43.921930\n17.151170\n200.915205\n4201.754386\n\n\nstd\n5.459584\n1.974793\n14.061714\n801.954536\n\n\nmin\n32.100000\n13.100000\n172.000000\n2700.000000\n\n\n25%\n39.225000\n15.600000\n190.000000\n3550.000000\n\n\n50%\n44.450000\n17.300000\n197.000000\n4050.000000\n\n\n75%\n48.500000\n18.700000\n213.000000\n4750.000000\n\n\nmax\n59.600000\n21.500000\n231.000000\n6300.000000\n\n\n\n\n\n\n\nVocê consegue perceber alguma relação entre o tamanho da nadadeira e o peso dos pinguins?\n\n# filtrar apenas pinguins adelie\nadelie = df[df[\"species\"] == \"Adelie\"]\n\n# scatter plot: massa corporal vs comprimento da nadadeira\nsns.scatterplot(data=adelie, x=\"flipper_length_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Comprimento da Nadadeira\")\nplt.xlabel(\"Comprimento da Nadadeira (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nTambém podemos relacionar a profundidade do bico com o peso.\n\n\n\n\nProfundidade do bico\n\n\n\n# scatter plot: massa corporal vs comprimento do bico\nsns.scatterplot(data=adelie, x=\"culmen_depth_mm\", y=\"body_mass_g\")\nplt.title(\"Adelie: Massa corporal vs Profundidade do Bico\")\nplt.xlabel(\"Profundidade do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.show()\n\n\n\n\n\n\n\n\nQual das duas características tem uma relação mais forte com o peso?\nNão é muito simples de responder só observando os gráficos, mas podemos calcular a correlação para quantificar essa relação.\n\n# cálculo da correlação entre as variáveis\ncorrelation = adelie[[\"flipper_length_mm\", \"culmen_depth_mm\", \"body_mass_g\"]].corr()\nprint(\"Correlação entre as variáveis:\")\nprint(correlation)\n\n# heatmap da correlação\nplt.figure(figsize=(8, 6))\nsns.heatmap(correlation, annot=True, cmap=\"coolwarm\", fmt=\".2f\")\nplt.title(\"Heatmap da Correlação entre Variáveis\")\nplt.show()\n\nCorrelação entre as variáveis:\n                   flipper_length_mm  culmen_depth_mm  body_mass_g\nflipper_length_mm           1.000000         0.307620     0.468202\nculmen_depth_mm             0.307620         1.000000     0.576138\nbody_mass_g                 0.468202         0.576138     1.000000\n\n\n\n\n\n\n\n\n\nBasicamente, quanto mais próximo de 1 ou -1, mais forte é a relação entre as duas medidas e mais parecido com uma linha é o gráfico de dispersão.\n\n# exemplos de scatter plots com seaborn mostrando correlações diferentes com dados simulados\n\n# correlação positiva\nimport numpy as np\nnp.random.seed(42)\nx_pos = np.random.rand(100)\ny_pos = x_pos + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_pos, y=y_pos)\nplt.title(\"Correlação Positiva\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# correlação negativa\nx_neg = np.random.rand(100)\ny_neg = -x_neg + np.random.normal(0, 0.2, 100)\nsns.scatterplot(x=x_neg, y=y_neg)\nplt.title(\"Correlação Negativa\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n# sem correlação\nx_no_corr = np.random.rand(100)\ny_no_corr = np.random.rand(100)\nsns.scatterplot(x=x_no_corr, y=y_no_corr)\nplt.title(\"Sem Correlação\")\nplt.xlabel(\"Variável X\")\nplt.ylabel(\"Variável Y\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nE o relacionamento das variáveis para as outras espécies de pinguins?\n\n# relação entre massa corporal e comprimento do bico\nsns.scatterplot(data=df, x=\"culmen_length_mm\", y=\"body_mass_g\", hue=\"species\")\nplt.title(\"Comprimento do bico vs Massa corporal\")\nplt.xlabel(\"Comprimento do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.legend(title=\"Espécie\")\nplt.show()",
+    "crumbs": [
+      "Notebooks",
+      "Modelos de dados"
+    ]
+  },
+  {
+    "objectID": "notebooks/31_modelos.html#regressão-linear",
+    "href": "notebooks/31_modelos.html#regressão-linear",
+    "title": "Modelos de dados",
+    "section": "Regressão linear",
+    "text": "Regressão linear\nVamos prever a massa corporal dos pinguins com base no comprimento do bico.\n\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\n\n# remover valores nulos\ndf_reg = df[[\"culmen_length_mm\", \"body_mass_g\", \"species\"]].dropna()\n\n# variáveis independentes e dependentes\nX = df_reg[[\"culmen_length_mm\"]]\ny = df_reg[\"body_mass_g\"]\n\n# separar em treino e teste\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n# criar e treinar o modelo\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n\n# avaliação do modelo\nr2 = model.score(X_test, y_test)\nprint(f\"Coeficiente de determinação R²: {r2:.2f}\")\nprint(f\"Coeficiente angular: {model.coef_[0]:.2f}, Intercepto: {model.intercept_:.2f}\")\n\nCoeficiente de determinação R²: 0.37\nCoeficiente angular: 85.06, Intercepto: 473.40\n\n\n\n# previsão\ny_pred = model.predict(X_test)\n\n# gráfico\nsns.scatterplot(data=df_reg, x=\"culmen_length_mm\", y=\"body_mass_g\", hue=\"species\")\nplt.plot(X_test, y_pred, color=\"red\", linewidth=2, label=\"Modelo\")\nplt.xlabel(\"Comprimento do Bico (mm)\")\nplt.ylabel(\"Massa Corporal (g)\")\nplt.title(\"Regressão Linear\")\nplt.legend()\nplt.show()",
+    "crumbs": [
+      "Notebooks",
+      "Modelos de dados"
+    ]
+  },
+  {
+    "objectID": "notebooks/31_modelos.html#classificação-linear",
+    "href": "notebooks/31_modelos.html#classificação-linear",
+    "title": "Modelos de dados",
+    "section": "Classificação linear",
+    "text": "Classificação linear\nAgora, vamos prever a espécie do pinguim com base em duas características físicas.\n\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.metrics import classification_report, ConfusionMatrixDisplay\n\n# selecionar dados\ndf_clf = df[[\"culmen_length_mm\", \"flipper_length_mm\", \"species\"]].dropna()\n\nX = df_clf[[\"culmen_length_mm\", \"flipper_length_mm\"]]\ny = df_clf[\"species\"]\n\n# normalizar\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n\n# separar conjuntos\nX_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.25, random_state=42)\n\n# treinar o modelo de classificação\nclf = LogisticRegression(max_iter=1000)\nclf.fit(X_train, y_train)\n\n# avaliar\ny_pred = clf.predict(X_test)\nprint(classification_report(y_test, y_pred))\n\n# matriz de confusão\nConfusionMatrixDisplay.from_estimator(clf, X_test, y_test)\nplt.show()\n\n              precision    recall  f1-score   support\n\n      Adelie       0.95      0.93      0.94        44\n   Chinstrap       0.85      0.85      0.85        13\n      Gentoo       0.97      1.00      0.98        29\n\n    accuracy                           0.94        86\n   macro avg       0.92      0.93      0.92        86\nweighted avg       0.94      0.94      0.94        86",
+    "crumbs": [
+      "Notebooks",
+      "Modelos de dados"
+    ]
+  },
+  {
+    "objectID": "notebooks/14_introducao.html",
+    "href": "notebooks/14_introducao.html",
+    "title": "Introdução teórica",
+    "section": "",
+    "text": "Boas-vindas ao nosso primeiro Notebook IPython/Jupyter. O objetivo deste documento é apresentar alguns conceitos fundamentais para abrirmos as práticas da disciplina.\nEmbora seja possível ler este e outros notebooks no site da disciplina, a minha recomendação é que o arquivo .ipynb seja baixado e executado na sua máquina (ou em algum serviço como o Colab) para que a experiência seja realmente interativa. No site, você deve encontrar uma versão, compilada em HTML pela ferramenta Quarto,1 na qual várias formatações em Markdown,2 específicas dessa ferramenta, são usadas pra melhorar a experiência de leitura, mas que não fazem muita diferença pra quem for executar o notebook interativamente.",
+    "crumbs": [
+      "Notebooks",
+      "Introdução teórica"
+    ]
+  },
+  {
+    "objectID": "notebooks/14_introducao.html#notebooks",
+    "href": "notebooks/14_introducao.html#notebooks",
+    "title": "Introdução teórica",
+    "section": "Notebooks",
+    "text": "Notebooks\nPrimeiramente, um notebook nada mais é do que um arquivo de texto em formato JSON3 que guarda uma lista de objetos. Cada objeto dessa lista representa uma célula de conteúdo do notebook. Por exemplo, estas presentes letrinhas, que com a luz dos olhos teus resolvem se encontrar, estão dentro de uma célula de texto em formato Markdown, como podemos ver abaixo.\n\nwith open(\"notebooks/14_introducao.ipynb\") as nb_file:\n    import json\n    nb = json.load(nb_file)\n    print(nb[\"cells\"][1])\n\n{'cell_type': 'markdown', 'metadata': {}, 'source': ['## Notebooks\\n', '\\n', 'Primeiramente, um _notebook_ nada mais é do que um arquivo de texto em formato JSON^[&lt;https://en.wikipedia.org/wiki/JSON&gt;] que guarda uma lista de objetos.\\n', 'Cada objeto dessa lista representa uma célula de conteúdo do *notebook*.\\n', 'Por exemplo, estas presentes letrinhas, que com a luz dos olhos teus resolvem se encontrar, estão dentro de uma célula de texto em formato Markdown, como podemos ver abaixo.']}\n\n\nE como você pode ver, a célula acima (e a logo abaixo) contém textos na sintaxe de Python. O legal sobre essas células com Python é que elas são executáveis quando o notebook é aberto por um programa que saiba interpretá-lo.\n\nprint(\"Você deve ver o resultado desta chamada \"\n      \"a print num espaço pra saídas logo abaixo.\")\n\nVocê deve ver o resultado desta chamada a print num espaço pra saídas logo abaixo.\n\n\nQuem já conhece a função print de Python deve lembrar que ela redireciona seus argumentos de entrada como um texto a ser exibido na saída padrão do processo Python em execução. No entanto, aqui podemos ver essa saída diretamente no notebook. Isso é possível graças a uma mágica desse programa que executa os notebooks e, em geral, essa mágica leva o nome de IPython.4",
+    "crumbs": [
+      "Notebooks",
+      "Introdução teórica"
+    ]
+  },
+  {
+    "objectID": "notebooks/14_introducao.html#ipython",
+    "href": "notebooks/14_introducao.html#ipython",
+    "title": "Introdução teórica",
+    "section": "IPython",
+    "text": "IPython\nDe forma resumida, o IPython é uma versão melhorada e mais interativa da shell5 do Python. Originalmente, o projeto IPython tinha como objetivo prover um ambiente interativo para computação científica usando a linguagem Python (Pérez e Granger 2007). Ou seja, os notebooks IPython são uma combinação de células em linguagem de marcação com células em Python que são executadas pela shell do IPython.\nCom o tempo, a popularidade e o escopo do projeto cresceram, os notebooks evoluíram para serem agnósticos em linguagem de programação, o que resultou no projeto Jupyter.6 No Jupyter, o que determina se a linguagem de programação pode ser executada no notebook é um processo independente chamado de kernel.7 Hoje em dia, é possível escrever notebooks Jupyter que usem diversas outras linguagens como Julia, R, Scala, etc, e quando a linguagem escolhida for Python, provavelmente se usará um kernel IPython.\nPara uma visão prática das melhorias implementadas pelo IPython, indico o primeiro capítulo de VanderPlas (2016).",
+    "crumbs": [
+      "Notebooks",
+      "Introdução teórica"
+    ]
+  },
+  {
+    "objectID": "notebooks/14_introducao.html#computação-científica",
+    "href": "notebooks/14_introducao.html#computação-científica",
+    "title": "Introdução teórica",
+    "section": "Computação científica",
+    "text": "Computação científica\nMas o que significa “computação científica”?8 Segundo Golub e Ortega (1992), trata-se da coleção de ferramentas, técnicas e teorias necessárias para resolver, por meio de computadores, modelos matemáticos de problemas das ciências e engenharias. Ou seja, uma aplicação da ciência da computação a problemas científicos e que tem muito a ver com ciência de dados.",
+    "crumbs": [
+      "Notebooks",
+      "Introdução teórica"
+    ]
+  },
+  {
+    "objectID": "notebooks/14_introducao.html#footnotes",
+    "href": "notebooks/14_introducao.html#footnotes",
+    "title": "Introdução teórica",
+    "section": "Notas de rodapé",
+    "text": "Notas de rodapé\n\n\nhttps://quarto.org↩︎\nhttps://en.wikipedia.org/wiki/Markdown↩︎\nhttps://en.wikipedia.org/wiki/JSON↩︎\nhttps://ipython.org↩︎\nhttps://en.wikipedia.org/wiki/Shell_(computing)↩︎\nhttps://jupyter.org/about↩︎\nhttps://docs.jupyter.org/en/stable/projects/kernels.html↩︎\nhttps://scicomp.rptu.de/about/scientific-computing↩︎",
+    "crumbs": [
+      "Notebooks",
+      "Introdução teórica"
+    ]
+  },
+  {
+    "objectID": "notebooks/21_analise_descritiva.html",
+    "href": "notebooks/21_analise_descritiva.html",
+    "title": "Análise descritiva de dados",
+    "section": "",
+    "text": "Dados retirado de https://dadosabertos.camara.leg.br/swagger/api.html?tab=staticfile\nimport pandas as pd\ndados = pd.read_csv(\n    \"dados/Ano-2025.csv\", sep=\";\", encoding=\"utf-8\", decimal=\".\", low_memory=False\n)\ndisplay(dados.head(4))\n\n\n\n\n\n\n\n\ntxNomeParlamentar\ncpf\nideCadastro\nnuCarteiraParlamentar\nnuLegislatura\nsgUF\nsgPartido\ncodLegislatura\nnumSubCota\ntxtDescricao\n...\nnumParcela\ntxtPassageiro\ntxtTrecho\nnumLote\nnumRessarcimento\ndatPagamentoRestituicao\nvlrRestituicao\nnuDeputadoId\nideDocumento\nurlDocumento\n\n\n\n\n0\nLID.GOV-CD\nNaN\nNaN\nNaN\n2023\nNaN\nNaN\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2115566\nNaN\nNaN\nNaN\n2812\n7877589\nhttps://www.camara.leg.br/cota-parlamentar/doc...\n\n\n1\nLID.GOV-CD\nNaN\nNaN\nNaN\n2023\nNaN\nNaN\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2123760\nNaN\nNaN\nNaN\n2812\n7892756\nhttps://www.camara.leg.br/cota-parlamentar/doc...\n\n\n2\nLID.GOV-CD\nNaN\nNaN\nNaN\n2023\nNaN\nNaN\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2131750\nNaN\nNaN\nNaN\n2812\n7907982\nhttps://www.camara.leg.br/cota-parlamentar/doc...\n\n\n3\nLID.GOV-CD\nNaN\nNaN\nNaN\n2023\nNaN\nNaN\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2106570\nNaN\nNaN\nNaN\n2812\n7862329\nhttps://www.camara.leg.br/cota-parlamentar/not...\n\n\n\n\n4 rows × 32 columns\ndados = dados[dados['sgUF'] == 'PI']\ndisplay(dados.dtypes)\n\ntxNomeParlamentar             object\ncpf                          float64\nideCadastro                  float64\nnuCarteiraParlamentar        float64\nnuLegislatura                  int64\nsgUF                          object\nsgPartido                     object\ncodLegislatura                 int64\nnumSubCota                     int64\ntxtDescricao                  object\nnumEspecificacaoSubCota        int64\ntxtDescricaoEspecificacao     object\ntxtFornecedor                 object\ntxtCNPJCPF                    object\ntxtNumero                     object\nindTipoDocumento               int64\ndatEmissao                    object\nvlrDocumento                 float64\nvlrGlosa                     float64\nvlrLiquido                   float64\nnumMes                         int64\nnumAno                         int64\nnumParcela                     int64\ntxtPassageiro                 object\ntxtTrecho                     object\nnumLote                        int64\nnumRessarcimento             float64\ndatPagamentoRestituicao       object\nvlrRestituicao               float64\nnuDeputadoId                   int64\nideDocumento                   int64\nurlDocumento                  object\ndtype: object\n#!pip install pyjanitor\nimport janitor\ndf_bronze=dados.clean_names()\ndisplay(df_bronze.head(4))\n\n\n\n\n\n\n\n\ntxnomeparlamentar\ncpf\nidecadastro\nnucarteiraparlamentar\nnulegislatura\nsguf\nsgpartido\ncodlegislatura\nnumsubcota\ntxtdescricao\n...\nnumparcela\ntxtpassageiro\ntxttrecho\nnumlote\nnumressarcimento\ndatpagamentorestituicao\nvlrrestituicao\nnudeputadoid\nidedocumento\nurldocumento\n\n\n\n\n478\nJulio Arcoverde\n7.730977e+10\n66385.0\n118.0\n2023\nPI\nPP\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2107978\nNaN\nNaN\nNaN\n3692\n7864666\nhttps://www.camara.leg.br/cota-parlamentar/doc...\n\n\n479\nJulio Arcoverde\n7.730977e+10\n66385.0\n118.0\n2023\nPI\nPP\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2125741\nNaN\nNaN\nNaN\n3692\n7896334\nhttps://www.camara.leg.br/cota-parlamentar/doc...\n\n\n480\nJulio Arcoverde\n7.730977e+10\n66385.0\n118.0\n2023\nPI\nPP\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2115942\nNaN\nNaN\nNaN\n3692\n7878276\nhttps://www.camara.leg.br/cota-parlamentar/doc...\n\n\n481\nJulio Arcoverde\n7.730977e+10\n66385.0\n118.0\n2023\nPI\nPP\n57\n1\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE ...\n...\n0\nNaN\nNaN\n2135533\nNaN\nNaN\nNaN\n3692\n7914836\nhttps://www.camara.leg.br/cota-parlamentar/doc...\n\n\n\n\n4 rows × 32 columns\n# Selecionar só as colunas de texto\ncolunas_chr = df_bronze.select_dtypes(include=['object', 'string']).columns.tolist()\ncolunas_numerica = df_bronze.select_dtypes(include=['int64', 'float64']).columns.tolist()\nprint(colunas_chr); print(colunas_numerica)\n\n['txnomeparlamentar', 'sguf', 'sgpartido', 'txtdescricao', 'txtdescricaoespecificacao', 'txtfornecedor', 'txtcnpjcpf', 'txtnumero', 'datemissao', 'txtpassageiro', 'txttrecho', 'datpagamentorestituicao', 'urldocumento']\n['cpf', 'idecadastro', 'nucarteiraparlamentar', 'nulegislatura', 'codlegislatura', 'numsubcota', 'numespecificacaosubcota', 'indtipodocumento', 'vlrdocumento', 'vlrglosa', 'vlrliquido', 'nummes', 'numano', 'numparcela', 'numlote', 'numressarcimento', 'vlrrestituicao', 'nudeputadoid', 'idedocumento']\n# Frequência simples (equivalente a table(x) no R)\ntabela_sgpartido = df_bronze['sgpartido'].value_counts()\ndisplay(tabela_sgpartido)\n\nsgpartido\nPT              451\nPP              204\nPSD             201\nREPUBLICANOS     80\nName: count, dtype: int64\ntabela_descricao = df_bronze['txtdescricao'].value_counts()\ndisplay(tabela_descricao)\n\ntxtdescricao\nPASSAGEM AÉREA - SIGEPA                                      320\nCOMBUSTÍVEIS E LUBRIFICANTES.                                237\nDIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.                         113\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR     96\nLOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES                 54\nTELEFONIA                                                     51\nFORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR                    32\nSERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.      15\nSERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO                      8\nHOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.         7\nLOCAÇÃO OU FRETAMENTO DE AERONAVES                             2\nPASSAGEM AÉREA - REEMBOLSO                                     1\nName: count, dtype: int64\ntabela_txtfornecedor = df_bronze['txtfornecedor'].value_counts()\ndisplay(tabela_txtfornecedor)\n\ntxtfornecedor\nTAM                                                       314\nCACIQUE PETROLEO LTDA                                      32\nPOSTO SAO BENEDITO PETROLEO LTDA                           22\nTRANSSERVICE PETROLEO LTDA                                 15\nAUTO POSTO 302 SUL LTDA                                    14\n                                                         ... \nSMARTPRINT LTDA                                             1\nMH BRASILIA ADMINISTRADORA DE EMPREENDIMENTOS LTDA          1\nEDVALDO FRANCISCO DE OLIVEIRA 49191160120                   1\nREDE JHJ DE RADIODIFUSÃO LTDA                               1\nTABITA FERREIRA MARINHO PRODUÇÕES E COMUNICAÇÃO EIRELI      1\nName: count, Length: 185, dtype: int64\n# Calcular as medidas descritivas separadamente\nmedia = df_bronze['vlrliquido'].mean()\nmediana = df_bronze['vlrliquido'].median()\nvariancia = df_bronze['vlrliquido'].var()\ndesvio_padrao = df_bronze['vlrliquido'].std()\ncoeficiente_variacao = desvio_padrao / media\n\n\n# Exibir resultados\nprint(\"Média:\")\nprint(media)\nprint(\"\\nMediana:\")\nprint(mediana)\nprint(\"\\nVariância:\")\nprint(variancia)\nprint(\"\\nDesvio padrão:\")\nprint(desvio_padrao)\nprint(\"\\nCoeficiente de Variação:\")\n\n\n\nprint(coeficiente_variacao)\n\nMédia:\n1853.603076923077\n\nMediana:\n667.92\n\nVariância:\n10820623.380604856\n\nDesvio padrão:\n3289.4715959565383\n\nCoeficiente de Variação:\n1.7746364563749852\nq2 = df_bronze['vlrliquido'].quantile(0.50);\nprint(q2)\n\n667.92\ndf_bronze.describe()\n\n\n\n\n\n\n\n\ncpf\nidecadastro\nnucarteiraparlamentar\nnulegislatura\ncodlegislatura\nnumsubcota\nnumespecificacaosubcota\nindtipodocumento\nvlrdocumento\nvlrglosa\nvlrliquido\nnummes\nnumano\nnumparcela\nnumlote\nnumressarcimento\nvlrrestituicao\nnudeputadoid\nidedocumento\n\n\n\n\ncount\n9.360000e+02\n936.000000\n936.000000\n936.0\n936.0\n936.000000\n936.000000\n936.000000\n936.000000\n936.000000\n936.000000\n936.000000\n936.0\n936.0\n9.360000e+02\n328.0\n0.0\n936.000000\n9.360000e+02\n\n\nmean\n4.217872e+10\n174072.123932\n204.438034\n2023.0\n57.0\n352.114316\n0.264957\n1.294872\n1862.676517\n9.073440\n1853.603077\n2.644231\n2025.0\n0.0\n1.377385e+06\n0.0\nNaN\n3317.371795\n5.230539e+06\n\n\nstd\n2.985106e+10\n56351.046445\n169.271375\n0.0\n0.0\n466.658121\n0.483183\n1.788440\n3290.839823\n125.534929\n3289.471596\n1.209821\n0.0\n0.0\n1.012245e+06\n0.0\nNaN\n597.304720\n3.618818e+06\n\n\nmin\n1.102125e+09\n66385.000000\n109.000000\n2023.0\n57.0\n1.000000\n0.000000\n0.000000\n-2928.400000\n0.000000\n-2928.400000\n1.000000\n2025.0\n0.0\n0.000000e+00\n0.0\nNaN\n1097.000000\n0.000000e+00\n\n\n25%\n1.389182e+10\n123086.000000\n111.000000\n2023.0\n57.0\n3.000000\n0.000000\n0.000000\n200.000000\n0.000000\n185.135000\n2.000000\n2025.0\n0.0\n0.000000e+00\n0.0\nNaN\n3121.000000\n3.199118e+05\n\n\n50%\n4.286637e+10\n188097.000000\n114.000000\n2023.0\n57.0\n10.000000\n0.000000\n0.000000\n669.770000\n0.000000\n667.920000\n3.000000\n2025.0\n0.0\n2.110828e+06\n0.0\nNaN\n3560.000000\n7.869479e+06\n\n\n75%\n7.456870e+10\n220697.000000\n118.000000\n2023.0\n57.0\n998.000000\n1.000000\n4.000000\n1715.290000\n0.000000\n1676.985000\n4.000000\n2025.0\n0.0\n2.124947e+06\n0.0\nNaN\n3670.000000\n7.894886e+06\n\n\nmax\n7.730977e+10\n220700.000000\n518.000000\n2023.0\n57.0\n998.000000\n4.000000\n4.000000\n36300.000000\n3600.000000\n36300.000000\n5.000000\n2025.0\n0.0\n2.137115e+06\n0.0\nNaN\n3692.000000\n7.917843e+06\nfrom scipy.stats import skew, kurtosis\nassimetria = df_bronze['vlrliquido'].skew()\ncurtose_ = df_bronze['vlrliquido'].kurtosis()\nprint(\"\\nAssimetria:\")\nprint(assimetria)\nprint(\"\\nCurtose:\")\nprint(curtose_)\n\n\nAssimetria:\n3.406585380619545\n\nCurtose:\n18.595100386926408",
+    "crumbs": [
+      "Notebooks",
+      "Análise descritiva de dados"
+    ]
+  },
+  {
+    "objectID": "notebooks/21_analise_descritiva.html#análise-bivariada",
+    "href": "notebooks/21_analise_descritiva.html#análise-bivariada",
+    "title": "Análise descritiva de dados",
+    "section": "Análise Bivariada",
+    "text": "Análise Bivariada\n\ndf_bronze.columns\n\nIndex(['txnomeparlamentar', 'cpf', 'idecadastro', 'nucarteiraparlamentar',\n       'nulegislatura', 'sguf', 'sgpartido', 'codlegislatura', 'numsubcota',\n       'txtdescricao', 'numespecificacaosubcota', 'txtdescricaoespecificacao',\n       'txtfornecedor', 'txtcnpjcpf', 'txtnumero', 'indtipodocumento',\n       'datemissao', 'vlrdocumento', 'vlrglosa', 'vlrliquido', 'nummes',\n       'numano', 'numparcela', 'txtpassageiro', 'txttrecho', 'numlote',\n       'numressarcimento', 'datpagamentorestituicao', 'vlrrestituicao',\n       'nudeputadoid', 'idedocumento', 'urldocumento'],\n      dtype='object')\n\n\n\ncontingency_table = pd.crosstab(df_bronze['sgpartido'], df_bronze['txtdescricao'])\ndisplay(contingency_table)\n\n\n\n\n\n\n\ntxtdescricao\nCOMBUSTÍVEIS E LUBRIFICANTES.\nDIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.\nFORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR\nHOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.\nLOCAÇÃO OU FRETAMENTO DE AERONAVES\nLOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR\nPASSAGEM AÉREA - REEMBOLSO\nPASSAGEM AÉREA - SIGEPA\nSERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.\nSERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO\nTELEFONIA\n\n\nsgpartido\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPP\n19\n15\n0\n0\n0\n8\n22\n0\n121\n7\n0\n12\n\n\nPSD\n53\n33\n0\n4\n0\n18\n13\n1\n71\n0\n0\n8\n\n\nPT\n150\n51\n32\n2\n2\n28\n55\n0\n92\n8\n0\n31\n\n\nREPUBLICANOS\n15\n14\n0\n1\n0\n0\n6\n0\n36\n0\n8\n0\n\n\n\n\n\n\n\n\n# prompt: txtdescricao pelo valor liquido\ntabela_cruzada_descricao_vlrliquido = df_bronze.groupby('sgpartido')['vlrliquido'].sum().sort_values(ascending=False)\ndisplay(tabela_cruzada_descricao_vlrliquido)\n\nsgpartido\nPT              713317.25\nPSD             532028.51\nPP              409071.32\nREPUBLICANOS     80555.40\nName: vlrliquido, dtype: float64\n\n\n\n# prompt: txtdescricao pelo valor liquido\ntabela_cruzada_descricao_vlrliquido = df_bronze.groupby('txtdescricao')['vlrliquido'].sum().sort_values(ascending=False)\ndisplay(tabela_cruzada_descricao_vlrliquido)\n\ntxtdescricao\nDIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.                         498967.03\nLOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES                421378.00\nPASSAGEM AÉREA - SIGEPA                                      270089.03\nCOMBUSTÍVEIS E LUBRIFICANTES.                                179362.21\nMANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR    155701.00\nSERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.     129899.88\nLOCAÇÃO OU FRETAMENTO DE AERONAVES                            58300.00\nTELEFONIA                                                     12436.93\nHOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.         3992.00\nPASSAGEM AÉREA - REEMBOLSO                                     2966.85\nFORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR                     1611.27\nSERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO                       268.28\nName: vlrliquido, dtype: float64\n\n\n\ndf_bronze['vlrliquido'].var()\n\nnp.float64(10820623.380604856)\n\n\n\ndf_bronze['vlrdocumento'].var()\n\nnp.float64(10829626.740104863)\n\n\n\ndf_bronze['vlrglosa'].var()\n\nnp.float64(15759.018374890535)\n\n\n\npd.set_option('display.float_format', '{:.4f}'.format)\nmatriz_cov = df_bronze[['vlrliquido','vlrdocumento','vlrglosa']].cov()\ndisplay(matriz_cov)\n\n\n\n\n\n\n\n\nvlrliquido\nvlrdocumento\nvlrglosa\n\n\n\n\nvlrliquido\n10820623.3806\n10817245.5512\n-3377.8294\n\n\nvlrdocumento\n10817245.5512\n10829626.7401\n12381.1889\n\n\nvlrglosa\n-3377.8294\n12381.1889\n15759.0184\n\n\n\n\n\n\n\n\nmatriz_cor = df_bronze[['vlrliquido','vlrdocumento','vlrglosa']] .corr()\ndisplay(matriz_cor)\n\n\n\n\n\n\n\n\nvlrliquido\nvlrdocumento\nvlrglosa\n\n\n\n\nvlrliquido\n1.0000\n0.9993\n-0.0082\n\n\nvlrdocumento\n0.9993\n1.0000\n0.0300\n\n\nvlrglosa\n-0.0082\n0.0300\n1.0000\n\n\n\n\n\n\n\n\nfrom scipy.stats import pearsonr, spearmanr\n# Calcula a correlação de Pearson entre as variáveis\ncorrelation_vlrliquido_vlrdocumento, _ = pearsonr(df_bronze['vlrliquido'], df_bronze['vlrdocumento'])\ncorrelation_vlrliquido_vlrglosa, _ = pearsonr(df_bronze['vlrliquido'], df_bronze['vlrglosa'])\ncorrelation_vlrdocumento_vlrglosa, _ = pearsonr(df_bronze['vlrdocumento'], df_bronze['vlrglosa'])\n\nprint(f\"Correlação de Pearson entre vlrliquido e vlrdocumento: {correlation_vlrliquido_vlrdocumento}\")\nprint(f\"Correlação de Pearson entre vlrliquido e vlrglosa: {correlation_vlrliquido_vlrglosa}\")\nprint(f\"Correlação de Pearson entre vlrdocumento e vlrglosa: {correlation_vlrdocumento_vlrglosa}\")\n\nCorrelação de Pearson entre vlrliquido e vlrdocumento: 0.999272195581829\nCorrelação de Pearson entre vlrliquido e vlrglosa: -0.008179881167973923\nCorrelação de Pearson entre vlrdocumento e vlrglosa: 0.029970295563040053",
+    "crumbs": [
+      "Notebooks",
+      "Análise descritiva de dados"
     ]
   },
   {
@@ -437,7 +459,7 @@
     "href": "slides/index.html",
     "title": "Slides",
     "section": "",
-    "text": "Índice de todas as apresentações de slides publicadas na pasta slides.\n\n\n\n\nTabela 1: Índice de slides\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nAbertura da disciplina\nIr para 11_abertura.qmd\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
+    "text": "Índice de todas as apresentações de slides publicadas na pasta slides.\n\n\n\n\nTabela 1: Índice de slides\n\n\n\n\n\n\n#\nTítulo\nLink\n\n\n\n\n1\nAbertura da disciplina\nIr para 11_abertura.qmd\n\n\n2\n21_estatistica_descritiva\nIr para 21_estatistica_descritiva.pdf\n\n\n\n\n\n\n\n\n\n\n\n De volta ao topo",
     "crumbs": [
       "Slides"
     ]

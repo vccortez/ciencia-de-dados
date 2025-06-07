@@ -2,74 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/outros/index.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/outros/bases-de-dados.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/meta/calendario.html</loc>
-    <lastmod>2025-06-07T17:03:15.204Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.371Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/slides/11_abertura.html</loc>
-    <lastmod>2025-06-07T17:03:15.212Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/14_introducao.html</loc>
-    <lastmod>2025-06-07T17:05:17.700Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/31_modelos.html</loc>
-    <lastmod>2025-06-07T17:05:04.215Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/13_ferramentas.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/12_relacionados.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/index.html</loc>
-    <lastmod>2025-06-07T17:03:15.202Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/12_definicao.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/12_processos.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/index.html</loc>
-    <lastmod>2025-06-07T17:03:15.212Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/21_visualizacao.html</loc>
-    <lastmod>2025-06-07T17:05:14.757Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.378Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/index.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/21_visualizacao.html</loc>
+    <lastmod>2025-06-07T17:56:57.759Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/index.html</loc>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/12_processos.html</loc>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/12_definicao.html</loc>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/index.html</loc>
+    <lastmod>2025-06-07T17:54:52.370Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/12_relacionados.html</loc>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/resenhas/13_ferramentas.html</loc>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/31_modelos.html</loc>
+    <lastmod>2025-06-07T17:56:47.237Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/14_introducao.html</loc>
+    <lastmod>2025-06-07T17:57:00.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vccortez.github.io/ciencia-de-dados/notebooks/21_analise_descritiva.html</loc>
+    <lastmod>2025-06-07T17:57:07.135Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/slides/index.html</loc>
-    <lastmod>2025-06-07T17:03:15.212Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.380Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/meta/contribuicoes.html</loc>
-    <lastmod>2025-06-07T17:03:15.204Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.371Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/meta/index.html</loc>
-    <lastmod>2025-06-07T17:03:15.204Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.371Z</lastmod>
   </url>
   <url>
     <loc>https://vccortez.github.io/ciencia-de-dados/outros/roteiro-de-aulas.html</loc>
-    <lastmod>2025-06-07T17:03:15.211Z</lastmod>
+    <lastmod>2025-06-07T17:54:52.377Z</lastmod>
   </url>
 </urlset>
