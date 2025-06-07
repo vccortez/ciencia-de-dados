@@ -2,10 +2,8 @@ import os
 from pathlib import Path
 from typing import Union
 
-StrOrPath = Union[str, Path]
 
-
-def relpath(path: StrOrPath, start: StrOrPath, to_path=False) -> StrOrPath:
+def relpath(path: str | Path, start: str | Path, to_path=False) -> str | Path:
     """
     Workaround to Path.relative_to(walk_up) in Python 3.10
     """

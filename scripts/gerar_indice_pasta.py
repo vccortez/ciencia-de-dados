@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
 def run(
     glob_list: list[str] = ["*.qmd"],
-    folder: str = None,
+    folder: str | None = None,
     lbl_num="\#",
     lbl_name="Título",
     lbl_link="Link",
@@ -16,6 +16,7 @@ def run(
     import glob
     import json
     import frontmatter
+    from pathlib import Path
     from scripts.util import relpath
 
     if folder is None:
@@ -33,16 +34,19 @@ def run(
         ppath = relpath(file, os.environ["QUARTO_PROJECT_ROOT"], to_path=True)
 
         meta = {}
-        if ppath.suffix == ".ipynb":
-            with open(ppath) as fd:
-                ipynb = json.load(fd)
-                source = "".join(ipynb["cells"][0]["source"])
-                meta, _ = frontmatter.parse(source)
-        else:
-            with open(ppath) as fd:
-                meta, _ = frontmatter.parse(fd.read())
+        if isinstance(ppath, Path) and isinstance(rpath, Path):
+            if ppath.suffix == ".ipynb":
+                with open(ppath) as fd:
+                    ipynb = json.load(fd)
+                    source = "".join(ipynb["cells"][0]["source"])
+                    meta, _ = frontmatter.parse(source)
+            elif ppath.suffix == ".pdf":
+                meta = {"title": rpath.stem}
+            else:
+                with open(ppath) as fd:
+                    meta, _ = frontmatter.parse(fd.read())
 
-        title = meta.get("title", rpath.stem)
-        out.append(f"| {i} | {title} | [Ir para {rpath.name}]({rpath}) |")
+            title = meta.get("title", rpath.stem)
+            out.append(f"| {i} | {title} | [Ir para {rpath.name}]({rpath}) |")
 
     return out

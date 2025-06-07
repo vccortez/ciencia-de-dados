@@ -13,7 +13,7 @@ from IPython.display import Markdown, display
 
 from scripts import gerar_indice_pasta
 
-indice = gerar_indice_pasta.run()
+indice = gerar_indice_pasta.run(["*.qmd", "*.pdf"])
 
 if len(indice) > 0:
     display(Markdown("\n".join(indice)))
